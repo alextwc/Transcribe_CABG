@@ -59,8 +59,8 @@ echo
 date && echo "Setting the PATH and environmental variables, removing annotated header lines now"
 #######################################################################################################
 echo
-SourceDIR="/proj/regeps/regep00/studies/TRANSCRIBE/analyses/retwc/20160829PCA"
-  DestDIR="/proj/regeps/regep00/studies/TRANSCRIBE/analyses/retwc/20160829PCA"
+SourceDIR="/path/20160829PCA"
+  DestDIR="/path/20160829PCA"
 cd $DestDIR
 # gunzip ALL.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
 ( sed '1,252d' ./ALL.chr1.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf ) > ALL.chr1.phase3.20130502.temp1.vcf
