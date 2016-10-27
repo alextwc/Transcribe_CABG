@@ -1,0 +1,148 @@
+CV.DISEASE.TRAIT
+Abdominal aortic aneurysm
+Aging traits
+Ankle-brachial index
+Anthracycline-induced cardiotoxicity in childhood cancer
+Aortic-valve calcification
+Aortic root size
+Aortic stiffness
+AR-C124910XX levels in individuals with acute coronary syndromes treated with ticagrelor
+Arterial stiffness
+Asymmetrical dimethylarginine levels
+Atrial fibrillation
+Atrial fibrillation/atrial flutter
+Atrioventricular conduction
+B-type natriuretic peptide
+Behcet's disease
+Biochemical measures
+Biomedical quantitative traits
+Blood pressure
+Blood pressure (age interaction)
+Brugada syndrome
+C4b binding protein levels
+Cardiac repolarization
+Cardiac Troponin-T levels
+Cardiovascular disease in hypertension (ACE inhibitor interaction)
+Cardiovascular disease in hypertension (calcium channel blocker interaction)
+Cardiovascular disease risk factors
+Cardiovascular heart disease in diabetics
+Carotid atherosclerosis in HIV infection
+Carotid intima media thickness
+Carotid plaque burden (smoking interaction)
+Cerebral amyloid angiopathy
+Cervical artery dissection
+Chagas cardiomyopathy in Tripanosoma cruzi seropositivity
+Chemerin levels
+Circulating myeloperoxidase levels (plasma)
+Circulating myeloperoxidase levels (serum)
+Circulating vasoactive peptide levels
+Congenital heart disease
+Congenital heart malformation
+Congenital left-sided heart lesions
+Congenital left-sided heart lesions (maternal effect)
+Conotruncal heart defects
+Coronary artery aneurysm in Kawasaki disease
+Coronary artery disease
+Coronary artery disease or ischemic stroke
+Coronary artery disease or large artery stroke
+Coronary heart disease
+Coronary heart disease event reduction in response to statin therapy (interaction)
+Coronary restenosis
+Coronary spasm
+D-dimer levels
+Diastolic blood pressure
+Dilated cardiomyopathy
+Drug-induced torsades de pointes
+Ejection fraction in Tripanosoma cruzi seropositivity
+Electrocardiographic conduction measures
+Electrocardiographic traits
+Endothelial growth factor levels
+Exercise treadmill test traits
+Fibrinogen
+Gaucher disease severity
+Heart failure
+Heart rate
+Heart rate variability traits
+Hemostatic factors and hematological phenotypes
+Hypertension
+Hypertension (young onset)
+Hypertension risk in short sleep duration
+Intracerebral hemorrhage
+Intracranial aneurysm
+Ischemic stroke
+Ischemic stroke (large artery atherosclerosis)
+Large artery stroke
+LDL (oxidized)
+LDL cholesterol
+Life threatening arrhythmia
+Lipid levels in hepatitis C treatment
+Lipid traits
+Lipoprotein-associated phospholipase A2 activity and mass
+Lipoprotein-associated phospholipase A2 activity change in response to statin therapy
+Lp (a) levels
+Major CVD
+Medication adherence in chronic diseases
+Metabolite levels
+Mortality in heart failure
+Myocardial infarction
+Myocardial infarction (early onset)
+Myocardial infarction in coronary artery disease
+Myocardial infarction in hypertension (calcium channel blocker interaction)
+Natriuretic peptide levels
+Obesity-related traits
+Orthostatic hypotension
+Osteoprotegerin levels
+P wave duration
+Paraoxonase activity
+Perioperative myocardial infarction in coronary artery bypass surgery
+Peripheral artery disease
+Plasma cystastin c levels in acute coronary syndrome
+Plasma plasminogen activator levels
+Plasma renin activity levels
+Platelet thrombus formation
+Postoperative atrial fibrillation in coronary artery bypass grafting surgery
+PR interval
+PR interval in Tripanosoma cruzi seropositivity
+PR segment
+Preeclampsia
+Protein quantitative trait loci
+Pulmonary arterial hypertension (without BMPR2 mutations)
+Pulse pressure
+Pulse pressure (alcohol consumption interaction)
+Pulse pressure in young-onset hypertension
+QRS duration
+QRS duration in Tripanosoma cruzi seropositivity
+QT interval
+QT interval (interaction)
+QT interval in Tripanosoma cruzi seropositivity
+Quantitative traits
+Response to angiotensin II receptor blocker therapy
+Response to angiotensin II receptor blocker therapy (opposite direction w/ diuretic therapy)
+Response to chemotherapy in breast cancer (hypertension) (bevacizumab)
+Response to chemotherapy in breast cancer hypertensive cases (cumulative dose) (bevacizumab)
+Response to Dalcetrapib treatment in acute coronary syndrome
+Response to statins (LDL cholesterol change)
+Resting heart rate
+RR interval (heart rate)
+Select biomarker traits
+Serum protein levels (sST2)
+Soluble ICAM-1
+Soluble levels of adhesion molecules
+Stroke
+Stroke (ischemic)
+Stroke (pediatric)
+Subclinical atherosclerosis traits (other)
+Sudden cardiac arrest
+Symmetrical dimethylarginine levels
+Systolic blood pressure
+Thoracic aortic aneurysms and dissections
+Ticagrelor levels in individuals with acute coronary syndromes treated with ticagrelor
+Trans fatty acid levels
+Type 2 diabetes (young onset) and obesity
+Urate levels
+Vascular brain injury
+Vascular dementia
+Vascular endothelial growth factor levels
+Venous thromboembolism
+Venous thromboembolism (SNP x SNP interaction)
+White matter hyperintensity volume in cerebral autosomal-dominant arteriopathy with subcortical infarcts and leukoencephalopathy

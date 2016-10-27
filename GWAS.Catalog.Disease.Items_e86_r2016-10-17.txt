@@ -1,0 +1,1602 @@
+﻿DISEASE.TRAIT
+&beta;2-Glycoprotein I (&beta;2-GPI) plasma levels
+3-hydroxy-1-methylpropylmercapturic acid levels in smokers
+3-hydroxypropylmercapturic acid levels in smokers
+5-HTT brain serotonin transporter levels
+Abdominal aortic aneurysm
+Acenocoumarol maintenance dosage
+Acne (severe)
+Acoustic startle blink response
+Activated partial thromboplastin time
+Acute kidney injury in coronary artery bypass surgery (creatinine rise)
+Acute lymphoblastic leukemia (adolescents and young adults)
+Acute lymphoblastic leukemia (B-cell precursor)
+Acute lymphoblastic leukemia (childhood)
+Acute urticaria and angioedema (non-steroidal anti-inflammatory drug-induced)
+Acylcarnitine levels
+ADAMTS13 activity
+Addiction
+Adiponectin levels
+Adiponectin levels (BMI-adjusted)
+Adiposity
+Adolescent idiopathic scoliosis
+Adolescent idiopathic scoliosis (severe)
+Advanced age-related macular degeneration
+Advanced glycation end-product levels
+Adverse response to aromatase inhibitors
+Adverse response to carbamapezine
+Adverse response to chemotherapy (neutropenia/leucopenia) (5-fluorouracil)
+Adverse response to chemotherapy (neutropenia/leucopenia) (all anthracycline-based drugs)
+Adverse response to chemotherapy (neutropenia/leucopenia) (all antimetabolite drugs)
+Adverse response to chemotherapy (neutropenia/leucopenia) (all antimicrotubule drugs)
+Adverse response to chemotherapy (neutropenia/leucopenia) (all platinum-based drugs)
+Adverse response to chemotherapy (neutropenia/leucopenia) (all topoisomerase inhibitors)
+Adverse response to chemotherapy (neutropenia/leucopenia) (camptothecin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (carboplatin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (cisplatin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (cyclophosphamide)
+Adverse response to chemotherapy (neutropenia/leucopenia) (docetaxel)
+Adverse response to chemotherapy (neutropenia/leucopenia) (doxorubicin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (epirubicin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (etoposide)
+Adverse response to chemotherapy (neutropenia/leucopenia) (gemcitabine)
+Adverse response to chemotherapy (neutropenia/leucopenia) (paclitaxel + carboplatin)
+Adverse response to chemotherapy (neutropenia/leucopenia) (paclitaxel)
+Adverse response to chemotherapy in breast cancer (alopecia)
+Adverse response to chemotherapy in breast cancer (alopecia) (anti-microtubule)
+Adverse response to chemotherapy in breast cancer (alopecia) (cyclophosphamide+doxorubicin+/-5FU)
+Adverse response to chemotherapy in breast cancer (alopecia) (cyclophosphamide+epirubicin+/-5FU)
+Adverse response to chemotherapy in breast cancer (alopecia) (docetaxel)
+Adverse response to chemotherapy in breast cancer (alopecia) (paclitaxel)
+Adverse response to lamotrigine and phenytoin
+Adverse response to radiation therapy
+Age-related cataracts
+Age-related cataracts (age at onset)
+Age-related hearing impairment
+Age-related hearing impairment (interaction)
+Age-related macular degeneration
+Age-related macular degeneration (CNV vs. GA)
+Age-related macular degeneration (CNV)
+Age-related macular degeneration (extreme sampling)
+Age-related macular degeneration (GA)
+Age-related macular degeneration (smoking status interaction)
+Age-related macular degeneration (wet)
+Age-related nuclear cataracts
+Age at smoking initiation in chronic obstructive pulmonary disease
+Age of smoking initiation
+Aggressive periodontitis (sex interaction)
+Aging
+Aging (facial)
+Aging (time to death)
+Aging (time to event)
+Aging traits
+AIDS
+AIDS progression
+Airflow obstruction
+Airway hyperresponsiveness
+Airway imaging phenotypes
+Airway responsiveness in chronic obstructive pulmonary disease
+Airway wall thickness
+Alcohol and nictotine co-dependence
+Alcohol consumption
+Alcohol consumption (maxi-drinks)
+Alcohol consumption (transferrin glycosylation)
+Alcohol dependence
+Alcohol dependence (age at onset)
+Alcoholism (12-month weekly alcohol consumption)
+Alcoholism (alcohol dependence factor score)
+Alcoholism (alcohol use disorder factor score)
+Alcoholism (heaviness of drinking)
+Allergic dermatitis (nickel)
+Allergic rhinitis
+Allergic rhinitis in asthma
+Allergic rhinitis in non-asthmatics
+Allergic sensitization
+Alloimmunization response to red blood cell transfusion in sickle cell anemia
+Alopecia areata
+Aluminium levels
+Alzheimer's disease
+Alzheimer's disease (age of onset)
+Alzheimer's disease (APOE e4 interaction)
+Alzheimer's disease (cognitive decline)
+Alzheimer's disease (late onset)
+Alzheimer's disease (survival time)
+Alzheimer's disease biomarkers
+Alzheimer's disease in APOE e4- carriers
+Alzheimer's disease in APOE e4+ carriers
+Amino acid levels
+Amyloid A serum levels
+Amyotrophic lateral sclerosis
+Amyotrophic lateral sclerosis (age of onset)
+Amyotrophic lateral sclerosis (sporadic)
+Amyotrophic lateral sclerosis or frontotemporal dementia
+Androgen levels
+Anger
+Angiotensin-converting enzyme activity
+Ankle-brachial index
+Ankylosing spondylitis
+Anorexia nervosa
+Anterior chamber depth
+Anthracycline-induced cardiotoxicity in childhood cancer
+Anthropometric traits
+Anthropometric traits in newborns
+Anti-cyclic Citrullinated Peptide Antibody
+Anti-saccade response
+Antibody level in response to infection
+Antibody status in Tripanosoma cruzi seropositivity
+Anticoagulant levels
+Antineutrophil cytoplasmic antibody-associated vasculitis
+Antinuclear antibody levels
+Antipsychotic-induced QTc interval prolongation
+Antipsychotic drug-induced weight gain
+Antipsychotic drug-induced weight gain (time interaction)
+Antitragus size
+Anxiety and major depressive disorder
+Anxiety disorder
+Anxiety in major depressive disorder
+Aortic-valve calcification
+Aortic root size
+Aortic stiffness
+Apolipoprotein Levels
+AR-C124910XX levels in individuals with acute coronary syndromes treated with ticagrelor
+Arsenic metabolism
+Arterial stiffness
+Arthritis (juvenile idiopathic)
+Asparaginase hypersensitivity in acute lymphoblastic leukemia
+Aspartate aminotransferase
+Asperger disorder
+Aspirin exacerbated respiratory disease in asthmatics
+Aspirin hydrolysis (plasma)
+Asthma
+Asthma (bronchodilator response)
+Asthma (childhood onset)
+Asthma (corticosteroid response)
+Asthma (sex interaction)
+Asthma (toluene diisocyanate-induced)
+Asthma and hay fever
+Asthma or chronic obstructive pulmonary disease
+Asymmetrical dimethylarginine levels
+Atopic dermatitis
+Atopic march
+Atopy
+Atrial fibrillation
+Atrial fibrillation/atrial flutter
+Atrioventricular conduction
+Atrioventricular septal defects in Down syndrome
+Attention deficit hyperactivity disorder
+Attention deficit hyperactivity disorder (combined symptoms)
+Attention deficit hyperactivity disorder (hyperactivity-impulsivity symptoms)
+Attention deficit hyperactivity disorder (inattention symptoms)
+Attention deficit hyperactivity disorder (time to onset)
+Attention deficit hyperactivity disorder and conduct disorder
+Attention deficit hyperactivity disorder motor coordination
+Attention deficit hyperactivity disorder symptoms (interaction)
+Attention function in attention deficit hyperactive disorder
+Autism
+Autism spectrum disorder
+Autism spectrum disorder-related traits
+Autism spectrum disorder, attention deficit-hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia (combined)
+Autoimmune hepatitis type-1
+Axial length
+B-type natriuretic peptide
+B cell non-Hodgkin lymphoma
+Barrett's esophagus
+Basal cell carcinoma
+Basal metabolic rate
+Behavioral disturbance or psychiatric symptoms and prion disease
+Behavioral disturbance or psychiatric symptoms in prion disease
+Behavioural disinhibition (generation interaction)
+Behcet's disease
+Beta-2 microglubulin plasma levels
+Beta-trace protein levels
+Beta thalassemia/hemoglobin E disease
+Biliary atresia
+Bilirubin levels
+Bilirubin levels in extreme obesity
+Binge eating behaviour and bipolar disorder
+Binge eating behaviour in bipolar disorder
+Biochemical measures
+Biomedical quantitative traits
+Bipolar disorder
+Bipolar disorder (age of onset and psychotic symptoms)
+Bipolar disorder (body mass index interaction)
+Bipolar disorder (inflammation and infection response interaction)
+Bipolar disorder (mania)
+Bipolar disorder and eating disorder
+Bipolar disorder and schizophrenia
+Bipolar disorder or major depressive disorder (combined)
+Bipolar disorder with mood-incongruent psychosis
+Bipolar I disorder
+Birdshot chorioretinopathy
+Birth length
+Birth weight
+Bitter taste perception
+Bitter taste response
+Black vs. blond hair color
+Black vs. non-black hair color
+Black vs. red hair color
+Bladder cancer
+Bladder cancer (smoking interaction)
+Blond vs non-blond hair color
+Blond vs. brown hair color
+Blood and toenail selenium levels
+Blood metabolite levels
+Blood metabolite ratios
+Blood pressure
+Blood pressure (age interaction)
+Blood pressure (anthropometric measures interaction)
+Blood pressure (smoking interaction)
+Blood pressure measurement (cold pressor test)
+Blood pressure measurement (high sodium and potassium intervention)
+Blood pressure measurement (high sodium intervention)
+Blood pressure measurement (low sodium intervention)
+Blood trace element (Cu levels)
+Blood trace element (Se levels)
+Blood trace element (Zn levels)
+Blue vs. brown eyes
+Blue vs. green eyes
+Body mass (lean)
+Body mass in chronic obstructive pulmonary disease
+Body mass index
+Body mass index (age interaction)
+Body mass index (change over time)
+Body mass index (education interaction)
+Body mass index (interaction)
+Body mass index and cholesterol (psychopharmacological treatment)
+Body mass index in asthmatics
+Body mass index in non-asthmatics
+Body mass index variance
+Bone mineral accretion in asthma (oral corticosteroid dose interaction)
+Bone mineral density
+Bone mineral density (hip)
+Bone mineral density (hip) and age at menarche
+Bone mineral density (paediatric, lower limb)
+Bone mineral density (paediatric, skull)
+Bone mineral density (paediatric, total body less head)
+Bone mineral density (paediatric, upper limb)
+Bone mineral density (spine)
+Bone mineral density (spine) and age at menarche
+Bone mineral density (wrist)
+Bone properties (heel)
+Borderline personality disorder features
+Brachial circumference
+Brain connectivity
+Brain cytoarchitecture
+Brain imaging
+Brain imaging in schizophrenia (interaction)
+Brain lesion load
+Brain structure
+Brain structure (hippocampal volume)
+Brain structure (temporal lobe volume)
+Breast cancer
+Breast cancer (early onset)
+Breast cancer (estrogen-receptor negative, progesterone-receptor negative, and human epidermal growth factor-receptor negative)
+Breast cancer (male)
+Breast cancer (menopausal hormone therapy interaction)
+Breast cancer (prognosis)
+Breast cancer (survival)
+Breast Cancer in BRCA1 mutation carriers
+Breast cancer in BRCA2 mutation carriers
+Breast size
+Breastfeeding duration
+Bronchodilator response in asthma
+Bronchodilator response in asthma (inhaled corticosteroid treatment interaction)
+Bronchopulmonary dysplasia
+Brown vs. non-brown hair color
+Brugada syndrome
+Bulimia nervosa
+Burning and freckling
+Butyrylcholinesterase levels
+C-reactive protein
+C-reactive protein and white blood cell count
+C-reactive protein levels
+C-reactive protein levels in ischemic stroke
+C4b binding protein levels
+Cadmium levels
+Caffeine consumption
+Calcaneal bone ultrasound measurement (speed of sound)
+Calcium levels
+Callous-unemotional behaviour
+Cannabis dependence
+Cannabis use (age at onset)
+Cannabis use (initiation)
+Capecitabine sensitivity
+Cardia gastric cancer
+Cardiac hypertrophy
+Cardiac muscle measurement
+Cardiac repolarization
+Cardiac structure and function
+Cardiac Troponin-T levels
+Cardiovascular disease in hypertension (ACE inhibitor interaction)
+Cardiovascular disease in hypertension (calcium channel blocker interaction)
+Cardiovascular disease risk factors
+Cardiovascular heart disease in diabetics
+Carotenoid and tocopherol levels
+Carotid artery intima media thickness (sex interaction)
+Carotid atherosclerosis in HIV infection
+Carotid intima media thickness
+Carotid plaque burden (smoking interaction)
+Cataracts in type 2 diabetes
+Caudate nucleus volume
+CD4:CD8 lymphocyte ratio
+Celiac disease
+Celiac disease or Rheumatoid arthritis
+Central corneal thickness
+Cerebral amyloid angiopathy
+Cerebral amyloid deposition (PET imaging)
+Cerebral amyloid deposition in APOEe4 non-carriers (PET imaging)
+Cerebral amyloid deposition positivity (PET imaging)
+Cerebrospinal AB1-42 levels
+Cerebrospinal AB1-42 levels in Alzheimer's disease dementia
+Cerebrospinal fluid clusterin levels
+Cerebrospinal fluid clusterin levels in APOEe4- carriers
+Cerebrospinal fluid clusterin levels in APOEe4+ carriers
+Cerebrospinal fluid levels of Alzheimer's disease-related proteins
+Cerebrospinal fluid p-Tau181p:AB1-42 ratio
+Cerebrospinal fluid t-tau:AB1-42 ratio
+Cerebrospinal P-tau181p levels
+Cerebrospinal T-tau levels
+Cerivastatin-induced rhabdomyolysis
+Cervical artery dissection
+Cervical cancer
+Chagas cardiomyopathy in Tripanosoma cruzi seropositivity
+Change in intraocular pressure in response to steroid treatment (triamcinolone acetonide)
+Chemerin levels
+Childhood and early adolescence aggressive behavior
+Childhood body mass index
+Cholelithiasis-related traits in sickle cell anemia
+Cholesterol
+Cholesterol and Triglycerides
+Cholesterol, total
+Chromium levels
+Chronic bronchitis and chronic obstructive pulmonary disease
+Chronic bronchitis in chronic obstructive pulmonary disease
+Chronic hepatitis B infection
+Chronic hepatitis C infection
+Chronic kidney disease
+Chronic kidney disease and serum creatinine levels
+Chronic lymphocytic leukemia
+Chronic mucus hypersecretion
+Chronic myeloid leukemia
+Chronic obstructive pulmonary disease
+Chronic obstructive pulmonary disease-related biomarkers
+Chronic obstructive pulmonary disease (moderate to severe)
+Chronic obstructive pulmonary disease (severe)
+Chronic periodontitis
+Cingulate cortical amyloid beta load
+Circulating cell-free DNA
+Circulating myeloperoxidase levels (plasma)
+Circulating myeloperoxidase levels (serum)
+Circulating phylloquinone levels
+Circulating vasoactive peptide levels
+Cirrhosis (alcohol related)
+Classic bladder exstrophy
+Cleft lip
+Cleft plate (environmental tobacco smoke interaction)
+Clozapine-induced agranulocytosis
+Clozapine-induced cytotoxicity
+Clubfoot
+Coagulation factor levels
+Cobalt levels
+Cocaine dependence
+Coffee consumption
+Coffee consumption (cups per day)
+Cognitive decline
+Cognitive decline (age-related)
+Cognitive decline rate in late mild cognitive impairment
+Cognitive function
+Cognitive performance
+Cognitive test performance
+Cold medicine related Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS-TEN) with severe mucosal involvement
+Colorectal cancer
+Colorectal cancer (aspirin and/or NSAID use interaction)
+Colorectal cancer (calcium intake interaction)
+Colorectal cancer (diet interaction)
+Colorectal or endometrial cancer
+Common traits (Other)
+Complement C3 and C4 levels
+Comprehensive strength and appendicular lean mass
+Conduct disorder
+Conduct disorder (interaction)
+Conduct disorder (symptom count)
+Congenital heart disease
+Congenital heart malformation
+Congenital left-sided heart lesions
+Congenital left-sided heart lesions (maternal effect)
+Conotruncal heart defects
+Contrast sensitivity
+Copper levels
+Corneal astigmatism
+Corneal curvature
+Corneal structure
+Coronary arterial lesions in patients with Kawasaki disease
+Coronary artery aneurysm in Kawasaki disease
+Coronary artery calcification
+Coronary artery disease
+Coronary artery disease or ischemic stroke
+Coronary artery disease or large artery stroke
+Coronary heart disease
+Coronary heart disease event reduction in response to statin therapy (interaction)
+Coronary restenosis
+Coronary spasm
+Cortical structure (interaction)
+Cortical thickness
+Corticobasal degeneration
+Cotinine glucuronidation
+Cough in response to angiotensin-converting enzyme inhibitor drugs
+Creatine kinase in statin users
+Creatinine levels
+Creatinine levels in ischemic stroke
+Creutzfeldt-Jakob disease
+Creutzfeldt-Jakob disease (sporadic)
+Creutzfeldt-Jakob disease (variant)
+Crohn's disease
+Crohn's disease-related phenotypes
+Crohn's disease (need for surgery)
+Crohn's disease (time to surgery)
+Crohn's disease and celiac disease
+Crohn's disease and psoriasis
+Crohn's disease and sarcoidosis (combined)
+Current cigarettes per day in chronic obstructive pulmonary disease
+Cutaneous lupus erythematosus
+Cutaneous malignant melanoma
+Cutaneous nevi
+Cutaneous psoriasis
+Cystatin C
+Cystic fibrosis-related diabetes
+Cystic fibrosis severity
+Cytokine-stimulated IL-6 production
+Cytokine and corticosteroid-stimulated IL-6 production
+Cytomegalovirus antibody response
+D-dimer levels
+Dehydroepiandrosterone sulphate levels
+Delta-5 desaturase activity
+Delta-6 desaturase activity
+Dementia and core Alzheimer's disease neuropathologic changes
+Dengue shock syndrome
+Dental caries
+Depression (quantitative trait)
+Depression and alcohol dependence
+Depressive and manic episodes in bipolar disorder
+Depressive episodes in bipolar disorder
+Depressive symptoms (SSRI exposure interaction)
+Dermatomyositis
+Developmental dysplasia of the hip
+Diabetes (gestational)
+Diabetes (incident)
+Diabetes related insulin traits
+Diabetic kidney disease
+Diabetic nephropathy in type 1 diabetes
+Diabetic retinopathy
+Diabetic retinopathy in type 2 diabetes
+Dialysis-related mortality
+Diastolic blood pressure
+Diastolic blood pressure (alcohol consumption interaction)
+Dietary macronutrient intake
+Diffuse large B cell lymphoma
+Digestive system disease (Barrett's esophagus and esophageal adenocarcinoma combined)
+Digit length ratio
+Diisocyanate-induced asthma
+Dilated cardiomyopathy
+Disc degeneration (lumbar)
+Disease-free survival in breast cancer
+DNA methylation (parent-of-origin)
+DNA methylation (variation)
+Drinking behavior
+Drug-induced liver injury
+Drug-induced liver injury (amoxicillin-clavulanate)
+Drug-induced liver injury (flucloxacillin)
+Drug-induced Stevens-Johnson syndrome or toxic epidermal necrolysis (SJS/TEN)
+Drug-induced torsades de pointes
+Duodenal ulcer
+Dupuytren's disease
+Dysphagia
+E-selectin levels
+Ear morphology
+Ear protrusion
+Early childhood aggressive behavior
+Eating disorder in bipolar disorder
+Eating disorders
+Eating disorders (purging via substances)
+Echocardiographic traits
+Economic and political preferences
+Economic and political preferences (environmentalism)
+Economic and political preferences (fairness)
+Economic and political preferences (feminism/equality)
+Economic and political preferences (immigration/crime)
+Economic and political preferences (time)
+Educational attainment
+Egg allergy
+Ejection fraction in Tripanosoma cruzi seropositivity
+Electrocardiographic conduction measures
+Electrocardiographic traits
+Electrodermal activity
+Electroencephalogram traits
+Electroencephalographic traits in alcoholism
+Elevated serum carcinoembryonic antigen levels
+Emphysema-related traits
+Emphysema imaging phenotypes
+End-stage coagulation
+End-stage renal disease
+End-stage renal disease (non-diabetic)
+End-stage renal disease in Type 1 diabetics
+Endometrial cancer
+Endometriosis
+Endothelial function traits
+Endothelial growth factor levels
+Enteric fever
+Entorhinal cortical thickness
+Entorhinal cortical thickness (Alzheimer's disease interaction)
+Entorhinal cortical volume
+Entorhinal cortical volume (Alzheimer's disease interaction)
+Eosinophil counts
+Eosinophilic esophagitis
+Eosinophilic esophagitis (pediatric)
+Epilepsy
+Epilepsy (generalized)
+Epilepsy (remission after treatment)
+Epilepsy and lamotrigine-induced maculopapular eruptions
+Epirubicin-induced leukopenia
+Episodic memory
+Epithelial ovarian cancer
+Epstein-Barr virus immune response (EBNA-1)
+Erectile dysfunction and prostate cancer treatment
+Erectile dysfunction in type 1 diabetes
+Erythema nodosum in inflammatory bowel disease
+Erythrocyte sedimentation rate
+Esophageal adenocarcinoma
+Esophageal cancer
+Esophageal cancer  (alcohol interaction)
+Esophageal cancer (squamous cell)
+Esophageal cancer and gastric cancer
+Esophageal squamous cell cancer (length of survival)
+Esophageal squamous cell carcinoma
+Essential tremor
+Estradiol levels
+Estradiol plasma levels (breast cancer)
+Event-related brain oscillations
+Event free survival in diffuse large B-cell lymphoma treated with immunochemotherapy
+Ewing sarcoma
+Exercise (leisure time)
+Exercise treadmill test traits
+Exfoliation glaucoma or exfoliation syndrome
+Exfoliation syndrome
+Exhaled carbon monoxide levels
+Exploratory eye movement dysfunction in schizophrenia (cognitive search score)
+Exploratory eye movement dysfunction in schizophrenia (mean eye scanning length)
+Exploratory eye movement dysfunction in schizophrenia (number of eye fixations)
+Exploratory eye movement dysfunction in schizophrenia (responsive search score)
+Exploratory eye movement dysfunction in schizophrenia (total eye scanning length)
+Expressive vocabulary in infants
+Exudative age-related macular degeneration
+Eye color
+Eye color traits
+F-cell distribution
+Facial morphology
+Facial pigmentation
+Factor VII
+Factor VII levels
+Factor VIII levels
+Fasting glucose-related traits
+Fasting glucose-related traits (interaction with BMI)
+Fasting insulin-related traits
+Fasting insulin-related traits (interaction with BMI)
+Fasting insulin (interaction)
+Fasting plasma glucose
+Fasting plasma glucose (childhood)
+Fat body mass
+Fat distribution (HIV)
+Febrile seizures
+Febrile seizures (MMR vaccine-related)
+Febrile seizures (MMR vaccine-unrelated)
+Femoral neck bone geometry
+Femoral neck bone geometry and menarche (age at onset)
+Fentanyl consumption in laparoscopic-assisted colectomy (first 24 hours)
+Fetal hemoglobin levels
+Fetal hemoglobin levels in sickle cell anemia
+Fibrinogen
+Fibrinogen levels
+Fibrinogen levels (smoking status, alcohol consumption or body mass index interaction)
+Fibrinogen levels in ischemic stroke
+Folate pathway vitamin levels
+Folding of antihelix
+Follicular lymphoma
+Follicule stimulating hormone
+Food allergy
+Food antigen IgG levels
+Forced expiratory volume in 1 second
+Forced expiratory volume in 1 second (environmental interaction)
+Forced vital capacity
+Formal thought disorder in schizophrenia
+Fractional exhaled nitric oxide (childhood)
+Fractional exhaled nitric oxide levels
+Freckles
+Freckling
+Free thyroxine concentration
+Frontotemporal dementia
+Fuchs's corneal dystrophy
+Functional impairment in major depressive disorder, bipolar disorder and schizophrenia
+Functional MRI
+Gait rhythm
+Gait variability
+Gallbladder cancer
+Gallstones
+Gambling
+Gamma gluatamyl transferase levels
+Gamma glutamyl transpeptidase
+Gastric adenocarcinoma (histologically verified)
+Gastric cancer
+Gastritis
+Gaucher disease severity
+Gene methylation in lung tissue
+General cognitive ability
+Glaucoma
+Glaucoma (exfoliation)
+Glaucoma (high intraocular pressure)
+Glaucoma (primary angle closure)
+Glaucoma (primary open-angle)
+Glioblastoma
+Glioma
+Glioma (high-grade)
+Glomerular filtration rate
+Glomerular filtration rate in chronic kidney disease
+Glomerulosclerosis
+Glucocorticoid-induced osteonecrosis
+Glucocorticoid-induced osteonecrosis (age 10 years and older)
+Glucocorticoid-induced osteonecrosis (time dependent analysis)
+Glucose homeostasis traits
+Glycated hemoglobin levels
+Glycemic traits
+Glycemic traits (pregnancy)
+Glycerophospholipid levels
+Gout
+Graves' disease
+Gray matter volume (schizophrenia interaction)
+Gut microbiome composition (summer and winter)
+Gut microbiome composition (summer)
+Gut microbiome composition (winter)
+Hair color
+Hair morphology
+Hand grip strength
+Handedness
+Handedness in dyslexia
+Haptoglobin levels
+Hashimoto thyroiditis versus Graves' disease
+HbA2 levels
+HDL cholesterol
+HDL Cholesterol - Triglycerides (HDLC-TG)
+HDL Cholesterol in HIV-infection
+Head circumference (infant)
+Hearing function
+Hearing impairment
+Heart failure
+Heart rate
+Heart rate variability traits
+Height
+Height adjusted BMI
+Helicobacter pylori serologic status
+Helix rolling
+Hematocrit
+Hematological and biochemical traits
+Hematological parameters
+Hematology traits
+Hemoglobin
+Hemoglobin A2 levels in sickle cell anemia
+Hemoglobin levels
+Hemostatic factors and hematological phenotypes
+Hepatic lipid content in extreme obesity
+Hepatitis
+Hepatitis B
+Hepatitis B (viral clearance)
+Hepatitis B vaccine response
+Hepatitis C induced liver cirrhosis
+Hepatitis C induced liver fibrosis
+Hepatocellular carcinoma
+Hepatocellular carcinoma in hepatitis B infection
+Hepcidin levels
+Hereditary hemochromatosis-related traits (HFE mutation homozygotes)
+Heschl's gyrus morphology
+High serum lipase activity
+Hip bone size
+Hip circumference (psychosocial stress interaction)
+Hip geometry
+Hippocampal atrophy
+Hippocampal sclerosis
+Hippocampal sclerosis of aging
+Hippocampal volume
+Hirschsprung disease
+HIV-1 control
+HIV-1 progression
+HIV-1 replication
+HIV-1 susceptibility
+HIV-1 viral setpoint
+HIV-associated dementia
+Hoarding
+Hodgkin's lymphoma
+Homeostasis model assessment of beta-cell function (interaction)
+Homeostasis model assessment of insulin resistance (interaction)
+Homoarginine levels
+Homocysteine levels
+Hormone measurements
+HPV seropositivity
+Hyperactive-impulsive symptoms
+Hyperopia
+Hypersomnia (HLA-DQB1*06:02 negative)
+Hypersomnia during a major depressive episode in bipolar disorder
+Hypertension
+Hypertension (young onset)
+Hypertension risk in short sleep duration
+Hypertriglyceridemia
+Hypospadias
+Hypothyroidism
+Idiopathic membranous nephropathy
+Idiopathic pulmonary fibrosis
+IFN-related cytopenia
+IgA levels
+IgA nephropathy
+IgE grass sensitization
+IgE levels
+IgE levels in asthmatics
+IgE levels in asthmatics (D.f. specific)
+IgE levels in asthmatics (D.p. specific)
+IgG glycosylation
+IgG levels
+IgM levels
+Ileal carcinoids
+Illicit drug use
+Immune reponse to smallpox (secreted IFN-alpha)
+Immune reponse to smallpox (secreted IL-10)
+Immune reponse to smallpox (secreted IL-12p40)
+Immune reponse to smallpox (secreted IL-1beta)
+Immune reponse to smallpox (secreted IL-2)
+Immune reponse to smallpox (secreted TNF-alpha)
+Immune response to anthrax vaccine
+Immune response to measles-mumps-rubella vaccine
+Immune response to smallpox vaccine (IL-6)
+Immunoglobulin A
+Immunoglobulin G index levels in multiple sclerosis
+Inattentive symptoms
+Infant length
+Infantile hypertrophic pyloric stenosis
+Inflammatory biomarkers
+Inflammatory biomarkers in Kawasaki disease
+Inflammatory bowel disease
+Inflammatory bowel disease (early onset)
+Inflammatory skin disease
+Influenza A (H1N1) infection
+Influenza A (H1N1) severity
+Information processing speed
+Inguinal hernia
+Insomnia
+Insomnia (caffeine-induced)
+Insulin-like growth factors
+Insulin-related traits
+Insulin resistance/response
+Intelligence
+Intelligence (childhood)
+Interferon alpha levels in systemic lupus erythematosus
+Interleukin-18 levels
+Interstitial lung disease
+Intracerebral hemorrhage
+Intracranial aneurysm
+Intracranial volume
+Intraocular pressure
+Iris characteristics
+Iris color
+Iron deficiency
+Iron levels
+Iron status biomarkers
+Iron status biomarkers (ferritin levels)
+Iron status biomarkers (iron levels)
+Iron status biomarkers (transferrin levels)
+Iron status biomarkers (transferrin saturation)
+Irritable bowel syndrome
+Ischemic stroke
+Ischemic stroke (cardioembolic)
+Ischemic stroke (large artery atherosclerosis)
+Ischemic stroke (small artery occlusion)
+Ischemic stroke (undetermined subtype)
+Job-related exhaustion
+Joint damage progression in ACPA-negative rheumatoid arthritis
+Juvenile osteochondritis dissecans
+Kashin-Beck disease
+Kawasaki disease
+Keloid
+Kidney function decline traits
+Kidney stones
+Knee osteoarthritis
+L-arginine levels
+Lachrymal/Salivary gland lesion in type 1 autoimmune pancreatitis
+Lapatinib-induced hepatotoxicity
+Large artery stroke
+Large B-cell lymphoma
+Laryngeal squamous cell carcinoma
+Late-onset myasthenia gravis
+LDL (oxidized)
+LDL cholesterol
+LDL peak particle diameter (total fat intake interaction)
+Lead levels
+Lead levels in blood
+Lean body mass and age at menarche (combined)
+Left inferior lateral ventricle volume (Cerebrospinal fluid biomarker status interaction)
+Left superior temporal gyrus thickness (schizophrenia interaction)
+Left ventricular mass
+Leishmaniasis (visceral)
+Lentiform nucleus volume
+Leprosy
+Lewy body disease
+Life threatening arrhythmia
+Lifespan
+Lifetime average cigarettes per day in chronic obstructive pulmonary disease
+Light vs. dark hair color
+Lipid levels in hepatitis C treatment
+Lipid metabolism phenotypes
+Lipid traits
+Lipoprotein-associated phospholipase A2 activity and mass
+Lipoprotein-associated phospholipase A2 activity change in response to statin therapy
+Lipoprotein (a) - cholesterol levels
+Lipoprotein (a) levels
+Liver enzyme levels
+Liver enzyme levels (alanine transaminase)
+Liver enzyme levels (alkaline phosphatase)
+Liver enzyme levels (aspartate transaminase)
+Liver enzyme levels (gamma-glutamyl transferase)
+Lobe attachment
+Lobe size
+Lobular breast cancer (menopausal hormone therapy interaction)
+Local histogram emphysema pattern
+Longevity
+Longevity (85 years and older)
+Longevity (90 years and older)
+Longitudinal alcohol consumption
+Longitudinal change in brain amyloid plaque burden
+Low bone mineral density (hip)
+Low bone mineral density (spine)
+Low vWF levels
+Lp (a) levels
+Lumiracoxib-related liver injury
+Lung adenocarcinoma
+Lung cancer
+Lung cancer (asbestos exposure interaction)
+Lung Cancer (DNA repair capacity)
+Lung cancer (smoking interaction)
+Lung disease severity in cystic fibrosis
+Lung function (FEV1)
+Lung function (FEV1/FVC)
+Lung function (forced expiratory flow between 25% and 75% of forced vital capacity)
+Lung function (FVC)
+Lupus nephritis in systemic lupus erythematosus
+Lymphocyte counts
+Lymphoma
+Magnesium levels
+Major CVD
+Major depressive disorder
+Major depressive disorder (broad)
+Major mood disorders
+Malaria
+Male-pattern baldness
+Male fertility
+Male infertility
+Mammographic density
+Mammographic density (dense area)
+Mammographic density (non-dense area)
+Manganese levels
+Manic episodes in bipolar disorder
+Marginal zone lymphoma
+Mathematical ability in children with dyslexia
+Matrix metalloproteinase levels
+Maximal oxygen uptake response
+Mean arterial pressure
+Mean arterial pressure (alcohol consumption interaction)
+Mean corpuscular hemoglobin
+Mean corpuscular hemoglobin concentration
+Mean corpuscular volume
+Mean forced vital capacity from 2 exams
+Mean platelet volume
+Medication adherence in chronic diseases
+Melanoma
+Memory performance
+Menarche (age at onset)
+Menarche and menopause (age at onset)
+Meningioma
+Meningococcal disease
+Menopause (age at onset)
+Mercury levels
+Mesial temporal lobe epilepsy with hippocampal sclerosis
+Metabolic syndrome
+Metabolic syndrome (bivariate traits)
+Metabolic traits
+Metabolite levels
+Metabolite levels  (X-11787)
+Metabolite levels (5-HIAA)
+Metabolite levels (5-HIAA/ MHPG Ratio)
+Metabolite levels (Dihydroxy docosatrienoic acid)
+Metabolite levels (HVA-5-HIAA Factor score)
+Metabolite levels (HVA)
+Metabolite levels (HVA/5-HIAA ratio)
+Metabolite levels (HVA/MHPG ratio)
+Metabolite levels (MHPG)
+Metabolite levels (Pyroglutamine)
+Metastasis at diagnosis in osteosarcoma
+Methamphetamine dependence
+Methotrexate clearance (acute lymphoblastic leukemia)
+Methotrexate phramacokinetics (acute lymphoblastic leukemia)
+MGMT methylation in smokers
+Microalbuminuria
+Middle childhood and early adolescence aggressive behavior
+Migraine
+Migraine - clinic-based
+Migraine with aura
+Migraine without aura
+Mild influenza (H1N1) infection
+Milk allergy
+Mitochondrial DNA levels
+Mitral valve prolapse
+Mixed cryoglobulinemia vasculitis in chronic hepatitis C infection
+Molar-incisor hypomineralization
+Molybdenum levels
+Monocyte chemoattractant protein-1
+Monocyte count
+Monocyte early outgrowth colony forming units
+Mood disorder and prion disease
+Mood disorder in prion disease
+Morbidity-free survival
+Morphine dose requirement in tonsillectomy and adenoidectomy surgery
+Mortality in heart failure
+Motion sickness
+Moyamoya disease
+Mucinous ovarian carcinoma
+Multiple cancers (lung cancer, gastric cancer, and squamous cell carcinoma)
+Multiple myeloma
+Multiple myeloma (hyperdiploidy)
+Multiple myeloma (IgH translocation)
+Multiple myeloma (survival)
+Multiple myeloma and monoclonal gammopathy
+Multiple sclerosis
+Multiple sclerosis--Brain Glutamate Levels
+Multiple sclerosis (age of onset)
+Multiple sclerosis (OCB status)
+Multiple sclerosis (severity)
+Multiple sclerosis or amyotrophic lateral sclerosis
+Musician's dystonia
+Myasthenia gravis
+Myeloproliferative neoplasms
+Myocardial infarction
+Myocardial infarction (early onset)
+Myocardial infarction in coronary artery disease
+Myocardial infarction in hypertension (calcium channel blocker interaction)
+Myopia
+Myopia (pathological)
+Myopia (severe)
+Myositis
+N-glycan levels
+Narcolepsy
+Narcolepsy (age of onset)
+Narcolepsy (onset before 2009 H1N1 influenza pandemic)
+Narcolepsy with cataplexy
+Nasopharyngeal carcinoma
+Natriuretic peptide levels
+Neonatal lupus
+Nephrolithiasis
+Nephropathy
+Nephrotic syndrome (acquired)
+Neuranatomic and neurocognitive phenotypes
+Neuritic plaque
+Neuroblastoma
+Neuroblastoma (high-risk)
+Neurofibrillary tangles
+Neuropathic pain in type 2 diabetes
+Neuroticism
+Neutrophil count
+Neutrophil count in HIV-infection
+Nevirapine-induced rash
+Nickel levels
+Nicotine dependence
+Nicotine glucouronidation
+Nicotine use
+Nodular sclerosis Hodgkin lymphoma
+Noise-induced hearing loss
+Non-albumin protein levels
+Non-alcoholic fatty liver disease
+Non-alcoholic fatty liver disease histology (AST)
+Non-alcoholic fatty liver disease histology (lobular)
+Non-alcoholic fatty liver disease histology (other)
+Non-cardia gastric cancer
+Non-glioblastoma glioma
+Non-melanoma skin cancer
+Non-obstructive azoospermia
+Non-small cell lung cancer
+Non-small cell lung cancer (recurrence rate)
+Non-small cell lung cancer (survival)
+Non-substance related behavioral disinhibition
+Non-word repetition
+Nonalcoholic fatty liver disease
+Nonsyndromic cleft lip with or without cleft palate
+Normalized brain volume
+Number of children
+Number of children (6+ vs. 0 or 1)
+Number of pregnancies
+Obesity
+Obesity-related traits
+Obesity (early onset extreme)
+Obesity (extreme)
+Obesity and osteoporosis
+Obesity in adult survivors of childhood cancer exposed to cranial radiation
+Obesity in adult survivors of childhood cancer not exposed to cranial radiation
+Objective response to lithium treatment
+Objective response to lithium treatment in bipolar disorder
+Obsessive-compulsive disorder
+Obstructive sleep apnea
+Odorant perception (&beta;-damascenone)
+Odorant perception (&beta;-ionone)
+Odorant perception (isobutyraldehyde)
+Oleic acid (18:1n-9) plasma levels
+Oligoclonal band status in multiple sclerosis
+Opioid sensitivity
+Oppositional defiant disorder in attention-deficit hyperactivity disorder
+Optic cup area
+Optic disc area
+Optic disc parameters
+Optic nerve measurement (cup-to-disc ratio)
+Optic nerve measurement (cup area)
+Optic nerve measurement (disc area)
+Optic nerve measurement (rim area)
+Orofacial clefts
+Orofacial clefts (interaction)
+Orthostatic hypotension
+Ossification of the posterior longitudinal ligament of the spine
+Osteoarthritis
+Osteoarthritis (hand, severe)
+Osteoarthritis (hip)
+Osteoarthritis biomarkers
+Osteonecrosis of the jaw
+Osteoporosis
+Osteoporosis-related phenotypes
+Osteoprotegerin levels
+Osteosarcoma
+Other erythrocyte phenotypes
+Otitis media (chronic/recurrent)
+Otosclerosis
+Ovarian cancer
+Ovarian cancer in BRCA1 mutation carriers
+Ovarian reserve
+Overweight status
+P wave duration
+Paclitaxel-induced cytotoxicity
+Paclitaxel-induced neuropathy
+Paget's disease
+Pain
+Palmitic acid (16:0) plasma levels
+Palmitoleic acid (16:1n-7) plasma levels
+Pancreatic cancer
+Pancreatitis
+Panic disorder
+Paraoxonase activity
+Parasitemia in Tripanosoma cruzi seropositivity
+Parent of origin effect on language impairment (paternal)
+Parkinson's disease
+Parkinson's disease (age of onset)
+Parkinson's disease (familial)
+Parkinson's disease (motor and cognition)
+Parkinson disease and lewy body pathology
+Partial epilepsies
+PCA3 expression level
+Peak creatinine levels in vancomycin therapy
+Peanut allergy
+Pediatric areal bone mineral density (radius)
+Pediatric autoimmune diseases
+Pediatric bone mineral content (radius)
+Pelvic organ prolapse
+Pelvic organ prolapse (moderate/severe)
+Perceived skin darkness
+Percent mammographic density
+Percentage gas trapping
+Pericardial fat
+Periodontal disease-related phenotypes
+Periodontal microbiota
+Periodontitis
+Periodontitis (CDC/AAP)
+Periodontitis (DPAL)
+Periodontitis (Mean PAL)
+Periodontitis (PAL4Q3)
+Perioperative myocardial infarction in coronary artery bypass surgery
+Peripheral artery disease
+Permanent tooth development
+Personality dimensions
+Personality traits in bipolar disorder
+Pharmacokinetics of antidepressant drugs in severe mental disorder (concentration dose ratio)
+Pharmacokinetics of antiepileptic drugs in severe mental disorder (concentration drug ratio)
+Pharmacokinetics of antipsychotic drugs in severe mental disorder (concentration drug ratio)
+Pharmacokinetics of olanzapine in severe mental disorder (concentration dose ratio)
+Phospholipid levels (plasma)
+Phosphorus levels
+Phytosterol levels
+Pit-and-Fissure caries
+Plasma amyloid beta peptide concentrations (ABx-40)
+Plasma amyloid beta peptide concentrations (ABx-42)
+Plasma clusterin levels
+Plasma cystastin c levels in acute coronary syndrome
+Plasma homocysteine levels
+Plasma homocysteine levels (post-methionine load test)
+Plasma lactate levels
+Plasma omega-3 polyunsaturated fatty acid level (eicosapentaenoic acid)
+Plasma omega-3 polyunsaturated fatty acid levels (alphalinolenic acid)
+Plasma omega-3 polyunsaturated fatty acid levels (docosahexaenoic acid)
+Plasma omega-6 polyunsaturated fatty acid levels (adrenic acid)
+Plasma omega-6 polyunsaturated fatty acid levels (arachidonic acid)
+Plasma omega-6 polyunsaturated fatty acid levels (dihomo-gamma-linolenic acid)
+Plasma omega-6 polyunsaturated fatty acid levels (gamma-linolenic acid)
+Plasma omega-6 polyunsaturated fatty acid levels (linoleic acid)
+Plasma plasminogen activator levels
+Plasma plasminogen levels
+Plasma renin activity levels
+Plasma thyroid-stimulating hormone levels
+Plasminogen activator inhibitor type 1 levels (PAI-1)
+Platelet aggregation
+Platelet count
+Platelet function and related traits
+Platelet thrombus formation
+Platinum-induced myelosuppression in non-small cell lung cancer
+Pneumoconiosis in silica exposure
+Political ideology
+Polychlorinated biphenyl levels
+Polycystic ovary syndrome
+Post-traumatic stress disorder
+Post-traumatic stress disorder (asjusted for relatedness)
+Post bronchodilator FEV1
+Post bronchodilator FEV1 in COPD
+Post bronchodilator FEV1/FVC ratio
+Post bronchodilator FEV1/FVC ratio in COPD
+Postburn hypertrophic scarring severity
+Postoperative atrial fibrillation in coronary artery bypass grafting surgery
+Postprandial triglyceride response to high fat diet meal
+PR interval
+PR interval in Tripanosoma cruzi seropositivity
+PR segment
+Pre bronchodilator FEV1
+Pre bronchodilator FEV1/FVC ratio
+Preeclampsia
+Premature ovarian failure
+Preschool internalizing problems
+Presence of antiphospholipid antibodies
+Primary biliary cirrhosis
+Primary sclerosing cholangitis
+Primary tooth development (number of teeth)
+Primary tooth development (time to first tooth eruption)
+Prion diseases
+Progranulin levels
+Progression free survival in metastatic colorectal cancer (CAPOX-B vs CAPOX-B plus cetuximab)
+Progression free survival in metastatic colorectal cancer (treatment interaction)
+Progressive supranuclear palsy
+Proinsulin levels
+Prostate-specific antigen levels
+Prostate cancer
+Prostate cancer (early onset)
+Prostate cancer (gene x gene interaction)
+Prostate cancer (survival)
+Prostate cancer aggressiveness
+Protein biomarker
+Protein C levels
+Protein quantitative trait loci
+Proteinuria and chronic kidney disease
+Proteinuria in chronic kidney disease
+Prothrombin fragments F1+2 levels in ischemic stroke
+Prothrombin time
+Psoriasis
+Psoriasis vulgaris
+Psoriatic arthritis
+Psychosis (atypical)
+Psychosis (methamphetamine induced)
+Psychosis and Alzheimer's disease
+Psychosis in Alzheimer's disease
+Psychotic symptoms and prion disease
+Psychotic symptoms in prion disease
+Pubertal anthropometrics
+Puberty onset
+Puberty onset (breast development)
+Puberty onset (genital enlargement)
+Pulmonary arterial hypertension (without BMPR2 mutations)
+Pulmonary artery enlargement and chronic obstructive pulmonary disease
+Pulmonary artery enlargement in chronic obstructive pulmonary disease
+Pulmonary emphysema
+Pulmonary function
+Pulmonary function (interaction)
+Pulmonary function decline
+Pulmonary function in asthmatics
+Pulse pressure
+Pulse pressure (alcohol consumption interaction)
+Pulse pressure in young-onset hypertension
+Pyoderma gangrenosum in inflammatory bowel disease
+QRS duration
+QRS duration in Tripanosoma cruzi seropositivity
+QT interval
+QT interval (interaction)
+QT interval in Tripanosoma cruzi seropositivity
+Quantitative traits
+Radiation response
+Reading and spelling
+Reading or mathematical ability
+Recalcitrant atopic dermatitis
+Recombination measurement
+Recombination measurement (females)
+Recombination measurement (males)
+Recombination rate (females)
+Recombination rate (males)
+Red blood cell count
+Red blood cell fatty acid levels
+Red blood cell traits
+Red vs non-red hair color
+Red vs. non-red hair color
+Red wine liking
+Refractive astigmatism
+Refractive error
+Relative hand skill
+Relative hand skill in reading disability
+Renal cell carcinoma
+Renal function-related traits (BUN)
+Renal function-related traits (eGRFcrea)
+Renal function-related traits (sCR)
+Renal function-related traits (urea)
+Renal function and chronic kidney disease
+Renal sinus fat
+Renal transplant outcome
+Resistin levels
+Response to abacavir-containing treatment in HIV-1 infection (virologic failure)
+Response to acetaminophen (hepatotoxicity)
+Response to alcohol consumption (flushing response)
+Response to amphetamines
+Response to angiotensin II receptor blocker therapy
+Response to angiotensin II receptor blocker therapy (opposite direction w/ diuretic therapy)
+Response to anti-depressant treatment in major depressive disorder
+Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 1 peripheral neuropathy)
+Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 2 peripheral neuropathy)
+Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 3 peripheral neuropathy)
+Response to anti-TNF alpha therapy in inflammatory bowel disease
+Response to anti-TNF treatment in rheumatoid arthritis
+Response to antidepressant treatment (citalopram)
+Response to antidepressants
+Response to antineoplastic agents
+Response to antipsychotic therapy (extrapyramidal side effects)
+Response to antipsychotic treatment
+Response to antipsychotic treatment in schizophrenia (reasoning)
+Response to antipsychotic treatment in schizophrenia (working memory)
+Response to bleomycin (chromatid breaks)
+Response to chemotherapy in breast cancer (hypertension) (bevacizumab)
+Response to chemotherapy in breast cancer hypertensive cases (cumulative dose) (bevacizumab)
+Response to cholinesterase inhibitors in Alzheimer's disease
+Response to citalopram treatment
+Response to clopidogrel therapy
+Response to cytadine analogues (cytosine arabinoside)
+Response to cytidine analogues (gemcitabine)
+Response to dabigatran etexilate treatment
+Response to Dalcetrapib treatment in acute coronary syndrome
+Response to diuretic therapy
+Response to diuretic therapy in hypertension
+Response to efavirenz-containing treatment in HIV 1 infection (virologic failure)
+Response to exercise (triglyceride levels)
+Response to fenofibrate
+Response to fenofibrate (adiponectin levels)
+Response to gemcitabine in pancreatic cancer
+Response to haloperidol in psychosis
+Response to hepatitis C treatment
+Response to Homoharringtonine (cytotoxicity)
+Response to iloperidone treatment (QT prolongation)
+Response to inhaled corticosteroid treatment in asthma (percentage change of FEV1)
+Response to inhaled glucocorticoid treatment in asthma (percentage change of FEV1)
+Response to interferon beta in multiple sclerosis
+Response to interferon beta therapy
+Response to irinotecan and platinum-based chemotherapy in non-small-cell lung cancer
+Response to irinotecan in non-small-cell lung cancer
+Response to metformin
+Response to metformin in type 2 diabetes (glycemic)
+Response to methotrexate in juvenile idiopathic arthritis
+Response to methotrexate in rheumatoid arthritis
+Response to methylphenidate treatment in attention-deficit/hyperactivity disorder (blood pressure)
+Response to montelukast in asthma (change in FEV1)
+Response to mTOR inhibitor (everolimus)
+Response to mTOR inhibitor (rapamycin)
+Response to Pazopanib in cancer (hepatotoxicity)
+Response to platinum-based agents
+Response to platinum-based chemotherapy (carboplatin)
+Response to platinum-based chemotherapy (cisplatin)
+Response to platinum-based chemotherapy in non-small-cell lung cancer
+Response to protease inhibitor treatment in hepatitis c (bilirubin toxicity)
+Response to protease inhibitor treatment in hepatitis c (peak serum total bilirubin levels)
+Response to radiotherapy in cancer (late toxicity)
+Response to radiotherapy in prostate cancer (toxicity)
+Response to serotonin reuptake inhibitors in major depressive disorder
+Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels)
+Response to serotonin reuptake inhibitors in non-psychotic unipolar depression
+Response to simvastatin treatment (PCSK9 protein level change)
+Response to statin therapy
+Response to statin therapy (LDL-C)
+Response to statins (LDL cholesterol change)
+Response to tamoxifen in breast cancer
+Response to taxane treatment (docetaxel)
+Response to taxane treatment (placlitaxel)
+Response to temozolomide
+Response to thiopurine immunosuppressants in inflammatory bowel disease (pancreatitis) (azathioprine and mercaptopurine)
+Response to TNF-alpha inhibitors in rheumatoid arthritis
+Response to TNF antagonist treatment
+Response to tocilizumab in rheumatoid arthritis
+Response to treatment for acute lymphoblastic leukemia
+Response to Vitamin E supplementation
+Response to zileuton treatment in asthma (FEV1 change interaction)
+Resting heart rate
+Resting oxygen saturation in chronic osbtructive pulmonary disease (pulse oxymetry)
+Restless legs syndrome
+Retinal arteriolar caliber
+Retinal vascular caliber
+Retinol levels
+Retinopathy in non-diabetics
+Rhegmatogenous retinal detachment
+Rheumatoid arthritis
+Rheumatoid arthritis (ACPA-negative)
+Ribavirin-induced anemia
+Rotator cuff tears
+RR interval (heart rate)
+Sagittal craniosynostosis
+Salivary gland carcinoma
+Sarcoidosis
+Sasang constitutional medicine type (So-Eum)
+Schizophrenia
+Schizophrenia (age at onset)
+Schizophrenia (cytomegalovirus infection interaction)
+Schizophrenia (inflammation and infection response interaction)
+Schizophrenia (negative symptoms)
+Schizophrenia (treatment resistant)
+Schizophrenia or bipolar disorder
+Schizophrenia, bipolar disorder and depression (combined)
+Schizophrenia, schizoaffective disorder or bipolar disorder
+Sclerosing cholangitis and ulcerative colitis (combined)
+Scoliosis
+Seasonality
+Select biomarker traits
+Self-employment
+Self-rated health
+Self-reported allergy
+Sense of smell
+Sensory disturbances after bilateral sagittal split ramus osteotomy
+Sepsis from pneumonia (survival)
+Serum albumin level
+Serum alkaline phosphatase levels
+Serum alpha1-antitrypsin levels
+Serum ceruloplasmin levels
+Serum dimethylarginine levels (asymmetric/symetric ratio)
+Serum ferritin levels
+Serum IgA levels
+Serum IgE levels
+Serum lipase activity
+Serum metabolite levels
+Serum prostate-specific antigen levels
+Serum protein levels (sST2)
+Serum selenium levels
+Serum tamsulosin hydrochloride concentration
+Serum thyroid-stimulating hormone levels
+Serum total protein level
+Serum uric acid levels
+Serum VEGFR2 concentration
+Serum vitamin D-binding protein levels
+Setpoint viral load in HIV-1 infection
+Severe influenza A (H1N1) infection
+Severe malaria
+Sex hormone-binding globulin levels
+Sex hormone levels
+Sexual dimorphism in anthropometric traits
+Sexual dysfunction (female)
+Sexual dysfunction (SSRI/SNRI-related)
+Shingles
+Sickle cell anemia (haemolysis)
+Sight-threatening diabetic retinopathy in type 2 diabetes
+Sitting height ratio
+Sjögren's syndrome
+Skin and soft tissue Staphylococcus aureus infection
+Skin colour saturation
+Skin pigmentation
+Skin sensitivity to sun
+Sleep-related phenotypes
+Sleep depth
+Sleep duration
+Sleep quality
+Sleep time
+Small-cell lung cancer (survival)
+Smoking behavior
+Smoking cessation
+Smoking cessation in chronic obstructive pulmonary disease
+Smoking initiation
+Smoking quantity
+Smooth-surface caries
+Social autistic-like traits
+Social communication problems
+Soluble E-selectin levels
+Soluble ICAM-1
+Soluble interleukin-2 receptor subunit alpha
+Soluble leptin receptor levels
+Soluble levels of adhesion molecules
+Speech perception in dyslexia
+Sphingolipid levels
+Spine bone size
+Spontaneous preterm birth (preterm birth)
+Spontaneous preterm birth (preterm delivery)
+Sporadic pituitary adenoma
+Squamous cell carcinoma
+Staphylococcus aureus infection
+Staphylococcus aureus nasal carriage (intermittent)
+Staphylococcus aureus nasal carriage (persistent)
+Stearic acid (18:0) plasma levels
+Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS-TEN)
+Stroke
+Stroke (ischemic)
+Stroke (pediatric)
+Subclinical atherosclerosis traits (other)
+Subcortical brain region volumes
+Subcutaneous adipose tissue
+Subjective response to lithium treatment
+Subjective response to lithium treatment in bipolar disorder
+Substance dependence
+Sudden cardiac arrest
+Suicidal ideation
+Suicidal ideation in depression or bipolar disorder
+Suicide
+Suicide attempts in bipolar disorder
+Suicide attempts in depression or bipolar disorder
+Suicide attempts in major depressive disorder
+Suicide behavior
+Suicide ideation score in major depressive disorder
+Suicide in bipolar disorder
+Suicide risk
+Sunburns
+Superior crus of antihelix expression
+Superior frontal gyrus grey matter volume
+Survival in colon cancer
+Survival in colorectal cancer
+Survival in colorectal cancer (distant metastatic)
+Survival in colorectal cancer (non-distant metastatic)
+Survival in endocrine treated breast cancer (estrogen-receptor positive)
+Survival in microsatellite instability low/stable colorectal cancer
+Survival in rectal cancer
+Symmetrical dimethylarginine levels
+Systemic lupus erythematosus
+Systemic lupus erythematosus and Systemic sclerosis
+Systemic sclerosis
+Systolic blood pressure
+Systolic blood pressure (alcohol consumption interaction)
+Systolic blood pressure in sickle cell anemia
+Tandem gait
+Tanning
+Tardive dyskinesia
+Telomere length
+Temperament
+Temperament (bipolar disorder)
+Temporomandibular joint disorders
+Testicular cancer
+Testicular germ cell cancer
+Testicular germ cell tumor
+Testosterone levels
+Tetralogy of Fallot
+Thiazide-induced adverse metabolic effects in hypertensive patients
+Thionamide-induced agranulocytosis in Graves' disease
+Thoracic-to-hip circumference ratio
+Thoracic aortic aneurysms and dissections
+Thrombin-antithrombin complex levels in ischemic stroke
+Thrombin generation potential phenotypes
+Thrombomodulin levels in ischemic stroke
+Thyroid cancer
+Thyroid cancer (Papillary, radiation-related)
+Thyroid function
+Thyroid hormone levels
+Thyroid peroxidase antibody levels
+Thyroid peroxidase antibody positivity
+Thyroid stimulating hormone
+Thyroid volume
+Thyrotoxic hypokalemic periodic paralysis
+Ticagrelor levels in individuals with acute coronary syndromes treated with ticagrelor
+Toenail selenium levels
+Tonometry
+Tooth agenesis (mandibular third molar)
+Tooth agenesis (third molar)
+Total bilirubin levels in HIV-1 infection
+Total ventricular volume
+Total ventricular volume (Alzheimer's disease interaction)
+Tourette's syndrome or obsessive-compulsive disorder
+Tourette syndrome
+Tragus size
+Trans fatty acid levels
+Treatment response for severe sepsis
+Trichloroethylene-induced hypersensitivity syndrome
+Triglycerides
+Triglycerides-Blood Pressure (TG-BP)
+Triptolide cytotoxicity
+Tuberculosis
+Tumor biomarkers
+Two-hour glucose challenge
+Type 1 diabetes
+Type 1 diabetes and autoimmune thyroid diseases
+Type 1 diabetes autoantibodies
+Type 1 diabetes nephropathy
+Type 2 diabetes
+Type 2 diabetes (dietary heme iron intake interaction)
+Type 2 diabetes (young onset) and obesity
+Type 2 diabetes and gout
+Type 2 diabetes and other traits
+Type 2 diabetes nephropathy
+Ulcerative colitis
+Ulcerative colitis or Crohn's disease
+Underweight status
+Upper aerodigestive tract cancers
+Urate levels
+Urate levels (BMI interaction)
+Urate levels in lean individuals
+Urate levels in obese individuals
+Urate levels in overweight individuals
+Urgency urinary incontinence
+Uric acid levels
+Urinary albumin-to-creatinine ratio
+Urinary albumin-to-creatinine ratio in diabetes
+Urinary albumin-to-creatinine ratio in non-diabetics
+Urinary albumin excretion
+Urinary albumin excretion rate in type 1 diabetes
+Urinary bladder cancer
+Urinary metabolites
+Urinary metabolites (H-NMR features)
+Urinary symptoms in response to radiotherapy in prostate cancer
+Urinary uromodulin levels
+Uterine fibroids
+Vaccine-related adverse events
+Vascular brain injury
+Vascular dementia
+Vascular endothelial growth factor levels
+Vaspin levels
+Vein graft stenosis in coronary artery bypass grafting
+Venous thromboembolism
+Venous thromboembolism (SNP x SNP interaction)
+Verbal declarative memory
+Vertical cup-disc ratio
+Very long-chain saturated fatty acid levels (fatty acid 20:0)
+Very long-chain saturated fatty acid levels (fatty acid 22:0)
+Very long-chain saturated fatty acid levels (fatty acid 24:0)
+Vincristine-induced peripheral neuropathy in acute lymphoblastic leukemia
+Visceral adipose tissue
+Visceral adipose tissue adjusted for BMI
+Visceral adipose tissue/subcutaneous adipose tissue ratio
+Visceral fat
+Vitamin B levels in ischemic stroke
+Vitamin B12 levels
+Vitamin D insufficiency
+Vitamin D levels
+Vitamin E levels
+Vitiligo
+Vitiligo (non-segmental)
+Vogt-Koyanagi-Harada syndrome
+Volumetric brain MRI
+vWF and FVIII levels
+vWF levels
+Waist-hip ratio
+Waist-to-hip circumference ratio (interaction)
+Waist-to-hip ratio adjusted for body mass index
+Waist circumference
+Waist Circumference - Triglycerides (WC-TG)
+Waist circumference and related phenotypes
+Warfarin maintenance dose
+Wegener's granulomatosis
+Weight
+Weight loss (gastric bypass surgery)
+White blood cell count
+White blood cell types
+White matter hyperintensities in ischemic stroke
+White matter hyperintensity burden
+White matter hyperintensity volume in cerebral autosomal-dominant arteriopathy with subcortical infarcts and leukoencephalopathy
+White matter integrity
+White matter integrity (interaction)
+White matter lesion progression
+White matter lesion progression (adjusted for white matter lesion burden at baseline)
+White matter microstructure (global fractional anisotropy)
+White wine liking
+Whole-brain volume
+Whole-brain volume (Alzheimer's disease interaction)
+Wilms tumor
+Word reading
+Yang-deficiency constitution
+YKL-40 levels
+Yu-Zhi constitution type in type 2 diabetes
+Zinc levels
