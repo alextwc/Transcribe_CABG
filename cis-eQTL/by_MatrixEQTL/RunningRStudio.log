@@ -1,0 +1,2319 @@
+###############################################################################
+###############################################################################
+################        Starting the round Baseline now!       ################
+###############################################################################
+###############################################################################
+[1] "2016-08-10 11:10:53 EDT"
+
+# Loading genotype data now #
+Rows read:  50,000 
+Rows read:  100,000 
+Rows read:  150,000 
+Rows read:  200,000 
+Rows read:  250,000 
+Rows read:  300,000 
+Rows read:  350,000 
+Rows read:  400,000 
+Rows read:  450,000 
+Rows read:  500,000 
+Rows read:  550,000 
+Rows read:  600,000 
+Rows read:  650,000 
+Rows read:  700,000 
+Rows read:  750,000 
+Rows read:  800,000 
+Rows read:  850,000 
+Rows read:  900,000 
+Rows read:  950,000 
+Rows read:  1,000,000 
+Rows read:  1,050,000 
+Rows read:  1,100,000 
+Rows read:  1,150,000 
+Rows read:  1,200,000 
+Rows read:  1,250,000 
+Rows read:  1,300,000 
+Rows read:  1,350,000 
+Rows read:  1,400,000 
+Rows read:  1,450,000 
+Rows read:  1,500,000 
+Rows read:  1,550,000 
+Rows read:  1,600,000 
+Rows read:  1,650,000 
+Rows read:  1,700,000 
+Rows read:  1,750,000 
+Rows read:  1,800,000 
+Rows read:  1,850,000 
+Rows read:  1,900,000 
+Rows read:  1,950,000 
+Rows read:  2,000,000 
+Rows read:  2,050,000 
+Rows read:  2,100,000 
+Rows read:  2,150,000 
+Rows read:  2,200,000 
+Rows read:  2,250,000 
+Rows read:  2,300,000 
+Rows read:  2,350,000 
+Rows read:  2,400,000 
+Rows read:  2,450,000 
+Rows read:  2,500,000 
+Rows read:  2,550,000 
+Rows read:  2,600,000 
+Rows read:  2,650,000 
+Rows read:  2,700,000 
+Rows read:  2,750,000 
+Rows read:  2,800,000 
+Rows read:  2,850,000 
+Rows read:  2,900,000 
+Rows read:  2,950,000 
+Rows read:  3,000,000 
+Rows read:  3,050,000 
+Rows read:  3,100,000 
+Rows read:  3,150,000 
+Rows read:  3,200,000 
+Rows read:  3,250,000 
+Rows read:  3,300,000 
+Rows read:  3,350,000 
+Rows read:  3,400,000 
+Rows read:  3,450,000 
+Rows read:  3,500,000 
+Rows read:  3,550,000 
+Rows read:  3,600,000 
+Rows read:  3,650,000 
+Rows read:  3,700,000 
+Rows read:  3,750,000 
+Rows read:  3,800,000 
+Rows read:  3,850,000 
+Rows read:  3,900,000 
+Rows read:  3,950,000 
+Rows read:  4,000,000 
+Rows read:  4,050,000 
+Rows read:  4,100,000 
+Rows read:  4,150,000 
+Rows read:  4,200,000 
+Rows read:  4,250,000 
+Rows read:  4,300,000 
+Rows read:  4,350,000 
+Rows read:  4,400,000 
+Rows read:  4,450,000 
+Rows read:  4,500,000 
+Rows read:  4,550,000 
+Rows read:  4562785  done.
+
+[1] "2016-08-10 11:17:42 EDT"
+# filter out SNPs with MAF<=0.05 ...
+# filter out SNPs for those who has only one subject under minor allele homozygous
+SNPs before filtering: 4562785 
+SNPs after filtering: 4473586 
+[1] "2016-08-10 11:18:23 EDT"
+
+# Loading gene expression data now #
+Rows read:  5,000 
+Rows read:  10,000 
+Rows read:  15,000 
+Rows read:  18214  done.
+
+[1] "2016-08-10 11:18:26 EDT"
+
+# Loading covariates now #
+Rows read:  7  done.
+
+[1] "2016-08-10 11:18:26 EDT"
+
+ Running MatrixEQTL on Baseline dataset now #
+[1] "2016-08-10 11:18:26 EDT"
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+# Making the histogram of local and distant p-values #
+ 
+[1] "2016-08-10 11:50:45 EDT"
+Matching data files and location files 
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  2.91  seconds
+Reordering genes
+ 
+Task finished in  2.19  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.06  seconds
+Creating output file(s) 
+Task finished in  0.01  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+Task finished in  2110.04  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values #
+ 
+# Showing the results of MatrixEQTL analysis of Baseline with covariates regressOut now #
+Analysis done in:  1929.21  seconds 
+# The cis-eQTL analysis was done in 32.1535 minutes
+
+# The number of total rows in cis-eQTL result is 7575687
+# The number of harvested SNPs in cis-eQTL result is 2947973
+# The number of harvested eGenes in cis-eQTL result is 17574
+# The cis-eQTL results are partially listing on the next lines: 
+             snps  gene statistic       pvalue          FDR       beta
+1 12:31232224:G:A DDX11 -24.65511 4.594163e-47 5.762232e-41 -0.6249699
+2 12:31213631:C:T DDX11 -24.24257 2.262455e-46 5.762232e-41 -0.6256089
+3 12:31213644:G:T DDX11 -24.24257 2.262455e-46 5.762232e-41 -0.6256089
+4 12:31213735:C:T DDX11 -24.24257 2.262455e-46 5.762232e-41 -0.6256089
+5 12:31214179:A:G DDX11 -24.24257 2.262455e-46 5.762232e-41 -0.6256089
+6 12:31214991:G:A DDX11 -24.24257 2.262455e-46 5.762232e-41 -0.6256089
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 247766
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 154338
+# The quantity of significant eGenes with FDR smaller than 0.05 is 5436
+# The quantity of significant eGenes with FDR smaller than 0.01 is 2785
+ 
+ Running MatrixEQTL on Baseline dataset without providing covariates now #
+ 
+[1] "2016-08-10 12:26:14 EDT"
+# Reloading covariates with dummy file now #
+
+[1] "2016-08-10 12:26:14 EDT"
+
+Matching data files and location files 
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  3.3  seconds
+Reordering genes
+ 
+Task finished in  3.25  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.05  seconds
+Creating output file(s) 
+Task finished in  0.03  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+Task finished in  1950.11  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values on NoRegressOut dataset now#
+ 
+# Showing the results of MatrixEQTL analysis of Baseline without covariates regressOut now #
+Analysis done in:  1788.55  seconds 
+# The cis-eQTL analysis was done in 29.8091666666667 minutes
+
+# The number of total rows in cis-eQTL result is 7575687
+# The number of harvested SNPs in cis-eQTL result is 2947973
+# The number of harvested eGenes in cis-eQTL result is 17574
+# The cis-eQTL results are partially listing on the next lines: 
+             snps  gene statistic       pvalue          FDR       beta
+1 12:31232224:G:A DDX11 -24.62713 1.544320e-48 6.676788e-42 -0.6163995
+2 12:31213631:C:T DDX11 -24.22492 7.932098e-48 6.676788e-42 -0.6176650
+3 12:31213644:G:T DDX11 -24.22492 7.932098e-48 6.676788e-42 -0.6176650
+4 12:31213735:C:T DDX11 -24.22492 7.932098e-48 6.676788e-42 -0.6176650
+5 12:31214179:A:G DDX11 -24.22492 7.932098e-48 6.676788e-42 -0.6176650
+6 12:31214991:G:A DDX11 -24.22492 7.932098e-48 6.676788e-42 -0.6176650
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 257338
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 161611
+# The quantity of significant eGenes with FDR smaller than 0.05 is 5526
+# The quantity of significant eGenes with FDR smaller than 0.01 is 2853
+ 
+[1] "2016-08-10 12:59:03 EDT"
+ 
+###############################################################################
+###############################################################################
+################        Starting the round Ischemia now!       ################
+###############################################################################
+###############################################################################
+[1] "2016-08-10 12:59:03 EDT"
+
+# Loading genotype data now #
+Rows read:  50,000 
+Rows read:  100,000 
+Rows read:  150,000 
+Rows read:  200,000 
+Rows read:  250,000 
+Rows read:  300,000 
+Rows read:  350,000 
+Rows read:  400,000 
+Rows read:  450,000 
+Rows read:  500,000 
+Rows read:  550,000 
+Rows read:  600,000 
+Rows read:  650,000 
+Rows read:  700,000 
+Rows read:  750,000 
+Rows read:  800,000 
+Rows read:  850,000 
+Rows read:  900,000 
+Rows read:  950,000 
+Rows read:  1,000,000 
+Rows read:  1,050,000 
+Rows read:  1,100,000 
+Rows read:  1,150,000 
+Rows read:  1,200,000 
+Rows read:  1,250,000 
+Rows read:  1,300,000 
+Rows read:  1,350,000 
+Rows read:  1,400,000 
+Rows read:  1,450,000 
+Rows read:  1,500,000 
+Rows read:  1,550,000 
+Rows read:  1,600,000 
+Rows read:  1,650,000 
+Rows read:  1,700,000 
+Rows read:  1,750,000 
+Rows read:  1,800,000 
+Rows read:  1,850,000 
+Rows read:  1,900,000 
+Rows read:  1,950,000 
+Rows read:  2,000,000 
+Rows read:  2,050,000 
+Rows read:  2,100,000 
+Rows read:  2,150,000 
+Rows read:  2,200,000 
+Rows read:  2,250,000 
+Rows read:  2,300,000 
+Rows read:  2,350,000 
+Rows read:  2,400,000 
+Rows read:  2,450,000 
+Rows read:  2,500,000 
+Rows read:  2,550,000 
+Rows read:  2,600,000 
+Rows read:  2,650,000 
+Rows read:  2,700,000 
+Rows read:  2,750,000 
+Rows read:  2,800,000 
+Rows read:  2,850,000 
+Rows read:  2,900,000 
+Rows read:  2,950,000 
+Rows read:  3,000,000 
+Rows read:  3,050,000 
+Rows read:  3,100,000 
+Rows read:  3,150,000 
+Rows read:  3,200,000 
+Rows read:  3,250,000 
+Rows read:  3,300,000 
+Rows read:  3,350,000 
+Rows read:  3,400,000 
+Rows read:  3,450,000 
+Rows read:  3,500,000 
+Rows read:  3,550,000 
+Rows read:  3,600,000 
+Rows read:  3,650,000 
+Rows read:  3,700,000 
+Rows read:  3,750,000 
+Rows read:  3,800,000 
+Rows read:  3,850,000 
+Rows read:  3,900,000 
+Rows read:  3,950,000 
+Rows read:  4,000,000 
+Rows read:  4,050,000 
+Rows read:  4,100,000 
+Rows read:  4,150,000 
+Rows read:  4,200,000 
+Rows read:  4,250,000 
+Rows read:  4,300,000 
+Rows read:  4,350,000 
+Rows read:  4,400,000 
+Rows read:  4,450,000 
+Rows read:  4,500,000 
+Rows read:  4,550,000 
+Rows read:  4562785  done.
+
+[1] "2016-08-10 13:05:25 EDT"
+# filter out SNPs with MAF<=0.05 ...
+# filter out SNPs for those who has only one subject under minor allele homozygous
+SNPs before filtering: 4562785 
+SNPs after filtering: 4473586 
+[1] "2016-08-10 13:05:57 EDT"
+
+# Loading gene expression data now #
+Rows read:  5,000 
+Rows read:  10,000 
+Rows read:  15,000 
+Rows read:  18392  done.
+
+[1] "2016-08-10 13:06:00 EDT"
+
+# Loading covariates now #
+Rows read:  8  done.
+
+[1] "2016-08-10 13:06:00 EDT"
+
+ Running MatrixEQTL on Ischemia dataset now #
+[1] "2016-08-10 13:06:00 EDT"
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+# Making the histogram of local and distant p-values #
+ 
+[1] "2016-08-10 13:39:19 EDT"
+Matching data files and location files 
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  2.53  seconds
+Reordering genes
+ 
+Task finished in  2.69  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.08  seconds
+Creating output file(s) 
+Task finished in  0.01  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+Task finished in  2069.5  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values #
+ 
+# Showing the results of MatrixEQTL analysis of Ischemia with covariates regressOut now #
+Analysis done in:  1902.25  seconds 
+# The cis-eQTL analysis was done in 31.7041666666667 minutes
+
+# The number of total rows in cis-eQTL result is 7642804
+# The number of harvested SNPs in cis-eQTL result is 2958739
+# The number of harvested eGenes in cis-eQTL result is 17733
+# The cis-eQTL results are partially listing on the next lines: 
+                       snps gene statistic       pvalue          FDR     beta
+1 rs10623571:18431254:A:ATT LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+2                kgp6997008 LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+3  rs56317740:18431449:AT:A LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+4  rs200130017:18431451:T:A LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+5   rs11599997:18431563:A:G LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+6   rs11604103:18431614:C:T LDHC  23.60199 4.522516e-45 2.468907e-39 0.664913
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 229903
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 141017
+# The quantity of significant eGenes with FDR smaller than 0.05 is 5218
+# The quantity of significant eGenes with FDR smaller than 0.01 is 2579
+ 
+ Running MatrixEQTL on Ischemia dataset without providing covariates now #
+
+[1] "2016-08-10 14:14:06 EDT"
+# Reloading covariates with dummy file now #
+
+[1] "2016-08-10 14:14:06 EDT"
+
+Matching data files and location files 
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  3.72  seconds
+Reordering genes
+ 
+Task finished in  2.86  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.06  seconds
+Creating output file(s) 
+Task finished in  0.02  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+Task finished in  2095.68  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values on NoRegressOut dataset now#
+ 
+# Showing the results of MatrixEQTL analysis of Ischemia without covariates regressOut now #
+Analysis done in:  1922.44  seconds 
+# The cis-eQTL analysis was done in 32.0406666666667 minutes
+
+# The number of total rows in cis-eQTL result is 7642804
+# The number of harvested SNPs in cis-eQTL result is 2958739
+# The number of harvested eGenes in cis-eQTL result is 17733
+# The cis-eQTL results are partially listing on the next lines: 
+                            snps  gene statistic       pvalue          FDR     beta
+1                 6:29642950:A:G ZFP57  23.49535 1.617001e-46 1.235842e-39 2.089076
+2                    kgp17121119 ZFP57  22.52821 9.673065e-45 3.696467e-39 1.956471
+3 rs9280637:29642978:C:CAACTTGAA ZFP57  22.52821 9.673065e-45 3.696467e-39 1.956471
+4         rs2535240:29643877:A:G ZFP57  22.52821 9.673065e-45 3.696467e-39 1.956471
+5         rs2535239:29643879:A:G ZFP57  22.52821 9.673065e-45 3.696467e-39 1.956471
+6          rs374317:29644040:C:T ZFP57  22.52821 9.673065e-45 3.696467e-39 1.956471
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 237752
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 146416
+# The quantity of significant eGenes with FDR smaller than 0.05 is 5309
+# The quantity of significant eGenes with FDR smaller than 0.01 is 2637
+ 
+[1] "2016-08-10 14:49:22 EDT"
+
+
+=================================================================================================
+#################################################################################################
+#################################################################################################
+=================================================================================================
+
+> source("D:/BWHMS/Meetings02/2016-08-15/MatrixEQTL_imputed121SNPs_State-eQTL.FDR.1.rstudio.1.0.R")
+############################################################################################################
+## R-script to run MatrixEQTL against the normalized (log(Exp+1.1)) State-specific RNA-Seq datasets       ##
+##                                                                                                        ##
+##  Author: Dr. Alex Tzuu-Wang Chang                                                                      ##
+##    Date: 2016-08-10                                                                                    ##
+##                                                                                                        ##
+## Version: 1.0 Using the Log2 transoformed RNA-Seq datasets instead of using the PEER-10 residuals       ##
+##                                                                                                        ##
+## Require: R v3.3.1, python etc.                                                                         ##
+##                                                                                                        ##
+## To install Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocInstaller")                                                     ##
+## To upgrade Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocUpgrade")                                                       ##
+## To install a package, for example the "SummarizedExperiment". Run the following commands:              ##
+##                          source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("SummarizedExperiment")                                              ##
+##                                                                                                        ##
+## When submit jobs at the outside of Channing:                                                           ##
+## (1) Login to capecod first (2) qsub -l lx yourScript.sh                                                ##
+## Switch to LINUX node from outside: ssh -l retwc -o StrictHostKeyChecking=no nantucket.bwh.harvard.edu  ##
+## Switch to LINUX node from  inside: ssh -l retwc nantucket                                              ##
+## Switch to ALKAN node from  inside: ssh alkan01                                                         ##
+## alias qs1='qrsh -pe ompi 8 -l virtual_free=32G -l m_core=5'                                            ##
+## alias qs2='qrsh -pe ompi 8 -l virtual_free=92G -l m_core=9'                                            ##
+##                                                                                                        ##
+## Run R in Channing:[ qs | (qrsh -l lx6,large) | (qrsh -l lx6,12hour=true) | (qrsh -l lx) ] then R;      ##
+## qrsh -l lx6 -l mem_free=92G -l m_core=13; qrsh -l lx6 -l mem_free=80G -l m_core=5;                     ##
+## qrsh -l rstudio; R --vanilla; /udd/stvjc/VM/R-devel-dist/bin/R; ~stvjc/bin/Rdevel --vanilla;           ##
+## `/udd/stvjc/bin/Rdevel RHOME`/bin/Rscript                                                              ##
+##                                                                                                        ##
+## Run R script in Channing:                                                                              ##
+## nohup R --no-save < myRscript.R > myRscriptR.out &                                                     ##
+## R --vanilla < /udd/retwc/R/test.R > /udd/retwc/R/testR.out ; qsub -l lx ./runMyRscript.sh              ##
+##                                                                                                        ##
+## After qs or qrsh the R executable file is located at the following path:                               ##
+## /local/bin/R -> /app/R-3.3.1@i86-rhel6.0/bin/R                                                         ##
+## Rscript -> /app/R-3.3.1@i86-rhel6.0/bin/Rscript                                                        ##
+## Check Job status: qds retwc; qstat -r; qstat -f; qstat -f | grep retwc | less; qstat -ls; qhost;       ##
+##                                                                                                        ##
+## Usage1 (for Channing Cluster): ( Rscript ./test.R ./LV135preX.csv ./LV133postX.csv ) >& testR.log      ##
+## Usage2 (for Channing Cluster): qbR ./test.R ./LV135preX.csv ./LV133postX.csv                           ##
+## Result: Usage 1 works; Usage 2 (qbR command line) failed to pass the arguments                         ##
+############################################################################################################
+[1] "2016-08-10 14:58:34 EDT"
+###############################################################################
+###############################################################################
+################        Starting the round Baseline now!       ################
+###############################################################################
+###############################################################################
+[1] "2016-08-10 14:58:46 EDT"
+
+# Loading genotype data now #
+Rows read:  50,000 
+Rows read:  100,000 
+Rows read:  150,000 
+Rows read:  200,000 
+Rows read:  250,000 
+Rows read:  300,000 
+Rows read:  350,000 
+Rows read:  400,000 
+Rows read:  450,000 
+Rows read:  500,000 
+Rows read:  550,000 
+Rows read:  600,000 
+Rows read:  650,000 
+Rows read:  700,000 
+Rows read:  750,000 
+Rows read:  800,000 
+Rows read:  850,000 
+Rows read:  900,000 
+Rows read:  950,000 
+Rows read:  1,000,000 
+Rows read:  1,050,000 
+Rows read:  1,100,000 
+Rows read:  1,150,000 
+Rows read:  1,200,000 
+Rows read:  1,250,000 
+Rows read:  1,300,000 
+Rows read:  1,350,000 
+Rows read:  1,400,000 
+Rows read:  1,450,000 
+Rows read:  1,500,000 
+Rows read:  1,550,000 
+Rows read:  1,600,000 
+Rows read:  1,650,000 
+Rows read:  1,700,000 
+Rows read:  1,750,000 
+Rows read:  1,800,000 
+Rows read:  1,850,000 
+Rows read:  1,900,000 
+Rows read:  1,950,000 
+Rows read:  2,000,000 
+Rows read:  2,050,000 
+Rows read:  2,100,000 
+Rows read:  2,150,000 
+Rows read:  2,200,000 
+Rows read:  2,250,000 
+Rows read:  2,300,000 
+Rows read:  2,350,000 
+Rows read:  2,400,000 
+Rows read:  2,450,000 
+Rows read:  2,500,000 
+Rows read:  2,550,000 
+Rows read:  2,600,000 
+Rows read:  2,650,000 
+Rows read:  2,700,000 
+Rows read:  2,750,000 
+Rows read:  2,800,000 
+Rows read:  2,850,000 
+Rows read:  2,900,000 
+Rows read:  2,950,000 
+Rows read:  3,000,000 
+Rows read:  3,050,000 
+Rows read:  3,100,000 
+Rows read:  3,150,000 
+Rows read:  3,200,000 
+Rows read:  3,250,000 
+Rows read:  3,300,000 
+Rows read:  3,350,000 
+Rows read:  3,400,000 
+Rows read:  3,450,000 
+Rows read:  3,500,000 
+Rows read:  3,550,000 
+Rows read:  3,600,000 
+Rows read:  3,650,000 
+Rows read:  3,700,000 
+Rows read:  3,750,000 
+Rows read:  3,800,000 
+Rows read:  3,850,000 
+Rows read:  3,900,000 
+Rows read:  3,950,000 
+Rows read:  4,000,000 
+Rows read:  4,050,000 
+Rows read:  4,100,000 
+Rows read:  4,150,000 
+Rows read:  4,200,000 
+Rows read:  4,250,000 
+Rows read:  4,300,000 
+Rows read:  4,350,000 
+Rows read:  4,400,000 
+Rows read:  4,450,000 
+Rows read:  4,500,000 
+Rows read:  4,550,000 
+Rows read:  4562785  done.
+
+[1] "2016-08-10 15:06:08 EDT"
+# filter out SNPs with MAF<=0.05 ...
+# filter out SNPs for those who has only one subject under minor allele homozygous
+SNPs before filtering: 4562785 
+SNPs after filtering: 4473586 
+[1] "2016-08-10 15:06:41 EDT"
+
+# Loading gene expression data now #
+Rows read:  5,000 
+Rows read:  10,000 
+Rows read:  15,000 
+Rows read:  18214  done.
+
+[1] "2016-08-10 15:06:44 EDT"
+
+# Loading covariates now #
+Rows read:  7  done.
+
+[1] "2016-08-10 15:06:44 EDT"
+
+ Running MatrixEQTL on Baseline dataset now #
+[1] "2016-08-10 15:06:44 EDT"
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+# Making the histogram of local and distant p-values #
+ 
+[1] "2016-08-10 15:41:30 EDT"
+Matching data files and location files 
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  2.43  seconds
+Reordering genes
+ 
+Task finished in  2.29  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.06  seconds
+Creating output file(s) 
+Task finished in  0.02  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,836 cis-eQTLs
+
+
+
+
+source("D:/BWHMS/Meetings02/2016-08-15/MatrixEQTL_imputed121SNPs_State-eQTL.FDR.1.rstudio.1.0.R")
+############################################################################################################
+## R-script to run MatrixEQTL against the normalized (log(Exp+1.1)) State-specific RNA-Seq datasets       ##
+##                                                                                                        ##
+##  Author: Dr. Alex Tzuu-Wang Chang                                                                      ##
+##    Date: 2016-08-10                                                                                    ##
+##                                                                                                        ##
+## Version: 1.0 Using the Log2 transoformed RNA-Seq datasets instead of using the PEER-10 residuals       ##
+##                                                                                                        ##
+## Require: R v3.3.1, python etc.                                                                         ##
+##                                                                                                        ##
+## To install Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocInstaller")                                                     ##
+## To upgrade Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocUpgrade")                                                       ##
+## To install a package, for example the "SummarizedExperiment". Run the following commands:              ##
+##                          source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("SummarizedExperiment")                                              ##
+##                                                                                                        ##
+## When submit jobs at the outside of Channing:                                                           ##
+## (1) Login to capecod first (2) qsub -l lx yourScript.sh                                                ##
+## Switch to LINUX node from outside: ssh -l retwc -o StrictHostKeyChecking=no nantucket.bwh.harvard.edu  ##
+## Switch to LINUX node from  inside: ssh -l retwc nantucket                                              ##
+## Switch to ALKAN node from  inside: ssh alkan01                                                         ##
+## alias qs1='qrsh -pe ompi 8 -l virtual_free=32G -l m_core=5'                                            ##
+## alias qs2='qrsh -pe ompi 8 -l virtual_free=92G -l m_core=9'                                            ##
+##                                                                                                        ##
+## Run R in Channing:[ qs | (qrsh -l lx6,large) | (qrsh -l lx6,12hour=true) | (qrsh -l lx) ] then R;      ##
+## qrsh -l lx6 -l mem_free=92G -l m_core=13; qrsh -l lx6 -l mem_free=80G -l m_core=5;                     ##
+## qrsh -l rstudio; R --vanilla; /udd/stvjc/VM/R-devel-dist/bin/R; ~stvjc/bin/Rdevel --vanilla;           ##
+## `/udd/stvjc/bin/Rdevel RHOME`/bin/Rscript                                                              ##
+##                                                                                                        ##
+## Run R script in Channing:                                                                              ##
+## nohup R --no-save < myRscript.R > myRscriptR.out &                                                     ##
+## R --vanilla < /udd/retwc/R/test.R > /udd/retwc/R/testR.out ; qsub -l lx ./runMyRscript.sh              ##
+##                                                                                                        ##
+## After qs or qrsh the R executable file is located at the following path:                               ##
+## /local/bin/R -> /app/R-3.3.1@i86-rhel6.0/bin/R                                                         ##
+## Rscript -> /app/R-3.3.1@i86-rhel6.0/bin/Rscript                                                        ##
+## Check Job status: qds retwc; qstat -r; qstat -f; qstat -f | grep retwc | less; qstat -ls; qhost;       ##
+##                                                                                                        ##
+## Usage1 (for Channing Cluster): ( Rscript ./test.R ./LV135preX.csv ./LV133postX.csv ) >& testR.log      ##
+## Usage2 (for Channing Cluster): qbR ./test.R ./LV135preX.csv ./LV133postX.csv                           ##
+## Result: Usage 1 works; Usage 2 (qbR command line) failed to pass the arguments                         ##
+############################################################################################################
+[1] "2016-08-11 08:44:02 EDT"
+Loading required package: MatrixEQTL
+###############################################################################
+###############################################################################
+################        Starting the round Baseline now!       ################
+###############################################################################
+###############################################################################
+[1] "2016-08-11 08:44:21 EDT"
+
+# Loading genotype data now #
+Rows read:  50,000 
+Rows read:  100,000 
+Rows read:  150,000 
+Rows read:  200,000 
+Rows read:  250,000 
+Rows read:  300,000 
+Rows read:  350,000 
+Rows read:  400,000 
+Rows read:  450,000 
+Rows read:  500,000 
+Rows read:  550,000 
+Rows read:  600,000 
+Rows read:  650,000 
+Rows read:  700,000 
+Rows read:  750,000 
+Rows read:  800,000 
+Rows read:  850,000 
+Rows read:  900,000 
+Rows read:  950,000 
+Rows read:  1,000,000 
+Rows read:  1,050,000 
+Rows read:  1,100,000 
+Rows read:  1,150,000 
+Rows read:  1,200,000 
+Rows read:  1,250,000 
+Rows read:  1,300,000 
+Rows read:  1,350,000 
+Rows read:  1,400,000 
+Rows read:  1,450,000 
+Rows read:  1,500,000 
+Rows read:  1,550,000 
+Rows read:  1,600,000 
+Rows read:  1,650,000 
+Rows read:  1,700,000 
+Rows read:  1,750,000 
+Rows read:  1,800,000 
+Rows read:  1,850,000 
+Rows read:  1,900,000 
+Rows read:  1,950,000 
+Rows read:  2,000,000 
+Rows read:  2,050,000 
+Rows read:  2,100,000 
+Rows read:  2,150,000 
+Rows read:  2,200,000 
+Rows read:  2,250,000 
+Rows read:  2,300,000 
+Rows read:  2,350,000 
+Rows read:  2,400,000 
+Rows read:  2,450,000 
+Rows read:  2,500,000 
+Rows read:  2,550,000 
+Rows read:  2,600,000 
+Rows read:  2,650,000 
+Rows read:  2,700,000 
+Rows read:  2,750,000 
+Rows read:  2,800,000 
+Rows read:  2,850,000 
+Rows read:  2,900,000 
+Rows read:  2,950,000 
+Rows read:  3,000,000 
+Rows read:  3,050,000 
+Rows read:  3,100,000 
+Rows read:  3,150,000 
+Rows read:  3,200,000 
+Rows read:  3,250,000 
+Rows read:  3,300,000 
+Rows read:  3,350,000 
+Rows read:  3,400,000 
+Rows read:  3,450,000 
+Rows read:  3,500,000 
+Rows read:  3,550,000 
+Rows read:  3,600,000 
+Rows read:  3,650,000 
+Rows read:  3,700,000 
+Rows read:  3,750,000 
+Rows read:  3,800,000 
+Rows read:  3,850,000 
+Rows read:  3,900,000 
+Rows read:  3,950,000 
+Rows read:  4,000,000 
+Rows read:  4,050,000 
+Rows read:  4,100,000 
+Rows read:  4,150,000 
+Rows read:  4,200,000 
+Rows read:  4,250,000 
+Rows read:  4,300,000 
+Rows read:  4,350,000 
+Rows read:  4,400,000 
+Rows read:  4,450,000 
+Rows read:  4,500,000 
+Rows read:  4,550,000 
+Rows read:  4562785  done.
+
+[1] "2016-08-11 08:52:42 EDT"
+# filter out SNPs with MAF<=0.05 ...
+# filter out SNPs for those who has only one subject under minor allele homozygous
+SNPs before filtering: 4562785 
+SNPs after filtering: 4473586 
+[1] "2016-08-11 08:53:25 EDT"
+
+# Loading gene expression data now #
+Rows read:  5,000 
+Rows read:  10,000 
+Rows read:  15,000 
+Rows read:  18214  done.
+
+[1] "2016-08-11 08:53:28 EDT"
+
+# Loading covariates now #
+Rows read:  7  done.
+
+[1] "2016-08-11 08:53:28 EDT"
+
+# Running MatrixEQTL on Baseline dataset now #
+[1] "2016-08-11 08:53:28 EDT"
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+# Making the histogram of local and distant p-values #
+ 
+[1] "2016-08-11 09:29:27 EDT"
+Matching data files and location files 
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  2.59  seconds
+Reordering genes
+ 
+Task finished in  2.58  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.08  seconds
+Creating output file(s) 
+Task finished in  0.01  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+Task finished in  2268.25  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values #
+ 
+# Showing the results of MatrixEQTL analysis of Baseline with covariates regressOut now #
+Analysis done in:  2086.98  seconds 
+# The cis-eQTL analysis was done in 34.783 minutes
+
+# The number of total rows in cis-eQTL result is 7575687
+# The number of harvested SNPs in cis-eQTL result is 2947973
+# The number of harvested eGenes in cis-eQTL result is 17574
+# The cis-eQTL results are partially listing on the next lines: 
+                      snps  gene statistic       pvalue          FDR     beta
+1   rs2927608:96252432:G:A ERAP2  24.49006 8.674708e-47 2.423858e-41 1.158121
+2   rs2910686:96252589:T:C ERAP2  24.49006 8.674708e-47 2.423858e-41 1.158121
+3   rs2548224:96272420:T:G ERAP2  24.30264 1.791733e-46 2.423858e-41 1.153752
+4 rs3842058:96272528:CAA:C ERAP2  24.30264 1.791733e-46 2.423858e-41 1.153752
+5   rs2548225:96273033:A:T ERAP2  24.30264 1.791733e-46 2.423858e-41 1.153752
+6   rs2617435:96273034:T:C ERAP2  24.30264 1.791733e-46 2.423858e-41 1.153752
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 132131
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 85909
+# The quantity of significant eGenes with FDR smaller than 0.05 is 3143
+# The quantity of significant eGenes with FDR smaller than 0.01 is 1444
+ 
+# Running MatrixEQTL on Baseline dataset without providing covariates now #
+ 
+[1] "2016-08-11 10:07:34 EDT"
+# Reloading covariates with dummy file now #
+
+[1] "2016-08-11 10:07:34 EDT"
+
+Matching data files and location files 
+18214 of 18214  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  3.83  seconds
+Reordering genes
+ 
+Task finished in  3.19  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.04  seconds
+Creating output file(s) 
+Task finished in  0.02  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,836 cis-eQTLs
+ 1.38% done, 272,474 cis-eQTLs
+ 2.50% done, 328,701 cis-eQTLs
+ 3.61% done, 466,088 cis-eQTLs
+ 4.72% done, 541,645 cis-eQTLs
+ 5.83% done, 632,331 cis-eQTLs
+ 6.94% done, 703,789 cis-eQTLs
+ 8.05% done, 774,851 cis-eQTLs
+ 9.16% done, 837,291 cis-eQTLs
+10.27% done, 919,732 cis-eQTLs
+11.38% done, 980,861 cis-eQTLs
+12.50% done, 1,031,600 cis-eQTLs
+13.61% done, 1,102,693 cis-eQTLs
+14.72% done, 1,174,396 cis-eQTLs
+15.83% done, 1,263,862 cis-eQTLs
+16.94% done, 1,354,965 cis-eQTLs
+18.05% done, 1,409,794 cis-eQTLs
+19.16% done, 1,456,056 cis-eQTLs
+20.27% done, 1,545,337 cis-eQTLs
+21.38% done, 1,604,168 cis-eQTLs
+22.50% done, 1,725,498 cis-eQTLs
+23.61% done, 1,753,126 cis-eQTLs
+24.72% done, 1,804,285 cis-eQTLs
+25.83% done, 1,871,339 cis-eQTLs
+26.94% done, 1,927,174 cis-eQTLs
+28.05% done, 1,962,861 cis-eQTLs
+29.16% done, 2,002,907 cis-eQTLs
+30.27% done, 2,054,211 cis-eQTLs
+31.38% done, 2,086,185 cis-eQTLs
+32.50% done, 2,137,277 cis-eQTLs
+32.77% done, 2,164,861 cis-eQTLs
+33.88% done, 2,205,708 cis-eQTLs
+35.00% done, 2,294,378 cis-eQTLs
+36.11% done, 2,368,379 cis-eQTLs
+37.22% done, 2,446,714 cis-eQTLs
+38.33% done, 2,681,541 cis-eQTLs
+39.44% done, 2,735,785 cis-eQTLs
+40.55% done, 2,775,992 cis-eQTLs
+41.66% done, 2,838,770 cis-eQTLs
+42.77% done, 2,920,313 cis-eQTLs
+43.88% done, 2,991,331 cis-eQTLs
+45.00% done, 3,073,310 cis-eQTLs
+46.11% done, 3,132,899 cis-eQTLs
+47.22% done, 3,211,176 cis-eQTLs
+48.33% done, 3,284,300 cis-eQTLs
+49.44% done, 3,345,955 cis-eQTLs
+50.55% done, 3,422,853 cis-eQTLs
+51.66% done, 3,469,708 cis-eQTLs
+52.77% done, 3,530,324 cis-eQTLs
+53.88% done, 3,576,051 cis-eQTLs
+55.00% done, 3,645,921 cis-eQTLs
+56.11% done, 3,714,570 cis-eQTLs
+57.22% done, 3,783,451 cis-eQTLs
+58.33% done, 3,888,756 cis-eQTLs
+59.44% done, 3,989,080 cis-eQTLs
+60.55% done, 4,052,631 cis-eQTLs
+61.66% done, 4,122,257 cis-eQTLs
+62.77% done, 4,218,741 cis-eQTLs
+63.88% done, 4,346,906 cis-eQTLs
+65.00% done, 4,425,474 cis-eQTLs
+66.11% done, 4,484,473 cis-eQTLs
+66.38% done, 4,530,033 cis-eQTLs
+67.50% done, 4,590,357 cis-eQTLs
+68.61% done, 4,678,395 cis-eQTLs
+69.72% done, 4,802,923 cis-eQTLs
+70.83% done, 4,898,540 cis-eQTLs
+71.94% done, 4,941,748 cis-eQTLs
+73.05% done, 5,045,622 cis-eQTLs
+74.16% done, 5,112,791 cis-eQTLs
+75.27% done, 5,163,566 cis-eQTLs
+76.38% done, 5,187,538 cis-eQTLs
+77.50% done, 5,273,274 cis-eQTLs
+78.61% done, 5,325,714 cis-eQTLs
+79.72% done, 5,412,369 cis-eQTLs
+80.83% done, 5,498,373 cis-eQTLs
+81.94% done, 5,597,669 cis-eQTLs
+83.05% done, 5,688,214 cis-eQTLs
+84.16% done, 5,825,706 cis-eQTLs
+85.27% done, 5,915,042 cis-eQTLs
+86.38% done, 6,033,282 cis-eQTLs
+87.50% done, 6,183,711 cis-eQTLs
+88.61% done, 6,322,028 cis-eQTLs
+89.72% done, 6,448,250 cis-eQTLs
+90.83% done, 6,468,552 cis-eQTLs
+91.11% done, 6,496,856 cis-eQTLs
+92.22% done, 6,582,903 cis-eQTLs
+93.33% done, 6,767,582 cis-eQTLs
+94.44% done, 7,066,485 cis-eQTLs
+95.55% done, 7,167,887 cis-eQTLs
+96.66% done, 7,283,172 cis-eQTLs
+97.77% done, 7,339,800 cis-eQTLs
+98.88% done, 7,508,497 cis-eQTLs
+100.00% done, 7,575,687 cis-eQTLs
+Task finished in  2003.61  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values on NoRegressOut dataset now#
+ 
+# Showing the results of MatrixEQTL analysis of Baseline without covariates regressOut now #
+Analysis done in:  1837  seconds 
+# The cis-eQTL analysis was done in 30.6166666666667 minutes
+
+# The number of total rows in cis-eQTL result is 7575687
+# The number of harvested SNPs in cis-eQTL result is 2947973
+# The number of harvested eGenes in cis-eQTL result is 17574
+# The cis-eQTL results are partially listing on the next lines: 
+                    snps  gene statistic       pvalue          FDR     beta
+1 rs2927608:96252432:G:A ERAP2  23.04878 1.055012e-45 3.996222e-39 1.201250
+2 rs2910686:96252589:T:C ERAP2  23.04878 1.055012e-45 3.996222e-39 1.201250
+3              rs3117301 ZFP57  22.21624 3.706383e-44 1.994574e-38 1.800599
+4 rs2747456:29656416:T:G ZFP57  22.21624 3.706383e-44 1.994574e-38 1.800599
+5              rs2747457 ZFP57  22.21624 3.706383e-44 1.994574e-38 1.800599
+6              rs2747460 ZFP57  22.21624 3.706383e-44 1.994574e-38 1.800599
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 106806
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 70551
+# The quantity of significant eGenes with FDR smaller than 0.05 is 2563
+# The quantity of significant eGenes with FDR smaller than 0.01 is 1165
+ 
+[1] "2016-08-11 10:41:17 EDT"
+ 
+###############################################################################
+###############################################################################
+################        Starting the round Ischemia now!       ################
+###############################################################################
+###############################################################################
+[1] "2016-08-11 10:41:17 EDT"
+
+# Loading genotype data now #
+Rows read:  50,000 
+Rows read:  100,000 
+Rows read:  150,000 
+Rows read:  200,000 
+Rows read:  250,000 
+Rows read:  300,000 
+Rows read:  350,000 
+Rows read:  400,000 
+Rows read:  450,000 
+Rows read:  500,000 
+Rows read:  550,000 
+Rows read:  600,000 
+Rows read:  650,000 
+Rows read:  700,000 
+Rows read:  750,000 
+Rows read:  800,000 
+Rows read:  850,000 
+Rows read:  900,000 
+Rows read:  950,000 
+Rows read:  1,000,000 
+Rows read:  1,050,000 
+Rows read:  1,100,000 
+Rows read:  1,150,000 
+Rows read:  1,200,000 
+Rows read:  1,250,000 
+Rows read:  1,300,000 
+Rows read:  1,350,000 
+Rows read:  1,400,000 
+Rows read:  1,450,000 
+Rows read:  1,500,000 
+Rows read:  1,550,000 
+Rows read:  1,600,000 
+Rows read:  1,650,000 
+Rows read:  1,700,000 
+Rows read:  1,750,000 
+Rows read:  1,800,000 
+Rows read:  1,850,000 
+Rows read:  1,900,000 
+Rows read:  1,950,000 
+Rows read:  2,000,000 
+Rows read:  2,050,000 
+Rows read:  2,100,000 
+Rows read:  2,150,000 
+Rows read:  2,200,000 
+Rows read:  2,250,000 
+Rows read:  2,300,000 
+Rows read:  2,350,000 
+Rows read:  2,400,000 
+Rows read:  2,450,000 
+Rows read:  2,500,000 
+Rows read:  2,550,000 
+Rows read:  2,600,000 
+Rows read:  2,650,000 
+Rows read:  2,700,000 
+Rows read:  2,750,000 
+Rows read:  2,800,000 
+Rows read:  2,850,000 
+Rows read:  2,900,000 
+Rows read:  2,950,000 
+Rows read:  3,000,000 
+Rows read:  3,050,000 
+Rows read:  3,100,000 
+Rows read:  3,150,000 
+Rows read:  3,200,000 
+Rows read:  3,250,000 
+Rows read:  3,300,000 
+Rows read:  3,350,000 
+Rows read:  3,400,000 
+Rows read:  3,450,000 
+Rows read:  3,500,000 
+Rows read:  3,550,000 
+Rows read:  3,600,000 
+Rows read:  3,650,000 
+Rows read:  3,700,000 
+Rows read:  3,750,000 
+Rows read:  3,800,000 
+Rows read:  3,850,000 
+Rows read:  3,900,000 
+Rows read:  3,950,000 
+Rows read:  4,000,000 
+Rows read:  4,050,000 
+Rows read:  4,100,000 
+Rows read:  4,150,000 
+Rows read:  4,200,000 
+Rows read:  4,250,000 
+Rows read:  4,300,000 
+Rows read:  4,350,000 
+Rows read:  4,400,000 
+Rows read:  4,450,000 
+Rows read:  4,500,000 
+Rows read:  4,550,000 
+Rows read:  4562785  done.
+
+[1] "2016-08-11 10:47:54 EDT"
+# filter out SNPs with MAF<=0.05 ...
+# filter out SNPs for those who has only one subject under minor allele homozygous
+SNPs before filtering: 4562785 
+SNPs after filtering: 4473586 
+[1] "2016-08-11 10:48:25 EDT"
+
+# Loading gene expression data now #
+Rows read:  5,000 
+Rows read:  10,000 
+Rows read:  15,000 
+Rows read:  18392  done.
+
+[1] "2016-08-11 10:48:27 EDT"
+
+# Loading covariates now #
+Rows read:  8  done.
+
+[1] "2016-08-11 10:48:27 EDT"
+
+# Running MatrixEQTL on Ischemia dataset now #
+[1] "2016-08-11 10:48:27 EDT"
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+# Making the histogram of local and distant p-values #
+ 
+[1] "2016-08-11 11:20:37 EDT"
+Matching data files and location files 
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  2.32  seconds
+Reordering genes
+ 
+Task finished in  2.54  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.08  seconds
+Creating output file(s) 
+Task finished in  0  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+Task finished in  2023.14  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values #
+ 
+# Showing the results of MatrixEQTL analysis of Ischemia with covariates regressOut now #
+Analysis done in:  1840.02  seconds 
+# The cis-eQTL analysis was done in 30.667 minutes
+
+# The number of total rows in cis-eQTL result is 7642804
+# The number of harvested SNPs in cis-eQTL result is 2958739
+# The number of harvested eGenes in cis-eQTL result is 17733
+# The cis-eQTL results are partially listing on the next lines: 
+                      snps  gene statistic       pvalue        FDR     beta
+1   rs2927608:96252432:G:A ERAP2  22.38182 5.939685e-43 2.1234e-37 1.180692
+2   rs2910686:96252589:T:C ERAP2  22.38182 5.939685e-43 2.1234e-37 1.180692
+3   rs2548224:96272420:T:G ERAP2  22.14589 1.555848e-42 2.1234e-37 1.175782
+4 rs3842058:96272528:CAA:C ERAP2  22.14589 1.555848e-42 2.1234e-37 1.175782
+5   rs2548225:96273033:A:T ERAP2  22.14589 1.555848e-42 2.1234e-37 1.175782
+6   rs2617435:96273034:T:C ERAP2  22.14589 1.555848e-42 2.1234e-37 1.175782
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 111504
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 71790
+# The quantity of significant eGenes with FDR smaller than 0.05 is 2731
+# The quantity of significant eGenes with FDR smaller than 0.01 is 1222
+
+# Running MatrixEQTL on Ischemia dataset without providing covariates now #
+
+[1] "2016-08-11 11:54:39 EDT"
+# Reloading covariates with dummy file now #
+
+[1] "2016-08-11 11:54:39 EDT"
+
+Matching data files and location files 
+18392 of 18392  genes matched
+4473579 of 4473586  SNPs matched
+Task finished in  3.97  seconds
+Reordering genes
+ 
+Task finished in  3.19  seconds
+Processing covariates 
+Task finished in  0  seconds
+Processing gene expression data (imputation, residualization, etc.) 
+Task finished in  0.06  seconds
+Creating output file(s) 
+Task finished in  0.02  seconds
+Performing eQTL analysis 
+ 0.27% done, 143,883 cis-eQTLs
+ 1.38% done, 273,642 cis-eQTLs
+ 2.50% done, 329,665 cis-eQTLs
+ 3.61% done, 469,253 cis-eQTLs
+ 4.72% done, 544,854 cis-eQTLs
+ 5.83% done, 634,824 cis-eQTLs
+ 6.94% done, 707,028 cis-eQTLs
+ 8.05% done, 777,832 cis-eQTLs
+ 9.16% done, 840,288 cis-eQTLs
+10.27% done, 920,997 cis-eQTLs
+11.38% done, 983,031 cis-eQTLs
+12.50% done, 1,032,471 cis-eQTLs
+13.61% done, 1,103,880 cis-eQTLs
+14.72% done, 1,175,786 cis-eQTLs
+15.83% done, 1,265,413 cis-eQTLs
+16.94% done, 1,355,586 cis-eQTLs
+18.05% done, 1,411,483 cis-eQTLs
+19.16% done, 1,458,441 cis-eQTLs
+20.27% done, 1,548,121 cis-eQTLs
+21.38% done, 1,606,952 cis-eQTLs
+22.50% done, 1,725,323 cis-eQTLs
+23.61% done, 1,752,987 cis-eQTLs
+24.72% done, 1,804,926 cis-eQTLs
+25.83% done, 1,870,388 cis-eQTLs
+26.94% done, 1,926,634 cis-eQTLs
+28.05% done, 1,963,442 cis-eQTLs
+29.16% done, 2,001,678 cis-eQTLs
+30.27% done, 2,054,276 cis-eQTLs
+31.38% done, 2,085,742 cis-eQTLs
+32.50% done, 2,125,148 cis-eQTLs
+32.77% done, 2,166,037 cis-eQTLs
+33.88% done, 2,206,967 cis-eQTLs
+35.00% done, 2,295,237 cis-eQTLs
+36.11% done, 2,368,281 cis-eQTLs
+37.22% done, 2,448,183 cis-eQTLs
+38.33% done, 2,682,706 cis-eQTLs
+39.44% done, 2,737,053 cis-eQTLs
+40.55% done, 2,777,590 cis-eQTLs
+41.66% done, 2,840,659 cis-eQTLs
+42.77% done, 2,922,202 cis-eQTLs
+43.88% done, 2,994,395 cis-eQTLs
+45.00% done, 3,079,872 cis-eQTLs
+46.11% done, 3,140,505 cis-eQTLs
+47.22% done, 3,222,318 cis-eQTLs
+48.33% done, 3,297,776 cis-eQTLs
+49.44% done, 3,359,850 cis-eQTLs
+50.55% done, 3,437,379 cis-eQTLs
+51.66% done, 3,486,258 cis-eQTLs
+52.77% done, 3,546,286 cis-eQTLs
+53.88% done, 3,592,013 cis-eQTLs
+55.00% done, 3,661,784 cis-eQTLs
+56.11% done, 3,734,294 cis-eQTLs
+57.22% done, 3,803,541 cis-eQTLs
+58.33% done, 3,910,767 cis-eQTLs
+59.44% done, 4,014,282 cis-eQTLs
+60.55% done, 4,079,263 cis-eQTLs
+61.66% done, 4,150,118 cis-eQTLs
+62.77% done, 4,247,189 cis-eQTLs
+63.88% done, 4,383,560 cis-eQTLs
+65.00% done, 4,462,395 cis-eQTLs
+66.11% done, 4,502,576 cis-eQTLs
+66.38% done, 4,568,744 cis-eQTLs
+67.50% done, 4,628,702 cis-eQTLs
+68.61% done, 4,717,293 cis-eQTLs
+69.72% done, 4,845,141 cis-eQTLs
+70.83% done, 4,942,249 cis-eQTLs
+71.94% done, 4,987,816 cis-eQTLs
+73.05% done, 5,092,106 cis-eQTLs
+74.16% done, 5,158,171 cis-eQTLs
+75.27% done, 5,209,659 cis-eQTLs
+76.38% done, 5,234,101 cis-eQTLs
+77.50% done, 5,320,818 cis-eQTLs
+78.61% done, 5,373,273 cis-eQTLs
+79.72% done, 5,459,456 cis-eQTLs
+80.83% done, 5,544,816 cis-eQTLs
+81.94% done, 5,644,897 cis-eQTLs
+83.05% done, 5,735,567 cis-eQTLs
+84.16% done, 5,875,164 cis-eQTLs
+85.27% done, 5,965,720 cis-eQTLs
+86.38% done, 6,086,051 cis-eQTLs
+87.50% done, 6,240,265 cis-eQTLs
+88.61% done, 6,381,385 cis-eQTLs
+89.72% done, 6,450,920 cis-eQTLs
+90.00% done, 6,507,897 cis-eQTLs
+91.11% done, 6,557,100 cis-eQTLs
+92.22% done, 6,644,135 cis-eQTLs
+93.33% done, 6,829,446 cis-eQTLs
+94.44% done, 7,129,136 cis-eQTLs
+95.55% done, 7,230,800 cis-eQTLs
+96.66% done, 7,348,044 cis-eQTLs
+97.77% done, 7,404,948 cis-eQTLs
+98.88% done, 7,576,143 cis-eQTLs
+100.00% done, 7,642,804 cis-eQTLs
+Task finished in  2259.97  seconds
+ 
+ 
+# Making the Q-Q plot of local and distant p-values on NoRegressOut dataset now#
+ 
+# Showing the results of MatrixEQTL analysis of Ischemia without covariates regressOut now #
+Analysis done in:  2078.63  seconds 
+# The cis-eQTL analysis was done in 34.6438333333333 minutes
+
+# The number of total rows in cis-eQTL result is 7642804
+# The number of harvested SNPs in cis-eQTL result is 2958739
+# The number of harvested eGenes in cis-eQTL result is 17733
+# The cis-eQTL results are partially listing on the next lines: 
+                            snps  gene statistic       pvalue          FDR     beta
+1                 6:29642950:A:G ZFP57  22.69006 4.840495e-45 2.328061e-39 2.159560
+2                    kgp17121119 ZFP57  22.63621 6.092165e-45 2.328061e-39 2.037237
+3 rs9280637:29642978:C:CAACTTGAA ZFP57  22.63621 6.092165e-45 2.328061e-39 2.037237
+4         rs2535240:29643877:A:G ZFP57  22.63621 6.092165e-45 2.328061e-39 2.037237
+5         rs2535239:29643879:A:G ZFP57  22.63621 6.092165e-45 2.328061e-39 2.037237
+6          rs374317:29644040:C:T ZFP57  22.63621 6.092165e-45 2.328061e-39 2.037237
+# The quantity of significant cis-eQTL with FDR smaller than 0.05 is 92318
+# The quantity of significant cis-eQTL with FDR smaller than 0.01 is 59278
+# The quantity of significant eGenes with FDR smaller than 0.05 is 2287
+# The quantity of significant eGenes with FDR smaller than 0.01 is 1000
+ 
+[1] "2016-08-11 12:32:39 EDT"
+ 
+[1] "2016-08-11 12:32:39 EDT"
+# Finishing The entire R Script with running time (in unit of seconds) = 12964.14705.8913806.43NANA seconds
+    user   system  elapsed 
+12964.14   705.89 13806.43 

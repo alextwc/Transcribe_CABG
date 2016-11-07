@@ -1,0 +1,39 @@
+
+> eqBox2
+function (gene, se, tf, snpgr, genome = "hg19", forceRs = TRUE, 
+    ...) 
+{
+    ans = prepEqData(gene, se, tf, snpgr, genome, forceRs = forceRs)
+    bb = boxplot(split(ans$ex, ans$gt), plot=FALSE)
+    beeswarm(split(ans$ex, ans$gt), #xlab = ans$coln, ylab = gene, 
+        ...)
+    bxp(bb, add=TRUE, boxfill="transparent")
+}
+<environment: 0x000000003fca0bc8>
+
+
+
+
+
+
+
+
+
+> pdf(file="iBaseline_eGene_XRRA1.pdf")
+> iBaselineSE11 = iBaselineSE[ seqnames(iBaselineSE) == "chr11", ]
+> eqBox2(gene="XRRA1", GRanges("11", IRanges(74572572, width=1)), se=iBaselineSE11, tf=tf11,   xlab="rs10793105", ylab="XRRA1")
+> GT <- eqDesc2(gene="XRRA1", GRanges("11", IRanges(74572572, width=1)), se=iBaselineSE11, tf=tf11)
+> mtext(names(GT),side=3,line=2, at=c(1.75,2.00,2.25))
+> mtext(c(GT[1],GT[2],GT[3]),side=3,line=1, at=c(1.75,2.00,2.25))
+> dev.off()
+RStudioGD 
+        2 
+>
+
+
+
+
+ls(pos = "package:limma")
+
+length(ls(pos = "package:limma"))
+[1] 294 

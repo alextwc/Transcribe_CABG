@@ -1,0 +1,834 @@
+############################################################################################################
+## R-script to run PEER10 & gQTLstats on Transcribe118 RNA-Seq for Baseline cis-eQTL analyses with 3 PCs  ##
+##                                                                                                        ##
+##  Author: Dr. Alex Tzuu-Wang Chang                                                                      ##
+##    Date: 2016-09-19                                                                                    ##
+##                                                                                                        ##
+## Version: 1.0 Setting the path variables for imputed Transcribe-118 genotyping dataset                  ##
+##                                                                                                        ##
+## Require: R v3.3.1, python etc.                                                                         ##
+##                                                                                                        ##
+## To install Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocInstaller")                                                     ##
+## To upgrade Bioconductor: source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("BiocUpgrade")                                                       ##
+## To install a package, for example the "SummarizedExperiment". Run the following commands:              ##
+##                          source("http://bioconductor.org/biocLite.R")                                  ##
+##                          biocLite("SummarizedExperiment")                                              ##
+##                                                                                                        ##
+## When submit jobs at the outside of Channing:                                                           ##
+## (1) Login to capecod first (2) qsub -l lx yourScript.sh                                                ##
+## Switch to LINUX node from outside: ssh -l retwc -o StrictHostKeyChecking=no nantucket.bwh.harvard.edu  ##
+## Switch to LINUX node from  inside: ssh -l retwc nantucket                                              ##
+## Switch to ALKAN node from  inside: ssh alkan01                                                         ##
+## alias qs1='qrsh -pe ompi 8 -l virtual_free=32G -l m_core=5'                                            ##
+## alias qs2='qrsh -pe ompi 8 -l virtual_free=92G -l m_core=9'                                            ##
+##                                                                                                        ##
+## Run R in Channing:[ qs | (qrsh -l lx6,large) | (qrsh -l lx6,12hour=true) | (qrsh -l lx) ] then R;      ##
+## qrsh -l lx6 -l mem_free=92G -l m_core=13; qrsh -l lx6 -l mem_free=80G -l m_core=5;                     ##
+## qrsh -l rstudio; R --vanilla; /udd/stvjc/VM/R-devel-dist/bin/R; ~stvjc/bin/Rdevel --vanilla;           ##
+## `/udd/stvjc/bin/Rdevel RHOME`/bin/Rscript                                                              ##
+##                                                                                                        ##
+## Run R script in Channing:                                                                              ##
+## nohup R --no-save < myRscript.R > myRscriptR.out &                                                     ##
+## R --vanilla < /udd/retwc/R/test.R > /udd/retwc/R/testR.out ; qsub -l lx ./runMyRscript.sh              ##
+##                                                                                                        ##
+## After qs or qrsh the R executable file is located at the following path:                               ##
+## /local/bin/R -> /app/R-3.3.1@i86-rhel6.0/bin/R                                                         ##
+## Rscript -> /app/R-3.3.1@i86-rhel6.0/bin/Rscript                                                        ##
+## Check Job status: qds retwc; qstat -r; qstat -f; qstat -f | grep retwc | less; qstat -ls; qhost;       ##
+##                                                                                                        ##
+## Usage1 (for Channing Cluster): ( Rscript ./test.R ./LV135preX.csv ./LV133postX.csv ) >& testR.log      ##
+## Usage2 (for Channing Cluster): qbR -A "./LV135preX.csv ./LV133postX.csv" ./test.R                      ##
+## Result: Usage 1 works; Usage 2 (qbR command line) is also working now after adding -A                  ##
+############################################################################################################
+[1] "2016-09-19 15:17:07 EDT"
+               _                           
+platform       x86_64-pc-linux-gnu         
+arch           x86_64                      
+os             linux-gnu                   
+system         x86_64, linux-gnu           
+status                                     
+major          3                           
+minor          3.1                         
+year           2016                        
+month          06                          
+day            21                          
+svn rev        70800                       
+language       R                           
+version.string R version 3.3.1 (2016-06-21)
+nickname       Bug in Your Hair            
+[1] "/app/R-3.3.1@i86-rhel6.0/lib64/R"
+[1] "/udd/retwc/R/x86_64-pc-linux-gnu-library/3.3"
+[2] "/app/R-3.3.1@i86-rhel6.0/lib64/R/library"    
+R version 3.3.1 (2016-06-21)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS release 6.8 (Final)
+
+locale:
+[1] C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  base     
+###############################################################################
+# Environmental Variables and Working directory settings, R packages loading  #
+###############################################################################
+[1] "2016-09-19 15:17:07 EDT"
+Loading required package: peer
+Loading required package: VariantAnnotation
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:parallel':
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, cbind, colnames, do.call, duplicated, eval, evalq,
+    get, grep, grepl, intersect, is.unsorted, lapply, lengths, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int, rank,
+    rbind, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Loading required package: GenomeInfoDb
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following objects are masked from 'package:base':
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: Rsamtools
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: 'VariantAnnotation'
+
+The following object is masked from 'package:base':
+
+    tabulate
+
+Loading required package: data.table
+
+Attaching package: 'data.table'
+
+The following object is masked from 'package:SummarizedExperiment':
+
+    shift
+
+The following object is masked from 'package:GenomicRanges':
+
+    shift
+
+The following object is masked from 'package:IRanges':
+
+    shift
+
+Loading required package: gQTLstats
+Loading required package: gQTLBase
+Loading required package: ggplot2
+Loading required package: reshape2
+
+Attaching package: 'reshape2'
+
+The following objects are masked from 'package:data.table':
+
+    dcast, melt
+
+Loading required package: biomaRt
+Loading required package: tools
+               biomart               version
+1 ENSEMBL_MART_ENSEMBL      Ensembl Genes 85
+2     ENSEMBL_MART_SNP  Ensembl Variation 85
+3 ENSEMBL_MART_FUNCGEN Ensembl Regulation 85
+4    ENSEMBL_MART_VEGA               Vega 65
+###############################################################################
+#              Starting the command-line arguments inputs!                    #
+###############################################################################
+[1] "2016-09-19 15:17:30 EDT"
+# The first command-line argument will be treated as the baseline(PRE) RNA-Seq. 
+# The second command-line argument will be treated as the ischemia(POST) RNA-Seq. 
+# The third command-line argument will be treated as the corresponded phenotypes dataset. 
+# Finished the command-line arguments inputs! 
+[1] "2016-09-19 15:17:55 EDT"
+                                                                               
+                                                                               
+###############################################################################
+# Preparing two states specific RNA-Seq expression datasets (still named as   #
+# PRE & POST) from both of the original PRE and POST RNA-Seq datasets.        #
+# Applying GTEx filtering & log2 transformation on the prepared datasets to   #
+# normalize the data distribution and to clean the improper data points such  #
+# as NA, NaN and Inf et cetera!                                               #
+###############################################################################
+# Preparing the RNA-Seq expression datasets .... removing postfixed X, removing gene coordinates information .....
+                                                                               
+###############################################################################
+# Making the subset group of the RNA-Seq datset to the sample size you specified now   #
+###############################################################################
+###############################################################################
+# Here are the object attributions of the original PRE expression dataset
+[1] "list"
+[1] "data.frame"
+[1] 23079   118
+[1] 118
+# Here are the object attributions of the original POST expression dataset
+[1] "list"
+[1] "data.frame"
+[1] 23079   118
+[1] 118
+###############################################################################
+[1] "2016-09-19 15:17:55 EDT"
+# Starting the filtration of zero expression genes now 
+# The quantity of the genes with zero expression across entire 118 subjects of PRE dataset is 1151
+# The quantity of the genes with zero expression across entire 118 subjects of POST dataset is 1057
+# Removing those genes with zero expression now! 
+# Removing those zero expression genes out from PRE dataset now 
+# Removing those zero expression genes out from POST dataset now 
+# The quantity of the genes left in PRE dataset after trimmed off zero expression genes is 21928
+# The quantity of the genes left in POST dataset after trimmed off zero expression genes is 22022
+# Removing those genes with individual expression larger than 0.1 RPKM but expressed in less than 10 subjects of PRE group now 
+# Removing those genes with individual expression larger than 0.1 RPKM but expressed in less than 10 subjects of POST group now 
+# The quantity of the genes left in PRE dataset after GTEx [#subjects(0.1 RPKM)>10] threshold filtration is 18147
+# The quantity of the genes left in POST dataset after GTEx [#subjects(0.1 RPKM)>10] threshold filtration is 18338
+# Now it is ready to perform log2 transformation [log2(1.1+RPKM)] to normalize the datasets! 
+# Now the dimension of PRE dataset is 18147 x 118
+# Now the dimension of POST dataset is 18338 x 118
+[1] "2016-09-19 15:17:59 EDT"
+###############################################################################
+##           Exploring the data point quality and distribution now           ##
+###############################################################################
+# The amount of NA (Not Available; missing values) existed in PRE dataset is 0
+# The amount of NaN (Not a Number; 0/0) existed in PRE dataset is 0
+# The amount of Inf (Infinity; caused by N/0) existed in PRE dataset is 0
+# The amount of zero in PRE dataset is 116516
+# The amount of negative values in PRE dataset is 0
+# The amount of positive values in PRE dataset is 2024830
+###############################################################################
+# The amount of NA (Not Available; missing values) existed in POST dataset is 0
+# The amount of NaN (Not a Number; 0/0) existed in POST dataset is 0
+# The amount of Inf (Infinity; caused by N/0) existed in POST dataset is 0
+# The amount of zero in POST dataset is 131359
+# The amount of negative values in POST dataset is 0
+# The amount of positive values in POST dataset is 2032525
+###############################################################################
+###############################################################################
+# Here are the object attributions of the PRE expression dataset after GTEx filtration 
+[1] "list"
+[1] "data.frame"
+[1] 18147   118
+[1] 118
+# Here are the object attributions of the POST expression dataset after GTEx filtration 
+[1] "list"
+[1] "data.frame"
+[1] 18338   118
+[1] 118
+###############################################################################
+###############################################################################
+# Now it is ready to perform log2 transformation [log2(1.1+RPKM)] to normalize the datasets! 
+[1] "2016-09-19 15:18:00 EDT"
+# Finishing log2 Transformation to create Logarithmic expression datasets now! 
+[1] "2016-09-19 15:18:02 EDT"
+###############################################################################
+# Here are the object attributions of PRE dataset after log2 transformation 
+[1] "list"
+[1] "data.frame"
+[1] 18147   118
+[1] 118
+# Here are the object attributions of POST dataset after log2 transformation 
+[1] "list"
+[1] "data.frame"
+[1] 18338   118
+[1] 118
+###############################################################################
+###############################################################################
+# The amount of NA (Not Available; missing values) in PRE dataset after log2 transformation is 0
+# The amount of NaN (Not a Number; 0/0) in PRE dataset after log2 transformation is 0
+# The amount of Inf (Infinity; caused by N/0) in PRE dataset after log2 transformation is 0
+# The amount of zero in PRE dataset after log2 transformation is 0
+# The amount of negative values in PRE dataset after log2 transformation is 0
+# The amount of positive values in PRE dataset after log2 transformation is 2141346
+# The Normalized PRE dataset has 1 Max values and the Max value is 29.5279111630836
+# The Normalized PRE dataset has 118659 min values and the min value is 0.137503523749935
+###############################################################################
+# The amount of NA (Not Available; missing values) in POST dataset after log2 transformation is 0
+# The amount of NaN (Not a Number; 0/0) in POST dataset after log2 transformation is 0
+# The amount of Inf (Infinity; caused by N/0) in POST dataset after log2 transformation is 0
+# The amount of zero in POST dataset after log2 transformation is 0
+# The amount of negative values in POST dataset after log2 transformation is 0
+# The amount of positive values in POST dataset after log2 transformation is 2163884
+# The Normalized POST dataset has 1 Max values and the Max value is 29.1577832537585
+# The Normalized POST dataset has 133618 min values and the min value is 0.137503523749935
+###############################################################################
+###############################################################################
+# Saving the normalized datasets (by log2 transformation) after low-level processing now 
+[1] "2016-09-19 15:18:03 EDT"
+[1] "2016-09-19 15:18:09 EDT"
+###############################################################################
+                                                                               
+##################################################################################
+# Preparing Gene Coordinates and phenotypes for GRange & SummarizedExperiment    #
+# The regressOut(Sex, Age, seqCenter, reads, AXC_time) is prepared for gQTLstats #
+##################################################################################
+[1] "2016-09-19 15:18:09 EDT"
+# Now the dimension of PRE dataset after intersection with phenotypes is 18147 x 118
+# Now the dimension of POST dataset after intersection with phenotypes is 18338 x 118
+# Saving the prepared phenotypic datasets now 
+[1] "2016-09-19 15:18:09 EDT"
+                                                                               
+                                                                               
+###############################################################################
+# Preparing the covs.rda object by using reshape2 package to convert the long #
+# data format to wide data format. It is because PEER package can only accept #
+# the wide data format of covariance table                                    #
+###############################################################################
+[1] "2016-09-19 15:18:09 EDT"
+# The identified categorical variables include SEX, Sequencing-Center and Reads-length 
+# Finished the intersection of subjects between Covs tables and expression datasets 
+# Now the Covs tables and expression datasets have the same subjects 
+# Finished making the Covs tables for PEER factor analysis 
+# Saving the prepared Covs objects now 
+[1] "2016-09-19 15:18:09 EDT"
+                                                                               
+#################################################################################
+# Making the 1st loop for non-imputed and imputed SNPs to run gQTLstats         #
+# Making the 2nd loop to run gQTLstats sequentially on PRE and POST datasets    #
+# Making the 3rd loop to run gQTLstats with PEER-K factor regress out residual  #
+#################################################################################
+[1] "2016-09-19 15:18:09 EDT"
+# The root directory of running this script is at /proj/regeps/regep00/studies/TRANSCRIBE/analyses/retwc/20160920gQTLstatsEQTL_States
+###############################################################################
+#                      Using imputed SNPs for gQTLstats                       #
+#                    Setting the paths for imputed SNPs now                   #
+###############################################################################
+###############################################################################
+# The current working directory is at /proj/regeps/regep00/studies/TRANSCRIBE/analyses/retwc/20160920gQTLstatsEQTL_States/imputed/imputed_Baseline
+###############################################################################
+                                                                               
+###############################################################################
+# Starting running PEER factor analyese at the following path /proj/regeps/regep00/studies/TRANSCRIBE/analyses/retwc/20160920gQTLstatsEQTL_States/imputed/imputed_Baseline
+###############################################################################
+# Run eQTL with PEER k factors plus the known covariance                      #
+# 1. run PEER with covariates, e.g. PEER_setCovariates(model, as.matrix(Covs))#
+# 2. get residuals from PEER, e.g. residuals = PEER_getResiduals(model),      #
+# 3. use the acquired residuals as new expression input                       #
+# for gQTLstats with or without regressOut(Age, Sex, SeqCenter, Reads-length) #
+###############################################################################
+# Run PEER with k factors now
+[1] "2016-09-19 15:18:10 EDT"
+# Starting the PEER factors analyses with k = 10
+NULL
+NULL
+[1]   118 18147
+NULL
+# Starting the iterations with PEER_getNk = 10
+NULL
+	iteration 0/10000
+	iteration 1/10000
+	iteration 2/10000
+	iteration 3/10000
+	iteration 4/10000
+	iteration 5/10000
+	iteration 6/10000
+	iteration 7/10000
+	iteration 8/10000
+	iteration 9/10000
+	iteration 10/10000
+	iteration 11/10000
+	iteration 12/10000
+	iteration 13/10000
+	iteration 14/10000
+	iteration 15/10000
+	iteration 16/10000
+	iteration 17/10000
+	iteration 18/10000
+	iteration 19/10000
+	iteration 20/10000
+	iteration 21/10000
+	iteration 22/10000
+	iteration 23/10000
+	iteration 24/10000
+	iteration 25/10000
+	iteration 26/10000
+	iteration 27/10000
+	iteration 28/10000
+	iteration 29/10000
+	iteration 30/10000
+	iteration 31/10000
+	iteration 32/10000
+	iteration 33/10000
+	iteration 34/10000
+	iteration 35/10000
+	iteration 36/10000
+	iteration 37/10000
+	iteration 38/10000
+	iteration 39/10000
+	iteration 40/10000
+	iteration 41/10000
+	iteration 42/10000
+	iteration 43/10000
+	iteration 44/10000
+	iteration 45/10000
+	iteration 46/10000
+	iteration 47/10000
+	iteration 48/10000
+	iteration 49/10000
+	iteration 50/10000
+	iteration 51/10000
+	iteration 52/10000
+	iteration 53/10000
+	iteration 54/10000
+	iteration 55/10000
+	iteration 56/10000
+	iteration 57/10000
+	iteration 58/10000
+	iteration 59/10000
+	iteration 60/10000
+	iteration 61/10000
+	iteration 62/10000
+	iteration 63/10000
+	iteration 64/10000
+	iteration 65/10000
+	iteration 66/10000
+	iteration 67/10000
+	iteration 68/10000
+	iteration 69/10000
+	iteration 70/10000
+	iteration 71/10000
+	iteration 72/10000
+	iteration 73/10000
+	iteration 74/10000
+	iteration 75/10000
+	iteration 76/10000
+	iteration 77/10000
+	iteration 78/10000
+	iteration 79/10000
+	iteration 80/10000
+	iteration 81/10000
+	iteration 82/10000
+	iteration 83/10000
+	iteration 84/10000
+	iteration 85/10000
+	iteration 86/10000
+	iteration 87/10000
+	iteration 88/10000
+	iteration 89/10000
+	iteration 90/10000
+	iteration 91/10000
+	iteration 92/10000
+	iteration 93/10000
+	iteration 94/10000
+	iteration 95/10000
+	iteration 96/10000
+	iteration 97/10000
+	iteration 98/10000
+	iteration 99/10000
+	iteration 100/10000
+	iteration 101/10000
+	iteration 102/10000
+	iteration 103/10000
+	iteration 104/10000
+	iteration 105/10000
+	iteration 106/10000
+	iteration 107/10000
+	iteration 108/10000
+	iteration 109/10000
+	iteration 110/10000
+	iteration 111/10000
+	iteration 112/10000
+	iteration 113/10000
+	iteration 114/10000
+	iteration 115/10000
+	iteration 116/10000
+	iteration 117/10000
+	iteration 118/10000
+	iteration 119/10000
+	iteration 120/10000
+	iteration 121/10000
+	iteration 122/10000
+	iteration 123/10000
+	iteration 124/10000
+	iteration 125/10000
+	iteration 126/10000
+	iteration 127/10000
+	iteration 128/10000
+	iteration 129/10000
+	iteration 130/10000
+	iteration 131/10000
+	iteration 132/10000
+	iteration 133/10000
+	iteration 134/10000
+	iteration 135/10000
+	iteration 136/10000
+	iteration 137/10000
+	iteration 138/10000
+	iteration 139/10000
+	iteration 140/10000
+	iteration 141/10000
+	iteration 142/10000
+	iteration 143/10000
+	iteration 144/10000
+	iteration 145/10000
+	iteration 146/10000
+	iteration 147/10000
+	iteration 148/10000
+	iteration 149/10000
+	iteration 150/10000
+	iteration 151/10000
+	iteration 152/10000
+	iteration 153/10000
+	iteration 154/10000
+	iteration 155/10000
+	iteration 156/10000
+	iteration 157/10000
+	iteration 158/10000
+	iteration 159/10000
+	iteration 160/10000
+Converged (var(residuals)) after 160 iterations
+
+NULL
+null device 
+          1 
+null device 
+          1 
+# Finishing the cycle K = 10
+[1] "2016-09-19 15:23:18 EDT"
+                                                                               
+###############################################################################
+###############################################################################
+# Starting making SE(SummarizedExperiment) objects with or without regressOut()
+# We don't apply regressOut() during gQTLstats since the PEER has done already 
+###############################################################################
+###############################################################################
+[1] "2016-09-19 15:23:18 EDT"
+# Applying the GRanges function now 
+# Integrating the gene coordinates and subject-phenotypic information 
+# into SummarizedExperiment objects (SE) now                          
+# Adding the information of 'rownames & colnames' into prepared SE objects now 
+# Finished making SE(SummarizedExperiment) objects and saved them as   
+# exprSE (without RegressOut) and regExprSE (with regressOut)          
+[1] "2016-09-19 15:23:23 EDT"
+                                                                               
+###############################################################################
+###############################################################################
+# Run gQTLstats with Genotyping VCF files on exprSE objects now!              #
+# expreSE is the dataset prepared without repetitively regressingOut those    #
+# covariance (Age, Sex, SeqCenter, AXC_time) during making SE objects         #
+###############################################################################
+###############################################################################
+[1] "2016-09-19 15:23:23 EDT"
+# Setting the seed = 12345 now 
+# Setting the MAF threshold as MAF >= 0.15 
+# Setting cis-radius as 100kb 
+# Setting the permutation times as 6 to calculate plug-in FDR values 
+# Setting the lower bound genotype frequency (lbgtf) as 0.023 to filter out the one-patient minor allele homozygous issue 
+# Starting running gQTLstats package now 
+###############################################################################
+                                                                               
+# This is the cycle for the state of Baseline and PEER-K= 10 and SNPs used is imputed
+###############################################################################
+# The used expression dataset is exprPre
+# gQTLstats is running with exprSE(without regressOut) object now 
+# Checking for universal heterozygous loci for exclusion
+# Checking ......   
+# Starting splitting exprSE(SummarizedExperiment) object exprPre to individual chromosomal SE objects 
+                                                                               
+###############################################################################
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0    10     0     0     0     0     0     0     0     0     0 
+
+Attaching package: 'Matrix'
+
+The following object is masked from 'package:VariantAnnotation':
+
+    expand
+
+The following object is masked from 'package:S4Vectors':
+
+    expand
+
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+Warning messages:
+1: In .vcf_usertag(map, tag, nm, verbose) :
+  ScanVcfParam 'info' fields not found in  header: 'LDAF' 'SVTYPE'
+2: In cisEsts(exprSE01, tf01, nperm = 3, lbmaf = 0.15, lbgtf = 0.023,  :
+  number unique values of paramRangeID returned differs from number requested
+The amount of tested SNP-GENE association pairs belong to chr1 is 667099
+The amount of successful-FDR-calculations on association pairs belong to chr1 is 667099
+Finishing the gQTLstats-eQTL on Chromosome chr1 
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0    10     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr2 is 488549
+The amount of successful-FDR-calculations on association pairs belong to chr2 is 488549
+Finishing the gQTLstats-eQTL on Chromosome chr2
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0    10     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr3 is 440843
+The amount of successful-FDR-calculations on association pairs belong to chr3 is 440843
+Finishing the gQTLstats-eQTL on Chromosome chr3
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0    10     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr4 is 330620
+The amount of successful-FDR-calculations on association pairs belong to chr4 is 330620
+Finishing the gQTLstats-eQTL on Chromosome chr4
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0    10     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr5 is 337410
+The amount of successful-FDR-calculations on association pairs belong to chr5 is 337410
+Finishing the gQTLstats-eQTL on Chromosome chr5
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0    10     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr6 is 532151
+The amount of successful-FDR-calculations on association pairs belong to chr6 is 532151
+Finishing the gQTLstats-eQTL on Chromosome chr6
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0    10 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr7 is 381064
+The amount of successful-FDR-calculations on association pairs belong to chr7 is 381064
+Finishing the gQTLstats-eQTL on Chromosome chr7
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0    10     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr8 is 264528
+The amount of successful-FDR-calculations on association pairs belong to chr8 is 264528
+Finishing the gQTLstats-eQTL on Chromosome chr8
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+   10     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr9 is 295520
+The amount of successful-FDR-calculations on association pairs belong to chr9 is 295520
+Finishing the gQTLstats-eQTL on Chromosome chr9
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0    10     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr10 is 327110
+The amount of successful-FDR-calculations on association pairs belong to chr10 is 327110
+Finishing the gQTLstats-eQTL on Chromosome chr10
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0    10     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr11 is 395579
+The amount of successful-FDR-calculations on association pairs belong to chr11 is 395579
+Finishing the gQTLstats-eQTL on Chromosome chr11
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0    10     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr12 is 365167
+The amount of successful-FDR-calculations on association pairs belong to chr12 is 365167
+Finishing the gQTLstats-eQTL on Chromosome chr12
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0    10     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr13 is 159457
+The amount of successful-FDR-calculations on association pairs belong to chr13 is 159457
+Finishing the gQTLstats-eQTL on Chromosome chr13
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0    10     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr14 is 222850
+The amount of successful-FDR-calculations on association pairs belong to chr14 is 222850
+Finishing the gQTLstats-eQTL on Chromosome chr14
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0    10     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr15 is 213366
+The amount of successful-FDR-calculations on association pairs belong to chr15 is 213366
+Finishing the gQTLstats-eQTL on Chromosome chr15
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0    10     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr16 is 286869
+The amount of successful-FDR-calculations on association pairs belong to chr16 is 286869
+Finishing the gQTLstats-eQTL on Chromosome chr16
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0    10     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr17 is 387766
+The amount of successful-FDR-calculations on association pairs belong to chr17 is 387766
+Finishing the gQTLstats-eQTL on Chromosome chr17
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0    10     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr18 is 128037
+The amount of successful-FDR-calculations on association pairs belong to chr18 is 128037
+Finishing the gQTLstats-eQTL on Chromosome chr18
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+   10     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr19 is 514720
+The amount of successful-FDR-calculations on association pairs belong to chr19 is 514720
+Finishing the gQTLstats-eQTL on Chromosome chr19
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0    10     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr20 is 203799
+The amount of successful-FDR-calculations on association pairs belong to chr20 is 203799
+Finishing the gQTLstats-eQTL on Chromosome chr20
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0    10     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr21 is 96707
+The amount of successful-FDR-calculations on association pairs belong to chr21 is 96707
+Finishing the gQTLstats-eQTL on Chromosome chr21
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0    10     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0     0     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr22 is 183598
+The amount of successful-FDR-calculations on association pairs belong to chr22 is 183598
+Finishing the gQTLstats-eQTL on Chromosome chr22
+
+chr19 chr13 chr12 chr22  chr3  chr4 chr15  chr2 chr17 chr16  chr6 chr11  chr7 
+    0     0     0     0     0     0     0     0     0     0     0     0     0 
+ chr9  chr1 chr23 chr21 chr10 chr14 chr20 chr18  chr5  chr8 chr24 
+    0     0    10     0     0     0     0     0     0     0     0 
+checking for universal heterozygous loci for exclusion (as dropUnivHet == TRUE) ...
+done checking.
+The amount of tested SNP-GENE association pairs belong to chr23 is 22702
+The amount of successful-FDR-calculations on association pairs belong to chr23 is 22702
+Finishing the gQTLstats-eQTL on Chromosome chr23
+There were 28 warnings (use warnings() to see them)
+                                                                               
+                                                                               
+###############################################################################
+###############################################################################
+# Summarizing the cis-eQTL result of this cycle with PEER factor = 10
+# The number of the columns in obtained cis-eQTL table of FDR.1 is 19
+# The number of the columns in obtained cis-eQTL table of FDR.05 is 19
+# The dimension of the obtained cis-eQTL table of FDR.1 is 7245511 x 19
+# The dimension of the obtained cis-eQTL table of FDR.05 is 307573 x 19
+###############################################################################
+###############################################################################
+# The current state-specific dataset is Baseline
+# gQTLstats was run under the condition without repetitively regressingOut 
+# The current PEER factor = 10
+# The number of SNP-Gene association pairs have FDR <= 100% is 7245511
+# The number of SNP-Gene association pairs have FDR <=  5% is 307573
+# The count of cis-eQTL genes (eGenes) of FDR <= 100% is 18112
+# The count of cis-eQTL genes (eGenes) of FDR <=   5% is 5422
+# Finishing gQTLstats on current expression dataset exprPre with PEER-K= 10
+[1] "2016-09-20 20:07:55 EDT"
+      user     system    elapsed 
+103124.718    496.981 103848.308 
+###############################################################################
+###############################################################################
+                                                                               
+                                                                               
+# Finishing The entire R Script with running time (in unit of seconds) = 103124.658494.139103848.3160.0682.842 seconds
+      user     system    elapsed 
+103124.726    496.981 103848.316 
