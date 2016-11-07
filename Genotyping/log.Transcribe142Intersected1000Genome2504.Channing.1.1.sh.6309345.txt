@@ -1,0 +1,59 @@
+The current job name is Transcribe142Intersected1000Genome2504.Channing.1.1.sh
+The current time is 2016-08-29_1048
+The current shell ID is 3748
+The JOB_ID of this submitted shell script (BASH script) is 6309345
+
+Mon Aug 29 10:48:59 EDT 2016
+Starting the AWK script now
+
+############################################################################################################
+############################################################################################################
+## You want to change the SNP_ID of your own genotyping dataset to the SNP_ID format of 1000 GenomePhase3 ##
+## genotyping dataset when both SNPs are at the same SNP locus                                            ##
+## The input files require the following conditions:                                                      ##
+## (1). Both input files have to be VCF file format                                                       ##
+## (2). The additional annotated head lines have to be removed. Only allow the folloiwng header line:     ##
+## #CHROM  POS  ID  REF  ALT  QUAL  FILTER  INFO  FORMAT  SID1  SID2  SID3  SID4  SID5  SID6  SID7  ..... ##
+##                                (The SID1 .....SIDN means the subject-ID)                               ##
+## (3). The algorithm of this script is to take the SNPs intersection first based on their SNP loci then  ##
+## start changing the SNP-ID to comply with the RS naming system of 1000 Genome genotyping dataset format ##
+## (4). You put 1000 genome reference file as the first input file and the file you want to re-write (    ##
+## which is transcribe142_chr1.vcf) as the second input file.                                             ##
+############################################################################################################
+############################################################################################################
+
+Mon Aug 29 10:48:59 EDT 2016
+Setting the PATH and environmental variables, removing annotated header lines now
+
+Mon Aug 29 11:19:32 EDT 2016
+The 1000 Genome reference file contains 6468095 rows
+Mon Aug 29 11:19:32 EDT 2016
+The 1000 Genome reference file contains 2513 columns
+Mon Aug 29 11:19:32 EDT 2016
+Your own genotyping dataset contains 116271 rows
+Mon Aug 29 11:19:32 EDT 2016
+Your own genotyping dataset contains 151 columns
+Mon Aug 29 11:19:32 EDT 2016
+Finished removing the additional annotated header lines now
+
+Mon Aug 29 11:19:32 EDT 2016
+Intersecting the common shared SNPs by their SNPs loci now
+Mon Aug 29 11:20:44 EDT 2016
+The intersected SNPs between two files contains 111774 rows
+Mon Aug 29 11:20:44 EDT 2016
+The intersected SNPs between two files contains 2513 columns
+Mon Aug 29 11:20:44 EDT 2016
+Finished extracting the common shared SNPs between two files now
+
+Mon Aug 29 11:20:44 EDT 2016
+Changing the SNP-ID of our smaller genotyping dataset to RS-naming system of 1000 Genome dataset now
+Mon Aug 29 13:55:27 EDT 2016
+The final intersected SNPs between two files contains 114172 rows
+Mon Aug 29 13:55:27 EDT 2016
+The final intersected SNPs between two files contains 151 columns
+Mon Aug 29 13:55:27 EDT 2016
+Finished changing the SNP-ID format with 1000 Genome RS-naming system now
+
+Mon Aug 29 13:55:27 EDT 2016
+Finished the entire AWK script now
+
