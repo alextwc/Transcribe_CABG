@@ -1,0 +1,99 @@
+#!/bin/bash 
+#BSUB -W 96:0 
+#BSUB -J copyTranscriptsGTF
+#BSUB -q long 
+#BSUB -o copyTranscriptsGTF_%J.out
+#BSUB -e copyTranscriptsGTF_%J.screen
+#BSUB -R 'rusage[mem=32768] span[hosts=1]'
+# module load seq/samtools/0.1.19
+# module load seq/fastqc/0.10.1
+# module load seq/skewer/0.1.120
+# module load seq/bamtools/2.2.3
+# module load seq/cufflinks/2.2.1
+# cwdPath=`pwd`
+# scriptName=$0
+# j=0; k=0; n=0;
+# read -p 'Please input the PathFileList name here: '
+# PathFile="$REPLY"
+
+: <<ScriptBackground
+This BASH script is for the automation of 
+"copying Cufflnks assembled transcripts GTF files".
+Script Author: Dr. Alex Tzuu-Wang Chang 
+ScriptBackground
+
+dtime=`date +'%F_%H%M'`
+echo "The current time is $dtime"
+echo "You are $USER"
+# echo "The JOB-ID of this submitted shell script (BASH script) is %J"
+echo "The current shell ID is $$"
+echo
+DestDIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150202Cuffmerge/Cufflinks"
+Source1DIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150129Cufflinks/transcribe"
+Source2DIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150130Cufflinks4EarlyBAMs/transcribe"
+unmappedDIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150121TophatSkewer/unmappedBAM"
+alignSummaryDIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150121TophatSkewer/alignSummary"
+date && echo 'Finished setting the paths for both source and destination folders'
+echo
+
+cd $DestDIR
+: > ./$USER.$dtime.$$.1.txt
+
+date && echo 'Start moving files to each correspondent folder'
+echo
+for i in $(ls -d $Source1DIR/*/); do echo $(basename $i) >> $USER.$dtime.$$.1.txt; done
+for line in $(cat $USER.$dtime.$$.1.txt)
+do 
+   if [ -d "$Source1DIR/$line" ] && [ -f "$Source1DIR/$line/cufflinks_out/transcripts.gtf" ]; then 
+       mv $Source1DIR/$line/cufflinks_out/transcripts.gtf $DestDIR/$line.transcripts.gtf
+#      mv $SourceDIR/$line/tophat_out/unmapped.bam $unmappedDIR/$line-.unmapped.bam
+#      mv $SourceDIR/$line/tophat_out/align_summary.txt $alignSummaryDIR/$line-.align_summary.txt
+#      cp -r $SourceDIR/$line/cufflinks ./$line.cufflinks
+#      cp $SourceDIR/$line/*.zip ./
+   fi
+done
+: > ./$USER.$dtime.$$.2.txt
+for i in $(ls -d $Source2DIR/*/); do echo $(basename $i) >> $USER.$dtime.$$.2.txt; done
+for line in $(cat $USER.$dtime.$$.2.txt)
+do 
+   if [ -d "$Source2DIR/$line" ] && [ -f "$Source2DIR/$line/cufflinks_out/transcripts.gtf" ]; then 
+       mv $Source2DIR/$line/cufflinks_out/transcripts.gtf $DestDIR/$line.transcripts.gtf
+   fi
+done
+
+# date && echo 'Start re-arranging the file name'
+# echo
+# for i in $(ls  $DestDIR)
+# do 
+#		if [ -d $i ]; then
+#				break
+#		fi 
+#		NewFilename=$( echo $i | awk -F-- 'BEGIN{OFS="--"}{print $3, $1, $2, $4, $5}')
+#		mv $DestDIR/$i $DestDIR/$NewFilename 
+# done    
+# for i in $(ls  $unmappedDIR)
+# do 
+#		if [ -d $i ]; then
+#				break
+#		fi 
+#		NewFilename=$( echo $i | awk -F-- 'BEGIN{OFS="--"}{print $3, $1, $2, $4, $5}')
+#		mv $unmappedDIR/$i $unmappedDIR/$NewFilename 
+# done
+#
+# ls >> summaryFilelist.txt
+#  ( sed '/lsf$/!d' summaryFilelist.txt ) > zz.txt
+#  ( sed '/^14/!d' summaryFilelist.txt ) > zz.txt
+# mv zz.txt summaryFilelist.txt
+# for line in $(cat ./summaryFilelist.txt)
+# do 
+#		if [ -d $line ]; then
+#				break
+#		fi 
+#		NewFilename=$( echo $line | awk -F-- 'BEGIN{OFS="--"}{print $3, $1, $2, $4, $5}')
+#		mv $alignSummaryDIR/$line $alignSummaryDIR/$NewFilename 
+# done
+
+date && echo 'Finished'
+: > ./$USER.$dtime.$$.txt
+echo >> $USER.$dtime.$$.txt
+ls -alish >> $USER.$dtime.$$.txt

@@ -1,0 +1,107 @@
+#!/bin/bash
+echo "#=============================================================================#"
+echo "#Title           :cuffnormID_transcribeID.HMS.lsf                             #"
+echo "#Description     :This script was written for converting the Cuffnorm ID to   #"
+echo "#                 our TRANSCRiBE 118 patient ID                               #"
+echo "#Author          :Dr. Alex Tzuu-Wang Chang                                    #"
+echo "#Date            :20160915                                                    #"
+echo "#Version         :1.0                                                         #"
+echo "#Usage           :bsub < ./cuffnormID_transcribeID.HMS.lsf                    #"
+echo "#Require&Notes   :bsub of LSF & BASH shell to use this script                 #"
+echo "#                 (for HMS Orchestra Cluster use only)                        #"
+echo "#BASH_Version    :4.1.2(1)-release (echo \$BASH_VERSION)                       #"
+echo "#=============================================================================#"
+#BSUB -W 96:0
+#BSUB -J CuffID2TransID
+#BSUB -q mcore
+#BSUB -o CuffID2TransID_%J.out
+#BSUB -e CuffID2TransID_%J.screen
+#BSUB -R 'rusage[mem=16384] span[hosts=1]'
+#BSUB -n 4
+#module load seq/skewer/0.1.120
+module load seq/samtools/1.3
+module load seq/fastqc/0.11.3
+module load seq/bamtools/2.2.3
+module load seq/cufflinks/2.2.1
+
+: <<ScriptBackground
+This BASH script is for the automation of 
+"Converting Cuffnorm-ID to our real patient ID".
+Script Author: Dr. Alex Tzuu-Wang Chang 
+ScriptBackground
+
+dtime=`date +'%F_%H%M'`
+echo "The current time is $dtime"
+echo "You are $USER"
+# echo "The JOB-ID of this submitted shell script (BASH script) is %J"
+echo "The current shell ID is $$"
+echo
+
+SourceDIR="/n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160913Cuffnorm/cuffnorm_out"
+  DestDIR="/n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160913Cuffnorm/cuffnorm_out"
+date && echo "Finished setting the paths for both source and destination folders"
+echo
+cd $DestDIR
+date && echo "Extracting the ID table from one of the Cuffnorm output files named samples.table"
+echo
+date && echo "Naming this table to sampleID.txt"
+echo
+(awk -F"\t" 'BEGIN{OFS="\t"} {print $1,$2}' ./samples.table) | (awk -F"/" 'BEGIN{OFS="\t"} {print $1,$12}') | \
+(awk -F"."  'BEGIN{OFS="\t"} {print $1}') | (sed 's/\t/,/g') | awk -F"," 'BEGIN{OFS="\t"} {print $1,$3}' > test.txt
+sed '1,1d' ./test.txt > sampleID.txt
+rm -f ./test.txt
+date && echo "Reading and Transposing the Cuffnorm main output file named genes.fpkm_table now"
+date && echo "The dimension of genes.fpkm_table before transposition is (genes x subjects)"
+date && echo "The dimension of genes.fpkm_table after transposition is (subjects x genes)"
+echo
+NR=`cat ./genes.fpkm_table | wc -l`
+NC=`sed -n '1p' ./genes.fpkm_table | wc -w`
+echo "Your genes.fpkm_table dataset before transposition contains $NR rows"
+echo "Your genes.fpkm_table dataset before transposition contains $NC columns"
+date && echo "Transposing the genes.fpkm_table now"
+ncolumns=$( head -n 1 ./genes.fpkm_table | wc -w)
+(for ((i=1;i<=$ncolumns;i++)); do awk '{print $'$i'}' ./genes.fpkm_table | tr '\n' ' '; echo; done) > tfile1.txt
+NR=`cat ./tfile1.txt | wc -l`
+NC=`sed -n '1p' ./tfile1.txt | wc -w`
+echo "Your genes.fpkm_table dataset after transposition contains $NR rows"
+echo "Your genes.fpkm_table dataset after transposition contains $NC columns"
+date && echo "Starting appending the Transcribe patient ID to each corresponded CuffnormID in genes.fpkm_table now"
+date && echo "Saving this new file that contained both Cuffnorm ID and our patient ID as genes.fpkm_table.duplicate for checking purpose of QC"
+echo
+(awk 'BEGIN {OFS="\t"} NR==FNR {CuffID[FNR]=$1;Trans118ID[FNR]=$2;next} \
+{print $0; for (i in CuffID){if($1==CuffID[i]){$1=Trans118ID[i];print $0}}}' ./sampleID.txt ./tfile1.txt) > genes.fpkm_table.duplicate
+date && echo "Filtering out the rows labled by Cuffnorm ID and save it as genes.fpkm_table.Transcribe_ID now"
+echo
+(sed -n '1~2p' ./genes.fpkm_table.duplicate ) > genes.fpkm_table.transID
+NR=`cat ./genes.fpkm_table.transID | wc -l`
+NC=`sed -n '1p' ./genes.fpkm_table.transID | wc -w`
+echo "Your genes.fpkm_table_Transcribe_ID dataset contains $NR rows"
+echo "Your genes.fpkm_table_Transcribe_ID dataset contains $NC columns"
+date && echo "Transposing the matrix of genes.fpkm_table_Transcribe_ID back to normal RNA-Seq gene expression file (genes x subjects)"
+echo
+(for ((i=1;i<=$"$(head -1 ./genes.fpkm_table.transID | wc -w)";i++)); do \
+ awk '{print $'$i'}' ./genes.fpkm_table.transID | tr '\n' ' '; echo; done) > tfile2.txt
+date && echo "Finished the transposition now"
+echo
+date && echo "Converting the Transcribe ID format from xxxV_pre/post to B0xxxV_pre/post now"
+echo
+(sed '1,1s/\(...V\)/B0\1/gp' ./tfile2.txt | sed '1,1d' ) > transcribe118.RNA-seq.cuffnormOriginal
+date && echo "Saving the final converted genes.fpkm_table to a new file named transcribe118.RNA-seq.cuffnormOriginal"
+echo
+NR=`cat ./transcribe118.RNA-seq.cuffnormOriginal | wc -l`
+NC=`sed -n '1p' ./transcribe118.RNA-seq.cuffnormOriginal | wc -w`
+echo "Your transcribe118.RNA-seq.cuffnormOriginal dataset contains $NR rows"
+echo "Your transcribe118.RNA-seq.cuffnormOriginal dataset contains $NC columns"
+rm -f ./tfile1.txt
+rm -f ./tfile2.txt
+echo
+date && echo "Finished the entire script running"
+echo
+
+
+#date && echo "Filtering out the columns labled by Cuffnorm ID now"
+#echo
+# awk '{for (i=2;i<=NF;i+=2){$i=""} print $0}' ./tfile2.txt > transcribe118.RNA-seq.cuffnormOriginal
+# awk '{for (i=2;i<=NF;i+=2){$i=""} print $0}' ./tfile2.txt > test
+#( sed 's/ /,/g' ./test ) > test.comma.txt
+#( sed 's/,/\t/g' ./test.comma.txt ) > transcribe118.RNA-seq.cuffnormOriginal

@@ -1,0 +1,135 @@
+#!/bin/bash 
+#BSUB -W 12:0 
+#BSUB -J genes.fpkm_table.HeaderConverter
+#BSUB -q priority 
+#BSUB -o genes.fpkm_table.HeaderConverter_%J.out
+#BSUB -e genes.fpkm_table.HeaderConverter_%J.screen
+#BSUB -R 'rusage[mem=8192] span[hosts=1]'
+#BSUB -n 1
+# module load seq/samtools/0.1.19
+# module load seq/fastqc/0.10.1
+# module load seq/skewer/0.1.120
+# module load seq/bamtools/2.2.3
+# module load seq/cufflinks/2.2.1
+# cwdPath=`pwd`
+# scriptName=$0
+# j=0; k=0; n=0;
+# read -p 'Please input the PathFileList name here: '
+# PathFile="$REPLY"
+
+: <<ScriptBackground
+This BASH script is for the automation of 
+"Converting the header of cuffnorm output to the original subject-ID".
+Script Author: Dr. Alex Tzuu-Wang Chang 
+ScriptBackground
+
+dtime=`date +'%F_%H%M'`
+echo "The current time is $dtime"
+echo "You are $USER"
+echo "The current shell ID is $$"
+echo
+
+# (for Channing settings)
+# dtime=$(date +'%F_%H%M')
+# echo "The current job name is $JOB_NAME"
+# echo "The current time is $dtime"
+# echo "The current shell ID is $$"
+# echo "The JOB_ID of this submitted shell script (BASH script) is $JOB_ID"
+# : > "$DestDIR"/SNPsNeedToBeRemoved.$dtime.$$.txt
+# ( awk 'BEGIN {OFS="\t"} $9 <= 0.000001 && $NF !~ /NA/ {print $2, "#HWE-P<0.000001(HWE-P="$9")"}' "$SourceDIR"/"$FileName".hwe ) >> "$DestDIR"/SNPsNeedToBeRemoved.$dtime.$$.txt
+# ( awk 'BEGIN {OFS="\t"} $5 >= 0.05 || $NF ~ /NA/ {print $2, "#SNP_isMissing>5%Subjects(MissingFraction="$5")"}' "$SourceDIR"/"$FileName".lmiss ) >> "$DestDIR"/SNPsNeedToBeRemoved.$dtime.$$.txt
+# ( awk 'BEGIN {OFS="\t"} $5 < 0.01 || $5 ~ /NA/ {print $2, "#MAF<1%(MAF="$5")"}' "$SourceDIR"/"$FileName".frq ) >> "$DestDIR"/SNPsNeedToBeRemoved.$dtime.$$.txt
+
+SourceDIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150204Cuffnorm/cuffnorm_out"
+  DestDIR="/groups/seidman/www/danny/RNASEQ/alextwc/20150204Cuffnorm/cuffnorm_out"
+cd $DestDIR
+: > ./tmp.$$
+FileName="genes.fpkm.header.txt"
+TMP_file="./tmp.$$"
+date && echo 'Finished setting the paths for both source and destination folder'
+echo
+
+date && echo 'Start '
+
+columnName=("\tpost_0\t" "\tpost_1\t" "\tpost_2\t" "\tpost_3\t" "\tpost_4\t" "\tpost_5\t" "\tpost_6\t" "\tpost_7\t" "\tpost_8\t" "\tpost_9\t" "\tpost_10\t" \
+"\tpost_11\t" "\tpost_12\t" "\tpost_13\t" "\tpost_14\t" "\tpost_15\t" "\tpost_16\t" "\tpost_17\t" "\tpost_18\t" "\tpost_19\t" "\tpost_20\t" \
+"\tpost_21\t" "\tpost_22\t" "\tpost_23\t" "\tpost_24\t" "\tpost_25\t" "\tpost_26\t" "\tpost_27\t" "\tpost_28\t" "\tpost_29\t" "\tpost_30\t" \
+"\tpost_31\t" "\tpost_32\t" "\tpost_33\t" "\tpost_34\t" "\tpost_35\t" "\tpost_36\t" "\tpost_37\t" "\tpost_38\t" "\tpost_39\t" "\tpost_40\t" \
+"\tpost_41\t" "\tpost_42\t" "\tpost_43\t" "\tpost_44\t" "\tpost_45\t" "\tpost_46\t" "\tpost_47\t" "\tpost_48\t" "\tpost_49\t" "\tpost_50\t" \
+"\tpost_51\t" "\tpost_52\t" "\tpost_53\t" "\tpost_54\t" "\tpost_55\t" "\tpost_56\t" "\tpost_57\t" "\tpost_58\t" "\tpost_59\t" "\tpost_60\t" \
+"\tpost_61\t" "\tpost_62\t" "\tpost_63\t" "\tpost_64\t" "\tpost_65\t" "\tpost_66\t" "\tpost_67\t" "\tpost_68\t" "\tpost_69\t" "\tpost_70\t" \
+"\tpost_71\t" "\tpost_72\t" "\tpost_73\t" "\tpost_74\t" "\tpost_75\t" "\tpost_76\t" "\tpost_77\t" "\tpost_78\t" "\tpost_79\t" "\tpost_80\t" \
+"\tpost_81\t" "\tpost_82\t" "\tpost_83\t" "\tpost_84\t" "\tpost_85\t" "\tpost_86\t" "\tpost_87\t" "\tpost_88\t" "\tpost_89\t" "\tpost_90\t" \
+"\tpost_91\t" "\tpost_92\t" "\tpost_93\t" "\tpost_94\t" "\tpost_95\t" "\tpost_96\t" "\tpost_97\t" "\tpost_98\t" "\tpost_99\t" "\tpost_100\t" \
+"\tpost_101\t" "\tpost_102\t" "\tpost_103\t" "\tpost_104\t" "\tpost_105\t" "\tpost_106\t" "\tpost_107\t" "\tpost_108\t" "\tpost_109\t" "\tpost_110\t" \
+"\tpost_111\t" "\tpost_112\t" "\tpost_113\t" "\tpost_114\t" "\tpost_115\t" "\tpost_116\t" "\tpost_117\t" "\tpost_118\t" "\tpost_119\t" "\tpost_120\t" \
+"\tpost_121\t" "\tpost_122\t" "\tpost_123\t" "\tpost_124\t" "\tpost_125\t" "\tpost_126\t" "\tpost_127\t" "\tpost_128\t" "\tpost_129\t" "\tpost_130\t" \
+"\tpost_131\t" "\tpost_132\t" \
+"\tpre_0\t" "\tpre_1\t" "\tpre_2\t" "\tpre_3\t" "\tpre_4\t" "\tpre_5\t" "\tpre_6\t" "\tpre_7\t" "\tpre_8\t" "\tpre_9\t" "\tpre_10\t" \
+"\tpre_11\t" "\tpre_12\t" "\tpre_13\t" "\tpre_14\t" "\tpre_15\t" "\tpre_16\t" "\tpre_17\t" "\tpre_18\t" "\tpre_19\t" "\tpre_20\t" \
+"\tpre_21\t" "\tpre_22\t" "\tpre_23\t" "\tpre_24\t" "\tpre_25\t" "\tpre_26\t" "\tpre_27\t" "\tpre_28\t" "\tpre_29\t" "\tpre_30\t" \
+"\tpre_31\t" "\tpre_32\t" "\tpre_33\t" "\tpre_34\t" "\tpre_35\t" "\tpre_36\t" "\tpre_37\t" "\tpre_38\t" "\tpre_39\t" "\tpre_40\t" \
+"\tpre_41\t" "\tpre_42\t" "\tpre_43\t" "\tpre_44\t" "\tpre_45\t" "\tpre_46\t" "\tpre_47\t" "\tpre_48\t" "\tpre_49\t" "\tpre_50\t" \
+"\tpre_51\t" "\tpre_52\t" "\tpre_53\t" "\tpre_54\t" "\tpre_55\t" "\tpre_56\t" "\tpre_57\t" "\tpre_58\t" "\tpre_59\t" "\tpre_60\t" \
+"\tpre_61\t" "\tpre_62\t" "\tpre_63\t" "\tpre_64\t" "\tpre_65\t" "\tpre_66\t" "\tpre_67\t" "\tpre_68\t" "\tpre_69\t" "\tpre_70\t" \
+"\tpre_71\t" "\tpre_72\t" "\tpre_73\t" "\tpre_74\t" "\tpre_75\t" "\tpre_76\t" "\tpre_77\t" "\tpre_78\t" "\tpre_79\t" "\tpre_80\t" \
+"\tpre_81\t" "\tpre_82\t" "\tpre_83\t" "\tpre_84\t" "\tpre_85\t" "\tpre_86" "\tpre_87\t" "\tpre_88\t" "\tpre_89\t" "\tpre_90\t" \
+"\tpre_91\t" "\tpre_92\t" "\tpre_93\t" "\tpre_94\t" "\tpre_95\t" "\tpre_96\t" "\tpre_97\t" "\tpre_98\t" "\tpre_99\t" "\tpre_100\t" \
+"\tpre_101\t" "\tpre_102\t" "\tpre_103\t" "\tpre_104\t" "\tpre_105\t" "\tpre_106\t" "\tpre_107\t" "\tpre_108\t" "\tpre_109\t" "\tpre_110\t" \
+"\tpre_111\t" "\tpre_112\t" "\tpre_113\t" "\tpre_114\t" "\tpre_115\t" "\tpre_116\t" "\tpre_117\t" "\tpre_118\t" "\tpre_119\t" "\tpre_120\t" \
+"\tpre_121\t" "\tpre_122\t" "\tpre_123\t" "\tpre_124\t" "\tpre_125\t" "\tpre_126\t" "\tpre_127\t" "\tpre_128\t" "\tpre_129\t" "\tpre_130\t" \
+"\tpre_131\t" "\tpre_132\t" "\tpre_133\t" "\tpre_134\t")
+subjectIDs=("\tB0100V_B0100V.post\t" "\tB0102V_B0102V.post\t" "\tB0103V_B0103V.post\t" "\tB0104V_B0104V.post\t" "\tB0105V_B0105V.post\t" "\tB0106V_B0106V.post\t" \
+"\tB0107V_B0107V.post\t" "\tB0108V_B0108V.post\t" "\tB0109V_B0109V.post\t" "\tB0110V_B0110V.post\t" "\tB0111V_B0111V.post\t" "\tB0112V_B0112V.post\t" \
+"\tB0113V_B0113V.post\t" "\tB0114V_B0114V.post\t" "\tB0115V_B0115V.post\t" "\tB0116V_B0116V.post\t" "\tB0118V_B0118V.post\t" "\tB0120V_B0120V.post\t" \
+"\tB0122V_B0122V.post\t" "\tB0123V_B0123V.post\t" "\tB0124V_B0124V.post\t" "\tB0125V_B0125V.post\t" "\tB0126V_B0126V.post\t" "\tB0127V_B0127V.post\t" \
+"\tB0129V_B0129V.post\t" "\tB0012V_B0012V.post\t" "\tB0130V_B0130V.post\t" "\tB0132V_B0132V.post\t" "\tB0133V_B0133V.post\t" "\tB0135V_B0135V.post\t" \
+"\tB0136V_B0136V.post\t" "\tB0137V_B0137V.post\t" "\tB0138V_B0138V.post\t" "\tB0139V_B0139V.post\t" "\tB0013V_B0013V.post\t" "\tB0140V_B0140V.post\t" \
+"\tB0141V_B0141V.post\t" "\tB0142V_B0142V.post\t" "\tB0143V_B0143V.post\t" "\tB0144V_B0144V.post\t" "\tB0145V_B0145V.post\t" "\tB0149V_B0149V.post\t" \
+"\tB0014V_B0014V.post\t" "\tB0150V_B0150V.post\t" "\tB0151V_B0151V.post\t" "\tB0152V_B0152V.post\t" "\tB0153V_B0153V.post\t" "\tB0154V_B0154V.post\t" \
+"\tB0156V_B0156V.post\t" "\tB0157V_B0157V.post\t" "\tB0159V_B0159V.post\t" "\tB0015V_B0015V.post\t" "\tB0160V_B0160V.post\t" "\tB0161V_B0161V.post\t" \
+"\tB0162V_B0162V.post\t" "\tB0163V_B0163V.post\t" "\tB0164V_B0164V.post\t" "\tB0016V_B0016V.post\t" "\tB0017V_B0017V.post\t" "\tB0018V_B0018V.post\t" \
+"\tB0019V_B0019V.post\t" "\tB0020V_B0020V.post\t" "\tB0021V_B0021V.post\t" "\tB0022V_B0022V.post\t" "\tB0023V_B0023V.post\t" "\tB0024V_B0024V.post\t" \
+"\tB0025V_B0025V.post\t" "\tB0026V_B0026V.post\t" "\tB0027V_B0027V.post\t" "\tB0028V_B0028V.post\t" "\tB0029V_B0029V.post\t" "\tB0002V_B0002V.post\t" \
+"\tB0030V_B0030V.post\t" "\tB0031V_B0031V.post\t" "\tB0032V_B0032V.post\t" "\tB0033V_B0033V.post\t" "\tB0034V_B0034V.post\t" "\tB0035V_B0035V.post\t" \
+"\tB0037V_B0037V.post\t" "\tB0039V_B0039V.post\t" "\tB0003V_B0003V.post\t" "\tB0041V_B0041V.post\t" "\tB0042V_B0042V.post\t" "\tB0043V_B0043V.post\t" \
+"\tB0044V_B0044V.post\t" "\tB0045V_B0045V.post\t" "\tB0046V_B0046V.post\t" "\tB0047V_B0047V.post\t" "\tB0048V_B0048V.post\t" "\tB0049V_B0049V.post\t" \
+"\tB0004V_B0004V.post\t" "\tB0050V_B0050V.post\t" "\tB0051V_B0051V.post\t" "\tB0052V_B0052V.post\t" "\tB0054V_B0054V.post\t" "\tB0055V_B0055V.post\t" \
+"\tB0056V_B0056V.post\t" "\tB0057V_B0057V.post\t" "\tB0059V_B0059V.post\t" "\tB0060V_B0060V.post\t" "\tB0061V_B0061V.post\t" "\tB0062V_B0062V.post\t" \
+"\tB0063V_B0063V.post\t" "\tB0064V_B0064V.post\t" "\tB0065V_B0065V.post\t" "\tB0066V_B0066V.post\t" "\tB0067V_B0067V.post\t" "\tB0068V_B0068V.post\t" \
+"\tB0069V_B0069V.post\t" "\tB0006V_B0006V.post\t" "\tB0070V_B0070V.post\t" "\tB0071V_B0071V.post\t" "\tB0073V_B0073V.post\t" "\tB0074V_B0074V.post\t" \
+"\tB0076V_B0076V.post\t" "\tB0078V_B0078V.post\t" "\tB0079V_B0079V.post\t" "\tB0080V_B0080V.post\t" "\tB0081V_B0081V.post\t" "\tB0082V_B0082V.post\t" \
+"\tB0084V_B0084V.post\t" "\tB0086V_B0086V.post\t" "\tB0088V_B0088V.post\t" "\tB0089V_B0089V.post\t" "\tB0008V_B0008V.post\t" "\tB0090V_B0090V.post\t" \
+"\tB0092V_B0092V.post\t" "\tB0093V_B0093V.post\t" "\tB0095V_B0095V.post\t" "\tB0096V_B0096V.post\t" "\tB0098V_B0098V.post\t" "\tB0099V_B0099V.post\t" \
+"\tB0009V_B0009V.post\t"  "\tB0100V_B0100V.pre\t"  "\tB0102V_B0102V.pre\t"  "\tB0103V_B0103V.pre\t"  "\tB0104V_B0104V.pre\t"  "\tB0105V_B0105V.pre\t" \
+"\tB0106V_B0106V.pre\t" "\tB0107V_B0107V.pre\t" "\tB0108V_B0108V.pre\t" "\tB0109V_B0109V.pre\t" "\tB0110V_B0110V.pre\t" "\tB0111V_B0111V.pre\t" \
+"\tB0112V_B0112V.pre\t" "\tB0113V_B0113V.pre\t" "\tB0114V_B0114V.pre\t" "\tB0115V_B0115V.pre\t" "\tB0116V_B0116V.pre\t" "\tB0118V_B0118V.pre\t" \
+"\tB0120V_B0120V.pre\t" "\tB0122V_B0122V.pre\t" "\tB0123V_B0123V.pre\t" "\tB0124V_B0124V.pre\t" "\tB0125V_B0125V.pre\t" "\tB0126V_B0126V.pre\t" \
+"\tB0127V_B0127V.pre\t" "\tB0129V_B0129V.pre\t" "\tB0012V_B0012V.pre\t" "\tB0130V_B0130V.pre\t" "\tB0132V_B0132V.pre\t" "\tB0133V_B0133V.pre\t" \
+"\tB0135V_B0135V.pre\t" "\tB0136V_B0136V.pre\t" "\tB0137V_B0137V.pre\t" "\tB0138V_B0138V.pre\t" "\tB0139V_B0139V.pre\t" "\tB0013V_B0013V.pre\t" \
+"\tB0140V_B0140V.pre\t" "\tB0141V_B0141V.pre\t" "\tB0142V_B0142V.pre\t" "\tB0143V_B0143V.pre\t" "\tB0144V_B0144V.pre\t" "\tB0145V_B0145V.pre\t" \
+"\tB0147V_B0147V.pre\t" "\tB0149V_B0149V.pre\t" "\tB0014V_B0014V.pre\t" "\tB0150V_B0150V.pre\t" "\tB0151V_B0151V.pre\t" "\tB0152V_B0152V.pre\t" \
+"\tB0153V_B0153V.pre\t" "\tB0154V_B0154V.pre\t" "\tB0155V_B0155V.pre\t" "\tB0156V_B0156V.pre\t" "\tB0157V_B0157V.pre\t" "\tB0159V_B0159V.pre\t" \
+"\tB0015V_B0015V.pre\t" "\tB0160V_B0160V.pre\t" "\tB0161V_B0161V.pre\t" "\tB0162V_B0162V.pre\t" "\tB0163V_B0163V.pre\t" "\tB0164V_B0164V.pre\t" \
+"\tB0017V_B0017V.pre\t" "\tB0018V_B0018V.pre\t" "\tB0019V_B0019V.pre\t" "\tB0020V_B0020V.pre\t" "\tB0021V_B0021V.pre\t" "\tB0022V_B0022V.pre\t" \
+"\tB0023V_B0023V.pre\t" "\tB0024V_B0024V.pre\t" "\tB0025V_B0025V.pre\t" "\tB0026V_B0026V.pre\t" "\tB0027V_B0027V.pre\t" "\tB0028V_B0028V.pre\t" \
+"\tB0029V_B0029V.pre\t" "\tB0002V_B0002V.pre\t" "\tB0030V_B0030V.pre\t" "\tB0031V_B0031V.pre\t" "\tB0032V_B0032V.pre\t" "\tB0033V_B0033V.pre\t" \
+"\tB0034V_B0034V.pre\t" "\tB0035V_B0035V.pre\t" "\tB0036V_B0036V.pre\t" "\tB0037V_B0037V.pre\t" "\tB0039V_B0039V.pre\t" "\tB0003V_B0003V.pre\t" \
+"\tB0041V_B0041V.pre\t" "\tB0042V_B0042V.pre\t" "\tB0043V_B0043V.pre\t" "\tB0044V_B0044V.pre\t" "\tB0045V_B0045V.pre\t" "\tB0046V_B0046V.pre\t" \
+"\tB0047V_B0047V.pre\t" "\tB0048V_B0048V.pre\t" "\tB0049V_B0049V.pre\t" "\tB0004V_B0004V.pre\t" "\tB0050V_B0050V.pre\t" "\tB0051V_B0051V.pre\t" \
+"\tB0052V_B0052V.pre\t" "\tB0054V_B0054V.pre\t" "\tB0055V_B0055V.pre\t" "\tB0056V_B0056V.pre\t" "\tB0057V_B0057V.pre\t" "\tB0059V_B0059V.pre\t" \
+"\tB0060V_B0060V.pre\t" "\tB0061V_B0061V.pre\t" "\tB0062V_B0062V.pre\t" "\tB0063V_B0063V.pre\t" "\tB0064V_B0064V.pre\t" "\tB0065V_B0065V.pre\t" \
+"\tB0066V_B0066V.pre\t" "\tB0067V_B0067V.pre\t" "\tB0068V_B0068V.pre\t" "\tB0069V_B0069V.pre\t" "\tB0006V_B0006V.pre\t" "\tB0070V_B0070V.pre\t" \
+"\tB0071V_B0071V.pre\t" "\tB0073V_B0073V.pre\t" "\tB0074V_B0074V.pre\t" "\tB0076V_B0076V.pre\t" "\tB0078V_B0078V.pre\t" "\tB0079V_B0079V.pre\t" \
+"\tB0080V_B0080V.pre\t" "\tB0081V_B0081V.pre\t" "\tB0082V_B0082V.pre\t" "\tB0084V_B0084V.pre\t" "\tB0086V_B0086V.pre\t" "\tB0088V_B0088V.pre\t" \
+"\tB0089V_B0089V.pre\t" "\tB0008V_B0008V.pre\t" "\tB0090V_B0090V.pre\t" "\tB0092V_B0092V.pre\t" "\tB0093V_B0093V.pre\t" "\tB0095V_B0095V.pre\t" \
+"\tB0096V_B0096V.pre\t" "\tB0098V_B0098V.pre\t" "\tB0099V_B0099V.pre\t" "\tB0009V_B0009V.pre\t")
+
+j=0
+for i in "${columnName[@]}"
+do
+   ( sed -n 's/'$i'/'${subjectIDs[j]}'/p' $FileName ) >> $TMP_file
+   mv -f $TMP_file $FileName
+   j=`expr $j + 1`
+done
+date && echo 'Finished'

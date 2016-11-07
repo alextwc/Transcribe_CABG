@@ -1,0 +1,5 @@
+
+# ls -d /n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160912Cuffquant/CXBfiles/* >> CXBfileList.txt
+# cat CXBfileList.txt | ( sed '/_post.abundances.cxb$/!d' ) >> post.cxb.txt
+ls -d /n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160912Cuffquant/CXBfiles/* | ( sed '/_post.abundances.cxb$/!d' ) >> post.cxb.txt
+ls -d /n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160912Cuffquant/CXBfiles/* |  ( sed '/_pre.abundances.cxb$/!d' ) >> pre.cxb.txt

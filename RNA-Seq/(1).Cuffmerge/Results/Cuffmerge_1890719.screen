@@ -1,0 +1,310 @@
+
+[Mon Sep 12 12:11:27 2016] Beginning transcriptome assembly merge
+-------------------------------------------
+
+[Mon Sep 12 12:11:27 2016] Preparing output location mergedtranscripts/
+[Mon Sep 12 12:16:06 2016] Converting GTF files to SAM
+[12:16:06] Loading reference annotation.
+[12:16:09] Loading reference annotation.
+[12:16:12] Loading reference annotation.
+[12:16:16] Loading reference annotation.
+[12:16:19] Loading reference annotation.
+[12:16:22] Loading reference annotation.
+[12:16:25] Loading reference annotation.
+[12:16:28] Loading reference annotation.
+[12:16:32] Loading reference annotation.
+[12:16:35] Loading reference annotation.
+[12:16:38] Loading reference annotation.
+[12:16:41] Loading reference annotation.
+[12:16:44] Loading reference annotation.
+[12:16:48] Loading reference annotation.
+[12:16:51] Loading reference annotation.
+[12:16:54] Loading reference annotation.
+[12:16:57] Loading reference annotation.
+[12:17:01] Loading reference annotation.
+[12:17:04] Loading reference annotation.
+[12:17:07] Loading reference annotation.
+[12:17:10] Loading reference annotation.
+[12:17:14] Loading reference annotation.
+[12:17:17] Loading reference annotation.
+[12:17:20] Loading reference annotation.
+[12:17:23] Loading reference annotation.
+[12:17:26] Loading reference annotation.
+[12:17:29] Loading reference annotation.
+[12:17:33] Loading reference annotation.
+[12:17:36] Loading reference annotation.
+[12:17:39] Loading reference annotation.
+[12:17:42] Loading reference annotation.
+[12:17:46] Loading reference annotation.
+[12:17:49] Loading reference annotation.
+[12:17:52] Loading reference annotation.
+[12:17:55] Loading reference annotation.
+[12:17:58] Loading reference annotation.
+[12:18:02] Loading reference annotation.
+[12:18:05] Loading reference annotation.
+[12:18:08] Loading reference annotation.
+[12:18:11] Loading reference annotation.
+[12:18:14] Loading reference annotation.
+[12:18:18] Loading reference annotation.
+[12:18:21] Loading reference annotation.
+[12:18:24] Loading reference annotation.
+[12:18:27] Loading reference annotation.
+[12:18:31] Loading reference annotation.
+[12:18:34] Loading reference annotation.
+[12:18:37] Loading reference annotation.
+[12:18:40] Loading reference annotation.
+[12:18:43] Loading reference annotation.
+[12:18:47] Loading reference annotation.
+[12:18:50] Loading reference annotation.
+[12:18:53] Loading reference annotation.
+[12:18:56] Loading reference annotation.
+[12:18:59] Loading reference annotation.
+[12:19:03] Loading reference annotation.
+[12:19:06] Loading reference annotation.
+[12:19:09] Loading reference annotation.
+[12:19:12] Loading reference annotation.
+[12:19:16] Loading reference annotation.
+[12:19:19] Loading reference annotation.
+[12:19:22] Loading reference annotation.
+[12:19:25] Loading reference annotation.
+[12:19:28] Loading reference annotation.
+[12:19:31] Loading reference annotation.
+[12:19:35] Loading reference annotation.
+[12:19:38] Loading reference annotation.
+[12:19:41] Loading reference annotation.
+[12:19:44] Loading reference annotation.
+[12:19:48] Loading reference annotation.
+[12:19:51] Loading reference annotation.
+[12:19:54] Loading reference annotation.
+[12:19:57] Loading reference annotation.
+[12:20:00] Loading reference annotation.
+[12:20:04] Loading reference annotation.
+[12:20:07] Loading reference annotation.
+[12:20:10] Loading reference annotation.
+[12:20:13] Loading reference annotation.
+[12:20:17] Loading reference annotation.
+[12:20:20] Loading reference annotation.
+[12:20:23] Loading reference annotation.
+[12:20:26] Loading reference annotation.
+[12:20:30] Loading reference annotation.
+[12:20:33] Loading reference annotation.
+[12:20:36] Loading reference annotation.
+[12:20:39] Loading reference annotation.
+[12:20:42] Loading reference annotation.
+[12:20:46] Loading reference annotation.
+[12:20:49] Loading reference annotation.
+[12:20:52] Loading reference annotation.
+[12:20:55] Loading reference annotation.
+[12:20:59] Loading reference annotation.
+[12:21:02] Loading reference annotation.
+[12:21:05] Loading reference annotation.
+[12:21:08] Loading reference annotation.
+[12:21:11] Loading reference annotation.
+[12:21:15] Loading reference annotation.
+[12:21:18] Loading reference annotation.
+[12:21:21] Loading reference annotation.
+[12:21:24] Loading reference annotation.
+[12:21:28] Loading reference annotation.
+[12:21:31] Loading reference annotation.
+[12:21:34] Loading reference annotation.
+[12:21:37] Loading reference annotation.
+[12:21:40] Loading reference annotation.
+[12:21:44] Loading reference annotation.
+[12:21:47] Loading reference annotation.
+[12:21:50] Loading reference annotation.
+[12:21:54] Loading reference annotation.
+[12:21:57] Loading reference annotation.
+[12:22:00] Loading reference annotation.
+[12:22:03] Loading reference annotation.
+[12:22:06] Loading reference annotation.
+[12:22:10] Loading reference annotation.
+[12:22:13] Loading reference annotation.
+[12:22:16] Loading reference annotation.
+[12:22:19] Loading reference annotation.
+[12:22:22] Loading reference annotation.
+[12:22:25] Loading reference annotation.
+[12:22:29] Loading reference annotation.
+[12:22:32] Loading reference annotation.
+[12:22:35] Loading reference annotation.
+[12:22:38] Loading reference annotation.
+[12:22:41] Loading reference annotation.
+[12:22:44] Loading reference annotation.
+[12:22:48] Loading reference annotation.
+[12:22:51] Loading reference annotation.
+[12:22:54] Loading reference annotation.
+[12:22:57] Loading reference annotation.
+[12:23:00] Loading reference annotation.
+[12:23:03] Loading reference annotation.
+[12:23:06] Loading reference annotation.
+[12:23:10] Loading reference annotation.
+[12:23:13] Loading reference annotation.
+[12:23:16] Loading reference annotation.
+[12:23:19] Loading reference annotation.
+[12:23:22] Loading reference annotation.
+[12:23:25] Loading reference annotation.
+[12:23:29] Loading reference annotation.
+[12:23:32] Loading reference annotation.
+[12:23:35] Loading reference annotation.
+[12:23:38] Loading reference annotation.
+[12:23:41] Loading reference annotation.
+[12:23:44] Loading reference annotation.
+[12:23:47] Loading reference annotation.
+[12:23:50] Loading reference annotation.
+[12:23:54] Loading reference annotation.
+[12:23:57] Loading reference annotation.
+[12:24:00] Loading reference annotation.
+[12:24:03] Loading reference annotation.
+[12:24:06] Loading reference annotation.
+[12:24:09] Loading reference annotation.
+[12:24:13] Loading reference annotation.
+[12:24:16] Loading reference annotation.
+[12:24:19] Loading reference annotation.
+[12:24:22] Loading reference annotation.
+[12:24:25] Loading reference annotation.
+[12:24:28] Loading reference annotation.
+[12:24:31] Loading reference annotation.
+[12:24:35] Loading reference annotation.
+[12:24:38] Loading reference annotation.
+[12:24:41] Loading reference annotation.
+[12:24:44] Loading reference annotation.
+[12:24:47] Loading reference annotation.
+[12:24:50] Loading reference annotation.
+[12:24:54] Loading reference annotation.
+[12:24:57] Loading reference annotation.
+[12:25:00] Loading reference annotation.
+[12:25:03] Loading reference annotation.
+[12:25:06] Loading reference annotation.
+[12:25:09] Loading reference annotation.
+[12:25:12] Loading reference annotation.
+[12:25:16] Loading reference annotation.
+[12:25:19] Loading reference annotation.
+[12:25:22] Loading reference annotation.
+[12:25:25] Loading reference annotation.
+[12:25:28] Loading reference annotation.
+[12:25:31] Loading reference annotation.
+[12:25:34] Loading reference annotation.
+[12:25:38] Loading reference annotation.
+[12:25:41] Loading reference annotation.
+[12:25:44] Loading reference annotation.
+[12:25:47] Loading reference annotation.
+[12:25:50] Loading reference annotation.
+[12:25:53] Loading reference annotation.
+[12:25:56] Loading reference annotation.
+[12:25:59] Loading reference annotation.
+[12:26:03] Loading reference annotation.
+[12:26:06] Loading reference annotation.
+[12:26:09] Loading reference annotation.
+[12:26:12] Loading reference annotation.
+[12:26:15] Loading reference annotation.
+[12:26:18] Loading reference annotation.
+[12:26:21] Loading reference annotation.
+[12:26:25] Loading reference annotation.
+[12:26:28] Loading reference annotation.
+[12:26:31] Loading reference annotation.
+[12:26:34] Loading reference annotation.
+[12:26:37] Loading reference annotation.
+[12:26:40] Loading reference annotation.
+[12:26:43] Loading reference annotation.
+[12:26:46] Loading reference annotation.
+[12:26:50] Loading reference annotation.
+[12:26:53] Loading reference annotation.
+[12:26:56] Loading reference annotation.
+[12:26:59] Loading reference annotation.
+[12:27:02] Loading reference annotation.
+[12:27:05] Loading reference annotation.
+[12:27:08] Loading reference annotation.
+[12:27:11] Loading reference annotation.
+[12:27:15] Loading reference annotation.
+[12:27:18] Loading reference annotation.
+[12:27:21] Loading reference annotation.
+[12:27:24] Loading reference annotation.
+[12:27:27] Loading reference annotation.
+[12:27:30] Loading reference annotation.
+[12:27:33] Loading reference annotation.
+[12:27:36] Loading reference annotation.
+[12:27:40] Loading reference annotation.
+[12:27:43] Loading reference annotation.
+[12:27:46] Loading reference annotation.
+[12:27:49] Loading reference annotation.
+[12:27:52] Loading reference annotation.
+[12:27:55] Loading reference annotation.
+[12:27:58] Loading reference annotation.
+[12:28:02] Loading reference annotation.
+[12:28:05] Loading reference annotation.
+[12:28:08] Loading reference annotation.
+[12:28:11] Loading reference annotation.
+[12:28:14] Loading reference annotation.
+[12:28:17] Loading reference annotation.
+[12:28:20] Loading reference annotation.
+[12:28:24] Loading reference annotation.
+[12:28:27] Loading reference annotation.
+[12:28:30] Loading reference annotation.
+[12:28:33] Loading reference annotation.
+[Mon Sep 12 12:29:51 2016] Quantitating transcripts
+Warning: Your version of Cufflinks is not up-to-date. It is recommended that you upgrade to Cufflinks v2.2.1 to benefit from the most recent features and bug fixes (http://cufflinks.cbcb.umd.edu).
+Command line:
+cufflinks -o mergedtranscripts/ -F 0.05 -g /n/data1/hms/genetics/seidman/danny/databases/genes.gtf -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 4 mergedtranscripts/tmp/mergeSam_fileJjQhCk 
+[bam_header_read] EOF marker is absent.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+File mergedtranscripts/tmp/mergeSam_fileJjQhCk doesn't appear to be a valid BAM file, trying SAM...
+[12:29:51] Loading reference annotation.
+[12:29:55] Inspecting reads and determining fragment length distribution.
+Processed 20661 loci.                       
+> Map Properties:
+>	Normalized Map Mass: 9348904.00
+>	Raw Map Mass: 9348904.00
+>	Fragment Length Distribution: Truncated Gaussian (default)
+>	              Default Mean: 200
+>	           Default Std Dev: 80
+[12:32:00] Assembling transcripts and estimating abundances.
+Processed 20661 loci.                       
+[Mon Sep 12 12:54:02 2016] Comparing against reference file /n/data1/hms/genetics/seidman/danny/databases/genes.gtf
+Warning: Your version of Cufflinks is not up-to-date. It is recommended that you upgrade to Cufflinks v2.2.1 to benefit from the most recent features and bug fixes (http://cufflinks.cbcb.umd.edu).
+Warning: couldn't find fasta record for 'chr17_ctg5_hap1'!
+Warning: couldn't find fasta record for 'chr17_gl000205_random'!
+Warning: couldn't find fasta record for 'chr19_gl000209_random'!
+Warning: couldn't find fasta record for 'chr1_gl000191_random'!
+Warning: couldn't find fasta record for 'chr4_ctg9_hap1'!
+Warning: couldn't find fasta record for 'chr4_gl000193_random'!
+Warning: couldn't find fasta record for 'chr4_gl000194_random'!
+Warning: couldn't find fasta record for 'chr6_apd_hap1'!
+Warning: couldn't find fasta record for 'chr6_cox_hap2'!
+Warning: couldn't find fasta record for 'chr6_dbb_hap3'!
+Warning: couldn't find fasta record for 'chr6_mann_hap4'!
+Warning: couldn't find fasta record for 'chr6_mcf_hap5'!
+Warning: couldn't find fasta record for 'chr6_qbl_hap6'!
+Warning: couldn't find fasta record for 'chr6_ssto_hap7'!
+Warning: couldn't find fasta record for 'chr7_gl000195_random'!
+Warning: couldn't find fasta record for 'chrUn_gl000211'!
+Warning: couldn't find fasta record for 'chrUn_gl000212'!
+Warning: couldn't find fasta record for 'chrUn_gl000218'!
+Warning: couldn't find fasta record for 'chrUn_gl000219'!
+Warning: couldn't find fasta record for 'chrUn_gl000220'!
+Warning: couldn't find fasta record for 'chrUn_gl000222'!
+Warning: couldn't find fasta record for 'chrUn_gl000223'!
+Warning: couldn't find fasta record for 'chrUn_gl000228'!
+[Mon Sep 12 12:56:39 2016] Comparing against reference file /n/data1/hms/genetics/seidman/danny/databases/genes.gtf
+Warning: Your version of Cufflinks is not up-to-date. It is recommended that you upgrade to Cufflinks v2.2.1 to benefit from the most recent features and bug fixes (http://cufflinks.cbcb.umd.edu).
+Warning: couldn't find fasta record for 'chr17_ctg5_hap1'!
+Warning: couldn't find fasta record for 'chr17_gl000205_random'!
+Warning: couldn't find fasta record for 'chr19_gl000209_random'!
+Warning: couldn't find fasta record for 'chr1_gl000191_random'!
+Warning: couldn't find fasta record for 'chr4_ctg9_hap1'!
+Warning: couldn't find fasta record for 'chr4_gl000193_random'!
+Warning: couldn't find fasta record for 'chr4_gl000194_random'!
+Warning: couldn't find fasta record for 'chr6_apd_hap1'!
+Warning: couldn't find fasta record for 'chr6_cox_hap2'!
+Warning: couldn't find fasta record for 'chr6_dbb_hap3'!
+Warning: couldn't find fasta record for 'chr6_mann_hap4'!
+Warning: couldn't find fasta record for 'chr6_mcf_hap5'!
+Warning: couldn't find fasta record for 'chr6_qbl_hap6'!
+Warning: couldn't find fasta record for 'chr6_ssto_hap7'!
+Warning: couldn't find fasta record for 'chr7_gl000195_random'!
+Warning: couldn't find fasta record for 'chrUn_gl000211'!
+Warning: couldn't find fasta record for 'chrUn_gl000212'!
+Warning: couldn't find fasta record for 'chrUn_gl000218'!
+Warning: couldn't find fasta record for 'chrUn_gl000219'!
+Warning: couldn't find fasta record for 'chrUn_gl000220'!
+Warning: couldn't find fasta record for 'chrUn_gl000222'!
+Warning: couldn't find fasta record for 'chrUn_gl000223'!
+Warning: couldn't find fasta record for 'chrUn_gl000228'!

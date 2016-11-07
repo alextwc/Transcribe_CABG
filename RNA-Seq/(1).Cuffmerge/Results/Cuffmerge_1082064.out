@@ -1,0 +1,56 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@ottavino002-223.orchestra>
+Subject: Job 1082064: <Cuffmerge> Exited
+
+Job <Cuffmerge> was submitted from host <mezzanine.orchestra> by user <tac15> in cluster <hms_orchestra>.
+Job was executed on host(s) <4*ottavino002-223.orchestra>, in queue <mcore>, as user <tac15> in cluster <hms_orchestra>.
+</home/tac15> was used as the home directory.
+</n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160909Cuffmerge> was used as the working directory.
+Started at Fri Sep  9 14:23:07 2016
+Results reported at Fri Sep  9 14:42:22 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash 
+#BSUB -W 96:0 
+#BSUB -J Cuffmerge
+#BSUB -q mcore
+#BSUB -o Cuffmerge_%J.out
+#BSUB -e Cuffmerge_%J.screen
+#BSUB -R 'rusage[mem=16384] span[hosts=1]'
+#BSUB -n 4
+#module load seq/skewer/0.1.120
+module load seq/samtools/1.3
+module load seq/fastqc/0.11.3
+module load seq/bamtools/2.2.3 
+module load seq/cufflinks/2.2.1
+
+# cd          /groups/seidman/www/danny/RNASEQ/alextwc/20150202Cuffmerge/
+cd  /n/data1/hms/genetics/seidman/danny/RNASEQ/alextwc/20160909Cuffmerge/
+
+/opt/cufflinks-2.2.1/bin/cuffmerge -o mergedtranscripts --ref-gtf /n/data1/hms/genetics/seidman/danny/databases/genes.gtf --ref-sequence /n/data1/hms/genetics/seidman/danny/databases/genome.fa -p 4 ./Transcribe118.236GTFlist.txt
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :   1097.94 sec.
+    Max Memory :      1672 MB
+    Max Swap   :     27861 MB
+
+    Max Processes  :         5
+    Max Threads    :         6
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <Cuffmerge_1082064.screen> for stderr output of this job.
+

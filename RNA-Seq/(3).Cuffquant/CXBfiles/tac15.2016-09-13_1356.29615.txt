@@ -1,0 +1,476 @@
+003V_post
+003V_pre
+004V_post
+004V_pre
+006V_post
+006V_pre
+008V_post
+008V_pre
+009V_post
+009V_pre
+012V_post
+012V_pre
+013V_post
+013V_pre
+014V_post
+014V_pre
+015V_post
+015V_pre
+017V_post
+017V_pre
+018V_post
+018V_pre
+021V_post
+021V_pre
+022V_post
+022V_pre
+024V_post
+024V_pre
+027V_post
+027V_pre
+028V_post
+028V_pre
+029V_post
+029V_pre
+030V_post
+030V_pre
+031V_post
+031V_pre
+032V_post
+032V_pre
+033V_post
+033V_pre
+034V_post
+034V_pre
+035V_post
+035V_pre
+037V_post
+037V_pre
+039V_post
+039V_pre
+041V_post
+041V_pre
+042V_post
+042V_pre
+043V_post
+043V_pre
+044V_post
+044V_pre
+045V_post
+045V_pre
+046V_post
+046V_pre
+047V_post
+047V_pre
+048V_post
+048V_pre
+049V_post
+049V_pre
+050V_post
+050V_pre
+051V_post
+051V_pre
+052V_post
+052V_pre
+054V_post
+054V_pre
+055V_post
+055V_pre
+056V_post
+056V_pre
+060V_post
+060V_pre
+061V_post
+061V_pre
+062V_post
+062V_pre
+063V_post
+063V_pre
+064V_post
+064V_pre
+065V_post
+065V_pre
+066V_post
+066V_pre
+067V_post
+067V_pre
+068V_post
+068V_pre
+069V_post
+069V_pre
+070V_post
+070V_pre
+071V_post
+071V_pre
+074V_post
+074V_pre
+076V_post
+076V_pre
+078V_post
+078V_pre
+079V_post
+079V_pre
+080V_post
+080V_pre
+081V_post
+081V_pre
+082V_post
+082V_pre
+086V_post
+086V_pre
+088V_post
+088V_pre
+089V_post
+089V_pre
+092V_post
+092V_pre
+093V_post
+093V_pre
+096V_post
+096V_pre
+098V_post
+098V_pre
+099V_post
+099V_pre
+100V_post
+100V_pre
+102V_post
+102V_pre
+103V_post
+103V_pre
+104V_post
+104V_pre
+105V_post
+105V_pre
+106V_post
+106V_pre
+107V_post
+107V_pre
+108V_post
+108V_pre
+109V_post
+109V_pre
+110V_post
+110V_pre
+111V_post
+111V_pre
+112V_post
+112V_pre
+113V_post
+113V_pre
+114V_post
+114V_pre
+115V_post
+115V_pre
+116V_post
+116V_pre
+118V_post
+118V_pre
+120V_post
+120V_pre
+122V_post
+122V_pre
+123V_post
+123V_pre
+124V_post
+124V_pre
+125V_post
+125V_pre
+126V_post
+126V_pre
+127V_post
+127V_pre
+129V_post
+129V_pre
+132V_post
+132V_pre
+133V_post
+133V_pre
+135V_post
+135V_pre
+136V_post
+136V_pre
+137V_post
+137V_pre
+138V_post
+138V_pre
+139V_post
+139V_pre
+140V_post
+140V_pre
+141V_post
+141V_pre
+142V_post
+142V_pre
+143V_post
+143V_pre
+144V_post
+144V_pre
+145V_post
+145V_pre
+149V_post
+149V_pre
+150V_post
+150V_pre
+151V_post
+151V_pre
+152V_post
+152V_pre
+153V_post
+153V_pre
+154V_post
+154V_pre
+156V_post
+156V_pre
+157V_post
+157V_pre
+159V_post
+159V_pre
+160V_post
+160V_pre
+162V_post
+162V_pre
+163V_post
+163V_pre
+164V_post
+164V_pre
+total 8.1G
+6261949637 123K drwxrwsr-x 2 tac15 seidman 9.7K Sep 13 13:57 .
+6261948880 363K drwxrwsr-x 4 tac15 seidman  26K Sep 13 13:56 ..
+6276271271  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:17 003V_post.abundances.cxb
+6274541715  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:31 003V_pre.abundances.cxb
+6274168658  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:09 004V_post.abundances.cxb
+6224724090  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:09 004V_pre.abundances.cxb
+6260206220  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:12 006V_post.abundances.cxb
+6300500284  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:33 006V_pre.abundances.cxb
+6272687702  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:47 008V_post.abundances.cxb
+6198776433  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:46 008V_pre.abundances.cxb
+6288719723  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 18:58 009V_post.abundances.cxb
+6287330038  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:19 009V_pre.abundances.cxb
+6189738483  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:06 012V_post.abundances.cxb
+6217715644  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:10 012V_pre.abundances.cxb
+6180678333  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:12 013V_post.abundances.cxb
+6254527776  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:13 013V_pre.abundances.cxb
+6159525265  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:16 014V_post.abundances.cxb
+6234225838  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:17 014V_pre.abundances.cxb
+6265170619  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:02 015V_post.abundances.cxb
+6246871493  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:01 015V_pre.abundances.cxb
+6235080718  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:21 017V_post.abundances.cxb
+6248825731  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:25 017V_pre.abundances.cxb
+6290629744  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:03 018V_post.abundances.cxb
+6226341851  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:01 018V_pre.abundances.cxb
+6228663453  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:05 021V_post.abundances.cxb
+6278848939  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:08 021V_pre.abundances.cxb
+6155271731  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:05 022V_post.abundances.cxb
+6237184051  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:05 022V_pre.abundances.cxb
+6280029262  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:18 024V_post.abundances.cxb
+6167055239  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:23 024V_pre.abundances.cxb
+6276329075  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:07 027V_post.abundances.cxb
+6188755548  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:11 027V_pre.abundances.cxb
+6254527777  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:28 028V_post.abundances.cxb
+6242781835  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:30 028V_pre.abundances.cxb
+6258969844  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:08 029V_post.abundances.cxb
+6274541717  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:08 029V_pre.abundances.cxb
+6261085658  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:23 030V_post.abundances.cxb
+6289042830  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:14 030V_pre.abundances.cxb
+6188555295  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:15 031V_post.abundances.cxb
+6285713050  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:26 031V_pre.abundances.cxb
+6276329079  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:22 032V_post.abundances.cxb
+6233961753  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:20 032V_pre.abundances.cxb
+6277479883  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:40 033V_post.abundances.cxb
+6165946865  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:46 033V_pre.abundances.cxb
+6272343557  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:33 034V_post.abundances.cxb
+6290673886  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:37 034V_pre.abundances.cxb
+6274687318  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:35 035V_post.abundances.cxb
+6196676779  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:50 035V_pre.abundances.cxb
+6221909379  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:16 037V_post.abundances.cxb
+6275562831  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:20 037V_pre.abundances.cxb
+6280323285  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:20 039V_post.abundances.cxb
+6259100090  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:21 039V_pre.abundances.cxb
+6251917933  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:27 041V_post.abundances.cxb
+6298473865  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:30 041V_pre.abundances.cxb
+6255324989  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:54 042V_post.abundances.cxb
+6282921844  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:38 042V_pre.abundances.cxb
+6261889638  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:26 043V_post.abundances.cxb
+6232515195  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:26 043V_pre.abundances.cxb
+6262438175  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:49 044V_post.abundances.cxb
+6300500338  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:55 044V_pre.abundances.cxb
+6260650085  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:30 045V_post.abundances.cxb
+6155271749  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:32 045V_pre.abundances.cxb
+6275005137  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:55 046V_post.abundances.cxb
+6261990856  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 19:44 046V_pre.abundances.cxb
+6300500347  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:29 047V_post.abundances.cxb
+6192012915  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:17 047V_pre.abundances.cxb
+6149305286  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:39 048V_post.abundances.cxb
+6239812817  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:48 048V_pre.abundances.cxb
+6261723023  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:01 049V_post.abundances.cxb
+6288719745  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:01 049V_pre.abundances.cxb
+6221909387  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:09 050V_post.abundances.cxb
+6289566379  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:59 050V_pre.abundances.cxb
+6180678334  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:06 051V_post.abundances.cxb
+6300175101  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:19 051V_pre.abundances.cxb
+6275899167  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:37 052V_post.abundances.cxb
+6299845561  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:34 052V_pre.abundances.cxb
+6272935489  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:21 054V_post.abundances.cxb
+6285372390  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:14 054V_pre.abundances.cxb
+6300174856  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:12 055V_post.abundances.cxb
+6252509756  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:27 055V_pre.abundances.cxb
+6294947735  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:25 056V_post.abundances.cxb
+6149305391  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:06 056V_pre.abundances.cxb
+6231658253  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:35 060V_post.abundances.cxb
+6239702214  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:37 060V_pre.abundances.cxb
+6290481256  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:11 061V_post.abundances.cxb
+6285044658  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:27 061V_pre.abundances.cxb
+6283742376  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:39 062V_post.abundances.cxb
+6260206221  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:57 062V_pre.abundances.cxb
+6294293973  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 20:32 063V_post.abundances.cxb
+6239131271  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:04 063V_pre.abundances.cxb
+6293163971  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:32 064V_post.abundances.cxb
+6238235468  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:39 064V_pre.abundances.cxb
+6269720240  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:42 065V_post.abundances.cxb
+6251257567  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:11 065V_pre.abundances.cxb
+6279269100  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:00 066V_post.abundances.cxb
+6245354174  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:40 066V_pre.abundances.cxb
+6287080556  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:23 067V_post.abundances.cxb
+6276660484  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 21:34 067V_pre.abundances.cxb
+6288331435  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:28 068V_post.abundances.cxb
+6263241097  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:06 068V_pre.abundances.cxb
+6256904962  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:40 069V_post.abundances.cxb
+6277142570  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:23 069V_pre.abundances.cxb
+6231659478  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:44 070V_post.abundances.cxb
+6260056686  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:08 070V_pre.abundances.cxb
+6166673812  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:05 071V_post.abundances.cxb
+6225045195  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:36 071V_pre.abundances.cxb
+6248086292  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:51 074V_post.abundances.cxb
+6271563832  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:05 074V_pre.abundances.cxb
+6159525570  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:41 076V_post.abundances.cxb
+6245702899  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:56 076V_pre.abundances.cxb
+6159525572  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:46 078V_post.abundances.cxb
+6258126624  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:20 078V_pre.abundances.cxb
+6283742441  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:45 079V_post.abundances.cxb
+6248884145  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:42 079V_pre.abundances.cxb
+6299845566  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:00 080V_post.abundances.cxb
+6297554914  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:58 080V_pre.abundances.cxb
+6189020364  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:52 081V_post.abundances.cxb
+6246482101  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:13 081V_pre.abundances.cxb
+6176106107  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:34 082V_post.abundances.cxb
+6294351869  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:04 082V_pre.abundances.cxb
+6296249154  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 22:52 086V_post.abundances.cxb
+6233103965  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:10 086V_pre.abundances.cxb
+6296636349  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:41 088V_post.abundances.cxb
+6159525593  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:25 088V_pre.abundances.cxb
+6230136340  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:34 089V_post.abundances.cxb
+6285044804  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:57 089V_pre.abundances.cxb
+6289910118  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:53 092V_post.abundances.cxb
+6164440504  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:06 092V_pre.abundances.cxb
+6261333481  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:06 093V_post.abundances.cxb
+6164897647  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:50 093V_pre.abundances.cxb
+6285172977  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:29 096V_post.abundances.cxb
+6295261843  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 12 23:49 096V_pre.abundances.cxb
+6189864240  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:18 098V_post.abundances.cxb
+6142221382  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:41 098V_pre.abundances.cxb
+6173019034  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:24 099V_post.abundances.cxb
+6220002578  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:13 099V_pre.abundances.cxb
+6297554919  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:48 100V_post.abundances.cxb
+6239604165  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:36 100V_pre.abundances.cxb
+6287330048  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:15 102V_post.abundances.cxb
+6273588325  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:40 102V_pre.abundances.cxb
+6293772200  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:37 103V_post.abundances.cxb
+6293703470  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:04 103V_pre.abundances.cxb
+6283324888  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:13 104V_post.abundances.cxb
+6261817506  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:37 104V_pre.abundances.cxb
+6245817205  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:34 105V_post.abundances.cxb
+6264167012  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:41 105V_pre.abundances.cxb
+6287265921  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:51 106V_post.abundances.cxb
+6274541722  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:47 106V_pre.abundances.cxb
+6261817509  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:48 107V_post.abundances.cxb
+6230959545  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:48 107V_pre.abundances.cxb
+6296179481  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:40 108V_post.abundances.cxb
+6134214627  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:53 108V_pre.abundances.cxb
+6187489445  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:51 109V_post.abundances.cxb
+6272343558  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:55 109V_pre.abundances.cxb
+6272399027  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:05 110V_post.abundances.cxb
+6266396139  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 00:55 110V_pre.abundances.cxb
+6221909389  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:25 111V_post.abundances.cxb
+6239275518  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:25 111V_pre.abundances.cxb
+6224646873  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:09 112V_post.abundances.cxb
+6196676784  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:21 112V_pre.abundances.cxb
+6262868688  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:17 113V_post.abundances.cxb
+6280254690  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:29 113V_pre.abundances.cxb
+6228665481  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:27 114V_post.abundances.cxb
+6261087116  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:02 114V_pre.abundances.cxb
+6281174483  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:52 115V_post.abundances.cxb
+6155272067  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:27 115V_pre.abundances.cxb
+6262438180  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:14 116V_post.abundances.cxb
+6291210423  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:41 116V_pre.abundances.cxb
+6213983630  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:43 118V_post.abundances.cxb
+6270143476  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:49 118V_pre.abundances.cxb
+6263241710  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:32 120V_post.abundances.cxb
+6292641401  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:29 120V_pre.abundances.cxb
+6241297389  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:36 122V_post.abundances.cxb
+6215078287  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:32 122V_pre.abundances.cxb
+6297493289  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:07 123V_post.abundances.cxb
+6265922296  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:43 123V_pre.abundances.cxb
+6243512749  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:52 124V_post.abundances.cxb
+6280254694  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:25 124V_pre.abundances.cxb
+6277734490  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:42 125V_post.abundances.cxb
+6189332820  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 01:49 125V_pre.abundances.cxb
+6253106091  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:06 126V_post.abundances.cxb
+6285044822  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:08 126V_pre.abundances.cxb
+6237184066  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:27 127V_post.abundances.cxb
+6269254177  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:24 127V_pre.abundances.cxb
+6243267531  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:10 129V_post.abundances.cxb
+6268401897  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:08 129V_pre.abundances.cxb
+6283483142  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:08 132V_post.abundances.cxb
+6155272084  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:40 132V_pre.abundances.cxb
+6173019038  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 05:23 133V_post.abundances.cxb
+6225257306  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:18 133V_pre.abundances.cxb
+6173019037  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:46 135V_post.abundances.cxb
+6173994367  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:52 135V_pre.abundances.cxb
+6273505827  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:48 136V_post.abundances.cxb
+6216153290  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:38 136V_pre.abundances.cxb
+6296852314  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:26 137V_post.abundances.cxb
+6263436800  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:23 137V_pre.abundances.cxb
+6267416544  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:19 138V_post.abundances.cxb
+6221066957  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:20 138V_pre.abundances.cxb
+6277480071  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:19 139V_post.abundances.cxb
+6231659498  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:47 139V_pre.abundances.cxb
+6274169036  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:58 140V_post.abundances.cxb
+6266786381  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:53 140V_pre.abundances.cxb
+6258126630  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:45 141V_post.abundances.cxb
+6294293980  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:55 141V_pre.abundances.cxb
+6292641414  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:40 142V_post.abundances.cxb
+6159067958  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 05:39 142V_pre.abundances.cxb
+6294878311  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:50 143V_post.abundances.cxb
+6276102385  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:03 143V_pre.abundances.cxb
+6262438182  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:51 144V_post.abundances.cxb
+6261564295  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 02:58 144V_pre.abundances.cxb
+6144976696  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:15 145V_post.abundances.cxb
+6290481265  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:00 145V_pre.abundances.cxb
+6246283459  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:01 149V_post.abundances.cxb
+6198776450  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:12 149V_pre.abundances.cxb
+6282049801  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:03 150V_post.abundances.cxb
+6260650103  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:19 150V_pre.abundances.cxb
+6189332828  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:18 151V_post.abundances.cxb
+6256426785  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:23 151V_pre.abundances.cxb
+6252766164  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:12 152V_post.abundances.cxb
+6193410692  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:43 152V_pre.abundances.cxb
+6286554689  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:23 153V_post.abundances.cxb
+6213983631  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:35 153V_pre.abundances.cxb
+6293703471  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:23 154V_post.abundances.cxb
+6243512750  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:39 154V_pre.abundances.cxb
+6233188494  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:17 156V_post.abundances.cxb
+6245817208  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:42 156V_pre.abundances.cxb
+6274367035  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:55 157V_post.abundances.cxb
+6233911458  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:52 157V_pre.abundances.cxb
+6290945289  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:42 159V_post.abundances.cxb
+6290481266  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:57 159V_pre.abundances.cxb
+6280396557  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:35 160V_post.abundances.cxb
+6155272085  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:46 160V_pre.abundances.cxb
+6294103538  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:57 162V_post.abundances.cxb
+6251918317  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:56 162V_pre.abundances.cxb
+6269795434  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:44 163V_post.abundances.cxb
+6242420711  36M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 04:23 163V_pre.abundances.cxb
+6290760487  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 03:47 164V_post.abundances.cxb
+6264167018  35M -rw-rw-r-- 1 tac15 seidman  30M Sep 13 06:59 164V_pre.abundances.cxb
+6221909425  34K -rw-rw-r-- 1 tac15 seidman 2.2K Sep 13 13:57 tac15.2016-09-13_1356.29615.txt
